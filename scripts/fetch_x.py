@@ -69,7 +69,6 @@ def _fetch_apify(
     """Run the kaitoeasyapi tweet scraper actor synchronously."""
     url = (
         f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
-        f"?token={token}"
     )
     since = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
     payload = {
@@ -83,7 +82,7 @@ def _fetch_apify(
         "X[apify]: scraping @%s (max %d, since %s)",
         handle, max_items, payload["start"],
     )
-    resp = requests.post(url, json=payload, timeout=120)
+    resp = requests.post(url, json=payload, headers={"Authorization": f"Bearer {token}"}, timeout=120)
     resp.raise_for_status()
     data = resp.json()
     out: list[dict] = []

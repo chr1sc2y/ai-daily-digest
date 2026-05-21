@@ -14,6 +14,9 @@ venv/
 # Build output
 dist/
 
+# Local scratch data
+tmp/
+
 # OS / editor
 .DS_Store
 .idea/

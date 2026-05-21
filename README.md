@@ -46,3 +46,5 @@ See [`docs/`](docs/README.md) — architecture, modules, data sources, tech stac
 ## License
 
 MIT.
+
+Inspired by [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders).

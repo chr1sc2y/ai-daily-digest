@@ -117,9 +117,10 @@ def test_fetch_apify_respects_max_items():
 def test_fetch_apify_passes_lookback_in_payload():
     captured = {}
 
-    def fake_post(url, json=None, timeout=None):
+    def fake_post(url, json=None, headers=None, timeout=None):
         captured["url"] = url
         captured["payload"] = json
+        captured["headers"] = headers
         return _FakeResp([])
 
     with patch.object(fetch_x.requests, "post", side_effect=fake_post):
@@ -132,7 +133,8 @@ def test_fetch_apify_passes_lookback_in_payload():
         )
 
     assert "my-actor" in captured["url"]
-    assert "token=my-token" in captured["url"]
+    assert "my-token" not in captured["url"]
+    assert captured["headers"]["Authorization"] == "Bearer my-token"
     assert captured["payload"]["twitterHandles"] == ["elonmusk"]
     assert captured["payload"]["maxItems"] == 5
     assert captured["payload"]["sort"] == "Latest"
