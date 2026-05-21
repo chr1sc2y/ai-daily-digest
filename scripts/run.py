@@ -1,4 +1,4 @@
-"""Entry point for the AI Daily Digest pipeline.
+"""Entry point for the Firsthand AI Digest pipeline.
 
 Usage:
     python scripts/run.py [--output dist/index.html] [--max-per-source 5] [--hours 24]
@@ -37,7 +37,17 @@ ROOT = HERE.parent
 DEFAULT_CONFIG = ROOT / "config" / "sources.json"
 DEFAULT_OUTPUT = ROOT / "dist" / "index.html"
 
-log = logging.getLogger("ai-daily-digest")
+log = logging.getLogger("firsthand-ai-digest")
+
+_REQUIRED_CONFIG_KEYS = ("x_users", "blogs", "site")
+
+
+def _validate_config(config: dict) -> None:
+    for key in _REQUIRED_CONFIG_KEYS:
+        if not config.get(key):
+            log.warning(
+                "Config key '%s' is missing or empty — digest output may be incomplete", key
+            )
 
 
 def _within_window(item: dict, cutoff: datetime) -> bool:
@@ -217,7 +227,7 @@ def _mock_items(now: datetime) -> tuple[list[dict], list[dict], list[dict], list
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Build the AI daily digest HTML.")
+    parser = argparse.ArgumentParser(description="Build the Firsthand AI Digest HTML.")
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--max-per-source", type=int, default=5)
@@ -254,6 +264,7 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
+    _validate_config(config)
     now = datetime.now(timezone.utc)
     window_start = _parse_utc_datetime(args.window_start) if args.window_start else None
     window_end = _parse_utc_datetime(args.window_end) if args.window_end else None
