@@ -21,15 +21,15 @@ def test_run_with_mock_data_writes_html(tmp_path):
     assert "Google DeepMind" in html
 
 
-def test_run_with_mock_data_removes_stale_output_cname(tmp_path):
+def test_run_with_mock_data_copies_root_cname(tmp_path):
     output = tmp_path / "index.html"
-    stale_cname = tmp_path / "CNAME"
-    stale_cname.write_text("old.example.com\n", encoding="utf-8")
+    output_cname = tmp_path / "CNAME"
+    output_cname.write_text("old.example.com\n", encoding="utf-8")
 
     status = run.main(["--mock-data", "--output", output.as_posix()])
 
     assert status == 0
-    assert not stale_cname.exists()
+    assert output_cname.read_text(encoding="utf-8") == "ai.prov1dence.top\n"
 
 
 def test_run_with_mock_data_writes_normalized_json(tmp_path):
