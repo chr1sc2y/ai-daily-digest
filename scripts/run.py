@@ -273,6 +273,8 @@ def main(argv: list[str] | None = None) -> int:
         x_items = fetch_x.fetch_all(
             users=config.get("x_users", []),
             max_items=args.max_per_source,
+            since=window_start,
+            until=window_end,
         )
 
         # ---- 2. Blogs / Releases / YouTube (generic RSS) ----------------------

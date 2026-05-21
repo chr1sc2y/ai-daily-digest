@@ -51,6 +51,10 @@ actor. Reads `apify_token`, `apify_actor`, `apify_lookback_hours` from
 purpose — secrets must live in the file. The CI workflow generates that
 file from the `APIFY_TOKEN` repo secret.
 
+The actor is called once per run with batched `searchTerms[]` entries, one
+per configured handle, using `from:<handle> since_time:<unix>
+until_time:<unix>` so scheduled segments map exactly to their 3-hour window.
+
 ## `scripts/fetch_rss.py`
 
 Generic RSS / Atom helpers used by blogs, podcasts (delegated), and

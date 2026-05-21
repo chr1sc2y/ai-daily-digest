@@ -29,6 +29,10 @@ import render_html  # noqa: E402
 ROOT = HERE.parent
 SEGMENT_HOURS = ("00", "03", "06", "09", "12", "15", "18", "21")
 KINDS = ("x", "blogs", "podcasts", "releases", "videos")
+PROVIDER_MOCK_MARKERS = (
+    "From KaitoEasyAPI, a reminder:",
+    "Thus, we returned N pieces of mock data",
+)
 
 
 def parse_dt(raw: str | None) -> datetime | None:
@@ -70,7 +74,7 @@ def flatten_items(payloads: list[dict]) -> dict[str, list[dict]]:
         items = payload.get("items") or {}
         for kind in KINDS:
             out[kind].extend(items.get(kind) or [])
-    out["x"] = dedup_by_link_or_text(out["x"])
+    out["x"] = dedup_by_link_or_text([item for item in out["x"] if usable_x_item(item)])
     for kind in ("blogs", "podcasts", "releases", "videos"):
         out[kind] = fetch_rss.dedup(out[kind])
     for kind in KINDS:
@@ -80,6 +84,13 @@ def flatten_items(payloads: list[dict]) -> dict[str, list[dict]]:
             reverse=True,
         )
     return out
+
+
+def usable_x_item(item: dict) -> bool:
+    text = f"{item.get('title') or ''}\n{item.get('summary') or ''}"
+    if any(marker in text for marker in PROVIDER_MOCK_MARKERS):
+        return False
+    return bool(item.get("link")) and item_dt(item) is not None
 
 
 def dedup_by_link_or_text(items: list[dict]) -> list[dict]:

@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-21T13:16:29.203040+00:00",
+  "counts": {
+    "x": 4,
+    "blogs": 0,
+    "podcasts": 1,
+    "releases": 7,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "this one\n\nno, sadly im not an investor\n\nhttps://t.co/HvFRMxRn2p",
+        "summary": "this one\n\nno, sadly im not an investor\n\nhttps://t.co/HvFRMxRn2p",
+        "link": "https://x.com/swyx/status/2057444240569864580",
+        "author": "swyx",
+        "published": "2026-05-21T12:51:47+00:00",
+        "source_name": "Swyx",
+        "source_role": "Smol AI / Latent Space",
+        "source_handle": "swyx"
+      },
+      {
+        "kind": "x",
+        "title": "@FishBlue66 @gbrainio This is a scam",
+        "summary": "@FishBlue66 @gbrainio This is a scam",
+        "link": "https://x.com/garrytan/status/2057442685699723699",
+        "author": "garrytan",
+        "published": "2026-05-21T12:45:36+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "This is a scam\n\nThere will be no GBrain, GStack or any other token https://t.co/pDkrbQbzHK",
+        "summary": "This is a scam\n\nThere will be no GBrain, GStack or any other token https://t.co/pDkrbQbzHK",
+        "link": "https://x.com/garrytan/status/2057442586579906966",
+        "author": "garrytan",
+        "published": "2026-05-21T12:45:12+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "@SYTrofimov @openclaw Coming! App's in the repo, just didn't get to ship it yet.",
+        "summary": "@SYTrofimov @openclaw Coming! App's in the repo, just didn't get to ship it yet.",
+        "link": "https://x.com/steipete/status/2057403837283991707",
+        "author": "steipete",
+        "published": "2026-05-21T10:11:14+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [
+      {
+        "title": "OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real",
+        "summary": "<p>AI suddenly feels like it has crossed a threshold, and Yann Dubois, co-lead of the Post-training Frontiers team at OpenAI, joins Matt Turck to explain why. Yann’s team has led the post-training behind the company's reasoning models, including the recent GPT-5.5 release. In this conversation, we go inside the shift from raw model capability to useful, reliable systems: what changed with GPT-5.5, why reinforcement learning is moving beyond math and coding competitions into messy real-world work, how reasoning models like GPT-5.5 actually work, the difference between GPT-5.5 Thinking and GPT-5.5 Pro, why post-training has become one of the most important frontiers in AI, and why evals, model-as-judge, hallucinations, agentic workflows, GDPval, and continual learning are now central to the next phase of frontier models. Yann also shares why continual learning remains one of AI's biggest unsolved problems three years after ChatGPT, and where startups still have massive room to build as frontier models race ahead.</p><p><br /></p><p>(00:00) - Cold open</p><p>(00:34) - Intro</p><p>(01:30) - Why recent AI progress feels like a step function</p><p>(04:13) - Model reliability &amp; the rollercoaster of shipping 5.5</p><p>(07:33) - How OpenAI structures vertical and horizontal teams</p><p>(09:49) - Improving model efficiency and test-time compute</p><p>(12:32) - Yann Dubois' journey from Switzerland to OpenAI</p><p>(15:37) - Reasoning in 2026: Real-world utility vs verifiable rewards</p><p>(18:34) - GPT-5.5 Thinking vs Pro: Scaling test-time compute</p><p>(20:09) - How reasoning models become more efficient</p><p>(23:23) - Pre-training scaling and overcoming the data wall</p><p>(27:03) - Multimodal data, synthetic data, and embodied AI</p><p>(31:05) - Demystifying mid-training and post-training</p><p>(37:21) - Does RL create new capabilities in AI?</p><p>(38:53) - The challenges and frontier of scaling RL</p><p>(43:09) - Is building AI models a craft or a strict science?</p><p>(48:21) - How AI models generalize across different domains</p><p>(54:18) - How reinforcement learning cures AI hallucinations</p><p>(56:04) - Negative generalization and conflicting instructions</p><p>(58:05) - Can RL scale to law, medicine, and the broader economy?</p><p>(1:00:19) - The evaluation bottleneck and Model as a Judge</p><p>(1:04:21) - Continuous AI progress &amp; continual learning</p><p>(1:08:49) - Will foundation models eat the agent harness?</p><p>(1:11:23) - Why startups should focus on the last mile of AI</p>",
+        "link": "https://podcasters.spotify.com/pod/show/firstmark/episodes/OpenAIs-Yann-Dubois-Why-AI-Progress-Suddenly-Feels-Real-e3jmaqc",
+        "author": "Matt Turck",
+        "keywords": "",
+        "published": "2026-05-21T11:30:00+00:00",
+        "kind": "podcast",
+        "source_name": "The MAD Podcast with Matt Turck",
+        "source_role": "Featuring Matt Turck",
+        "source_handle": "The MAD Podcast with Matt Turck"
+      }
+    ],
+    "releases": [
+      {
+        "kind": "release",
+        "source_name": "infiniflow/ragflow",
+        "source_role": "infiniflow/ragflow",
+        "title": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+        "summary": "⭐ 80,976 · RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+        "link": "https://github.com/infiniflow/ragflow",
+        "published": "2026-05-21T12:57:04+00:00",
+        "author": "infiniflow"
+      },
+      {
+        "kind": "release",
+        "source_name": "open-webui/open-webui",
+        "source_role": "open-webui/open-webui",
+        "title": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "summary": "⭐ 138,069 · User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "link": "https://github.com/open-webui/open-webui",
+        "published": "2026-05-21T12:56:59+00:00",
+        "author": "open-webui"
+      },
+      {
+        "kind": "release",
+        "source_name": "langgenius/dify",
+        "source_role": "langgenius/dify",
+        "title": "Production-ready platform for agentic workflow development.",
+        "summary": "⭐ 142,152 · Production-ready platform for agentic workflow development.",
+        "link": "https://github.com/langgenius/dify",
+        "published": "2026-05-21T12:21:48+00:00",
+        "author": "langgenius"
+      },
+      {
+        "kind": "release",
+        "source_name": "Significant-Gravitas/AutoGPT",
+        "source_role": "Significant-Gravitas/AutoGPT",
+        "title": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "summary": "⭐ 184,440 · AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "link": "https://github.com/Significant-Gravitas/AutoGPT",
+        "published": "2026-05-21T12:21:11+00:00",
+        "author": "Significant-Gravitas"
+      },
+      {
+        "kind": "release",
+        "source_name": "vllm-project/vllm",
+        "source_role": "vllm-project/vllm",
+        "title": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+        "summary": "⭐ 80,646 · A high-throughput and memory-efficient inference and serving engine for LLMs",
+        "link": "https://github.com/vllm-project/vllm",
+        "published": "2026-05-21T12:15:55+00:00",
+        "author": "vllm-project"
+      },
+      {
+        "kind": "release",
+        "source_name": "huggingface/transformers",
+        "source_role": "huggingface/transformers",
+        "title": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+        "summary": "⭐ 160,839 · 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+        "link": "https://github.com/huggingface/transformers",
+        "published": "2026-05-21T11:48:15+00:00",
+        "author": "huggingface"
+      },
+      {
+        "kind": "release",
+        "source_name": "NousResearch/hermes-agent",
+        "source_role": "NousResearch/hermes-agent",
+        "title": "The agent that grows with you",
+        "summary": "⭐ 160,845 · The agent that grows with you",
+        "link": "https://github.com/NousResearch/hermes-agent",
+        "published": "2026-05-21T11:10:07+00:00",
+        "author": "NousResearch"
+      }
+    ],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-21T10:00:00+00:00",
+    "end": "2026-05-21T13:00:00+00:00"
+  }
+}

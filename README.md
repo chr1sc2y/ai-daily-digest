@@ -37,7 +37,7 @@ Push to GitHub, then:
 1. **Settings → Secrets → Actions**: add `APIFY_TOKEN`.
 2. **Settings → Pages**: source = *GitHub Actions*.
 3. Optional custom domain: create a repo-root `CNAME` with `ai.<your-domain>`, add DNS `CNAME ai <username>.github.io`, then enable HTTPS in Pages.
-4. **Actions → Daily Digest → Run workflow** for the first build.
+4. Pushes to `main` deploy the committed archive via **Deploy Site**. Use **Actions → Daily Digest → Run workflow** when you want to fetch a fresh segment immediately.
 
 ## Tests
 

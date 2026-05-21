@@ -41,7 +41,7 @@ committed JSON archive data.
 
 | # | Stage              | Module                     | Notes                                  |
 |---|--------------------|----------------------------|----------------------------------------|
-| 1 | Fetch X posts      | `fetch_x.py`               | Apify kaitoeasyapi actor               |
+| 1 | Fetch X posts      | `fetch_x.py`               | Batched Apify kaitoeasyapi search terms|
 | 2 | Fetch blogs        | `fetch_rss.py`             | Atom / RSS via `feedparser`            |
 | 3 | Fetch trending     | `fetch_github_trending.py` | GitHub Search API, topic + stars       |
 | 4 | Fetch YouTube      | `fetch_rss.py`             | `videos.xml?channel_id=…`              |
@@ -74,4 +74,4 @@ committed JSON archive data.
 
 - LLM summarisation: a `summarize.py` step can be inserted between dedup
   and render. The render layer already accepts a `summary` field per item.
-- Batch X fetching by handle group to reduce Apify minimum-charge pressure.
+- Optional catch-up/backfill command for missing historical 3-hour segments.

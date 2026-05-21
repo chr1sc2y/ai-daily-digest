@@ -6,7 +6,10 @@ What we fetch, where it lives, and how stable it is.
 
 - **Provider**: Apify actor [`kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest`](
   https://apify.com/kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest)
-- **Cost**: ~$0.25 per 1k tweets; a 25-handle / 24h run costs cents.
+- **Cost**: ~$0.25 per 1k tweets; each 3-hour run batches all handles into
+  one actor call and then clips locally.
+- **Input mode**: one batched Apify Actor run with `searchTerms[]`, using
+  Twitter search syntax like `from:sama since_time:<unix> until_time:<unix>`.
 - **Stability**: backed by Apify's rotating proxy pool; survives X's
   anti-scraping changes better than a direct API.
 - **Auth**: `apify_token` in `config/secrets.json`.
@@ -107,11 +110,11 @@ To find a channel ID: visit the channel page, view source, search for
 
 | Category | Cron | Window |
 |----------|------|--------|
-| X / posts        | daily | last 24 h  |
-| Blogs            | daily | last 7 d   |
-| Trending repos   | daily | last 14 d  |
-| YouTube videos   | daily | last 7 d   |
-| Podcasts         | daily | last 30 d  |
+| X / posts        | every 3 h | exact 3 h segment |
+| Blogs            | every 3 h | exact 3 h segment |
+| Trending repos   | every 3 h | exact 3 h segment |
+| YouTube videos   | every 3 h | exact 3 h segment |
+| Podcasts         | every 3 h | exact 3 h segment |
 
 Knobs: `--hours`, `--blog-hours`, `--release-hours`, `--video-hours`,
 `--podcast-hours`.

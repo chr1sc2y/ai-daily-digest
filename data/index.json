@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-21T12:58:54.660293+00:00",
+  "generated_at": "2026-05-21T13:22:51.309571+00:00",
   "timezone": "Asia/Shanghai",
   "local_date": "2026-05-21",
   "ranges": [
@@ -12,13 +12,28 @@
     "7d"
   ],
   "default_range": "24h",
-  "segments": [],
+  "segments": [
+    {
+      "date": "2026-05-21",
+      "hour": "18",
+      "path": "data/segments/2026-05-21/18.json",
+      "window_start": "2026-05-21T10:00:00+00:00",
+      "window_end": "2026-05-21T13:00:00+00:00",
+      "counts": {
+        "x": 4,
+        "blogs": 0,
+        "podcasts": 1,
+        "releases": 7,
+        "videos": 0
+      }
+    }
+  ],
   "daily": [
     {
       "date": "2026-05-21",
       "path": "data/daily/2026-05-21.json",
       "counts": {
-        "x": 125,
+        "x": 0,
         "blogs": 16,
         "podcasts": 19,
         "releases": 19,

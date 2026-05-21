@@ -27,9 +27,10 @@ That's it. No web framework, no database, no JS toolchain.
 
 ## Infrastructure
 
-- **GitHub Actions** — daily cron + manual `workflow_dispatch`. Two
-  workflows live in `.github/workflows/`:
+- **GitHub Actions** — 3-hour cron, push deploy, and manual
+  `workflow_dispatch`. Three workflows live in `.github/workflows/`:
   - `daily.yml`: runs the pipeline, deploys `dist/` to Pages.
+  - `pages.yml`: deploys already-committed `data/` to Pages on push.
   - `tests.yml`: runs `pytest` on push and PR.
 - **GitHub Pages** — static hosting, `Source: GitHub Actions`.
 - **Custom domain** — `ai.<your-domain>` via the repo-root `CNAME` file

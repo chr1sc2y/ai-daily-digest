@@ -49,6 +49,11 @@ variables; the Apify token must be in the file.
 [`.github/workflows/tests.yml`](../.github/workflows/tests.yml) runs the
 unit tests on every push and PR.
 
+[`.github/workflows/pages.yml`](../.github/workflows/pages.yml) deploys the
+already-committed `data/` archive to GitHub Pages on every push to `main`.
+It does not need `APIFY_TOKEN`; scheduled data fetching still belongs to
+`daily.yml`.
+
 ## Custom domain
 
 1. Settings → Pages → **Source: GitHub Actions**, **Custom domain:
@@ -93,8 +98,8 @@ they don't run by default.
 ## Cost
 
 - **Apify** — billed by returned data, with provider-specific minimums per
-  actor call. The 3-hour schedule lowers each window size but increases call
-  count unless the X fetcher batches handles.
+  actor call. The X fetcher batches all configured handles into one actor run
+  per 3-hour segment, then clips the returned tweets per handle locally.
 - **GitHub Actions** — free tier covers daily cron easily.
 - **GitHub Pages** — free.
 - **GitHub Search API** — free.

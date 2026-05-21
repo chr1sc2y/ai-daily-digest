@@ -92,8 +92,8 @@ def test_fetch_apify_drops_items_older_than_cutoff():
     old = (datetime.now(timezone.utc) - timedelta(days=10)).isoformat()
     fresh = datetime.now(timezone.utc).isoformat()
     payload = [
-        {"text": "stale tweet", "createdAt": old},
-        {"text": "fresh tweet", "createdAt": fresh},
+        {"text": "stale tweet", "url": "https://x.com/sama/status/old", "createdAt": old},
+        {"text": "fresh tweet", "url": "https://x.com/sama/status/fresh", "createdAt": fresh},
     ]
     with patch.object(fetch_x.requests, "post", return_value=_FakeResp(payload)):
         out = fetch_x._fetch_apify(
@@ -109,9 +109,10 @@ def test_fetch_apify_drops_provider_mock_text():
     payload = [
         {
             "text": "From KaitoEasyAPI, a reminder:Thus, we returned N pieces of mock data.",
+            "url": "https://x.com/sama/status/mock",
             "createdAt": now_iso,
         },
-        {"text": "real tweet", "createdAt": now_iso},
+        {"text": "real tweet", "url": "https://x.com/sama/status/real", "createdAt": now_iso},
     ]
     with patch.object(fetch_x.requests, "post", return_value=_FakeResp(payload)):
         out = fetch_x._fetch_apify(
@@ -124,7 +125,10 @@ def test_fetch_apify_drops_provider_mock_text():
 
 def test_fetch_apify_respects_max_items():
     now_iso = datetime.now(timezone.utc).isoformat()
-    payload = [{"text": f"#{i}", "createdAt": now_iso} for i in range(50)]
+    payload = [
+        {"text": f"#{i}", "url": f"https://x.com/sama/status/{i}", "createdAt": now_iso}
+        for i in range(50)
+    ]
     with patch.object(fetch_x.requests, "post", return_value=_FakeResp(payload)):
         out = fetch_x._fetch_apify(
             handle="sama", max_items=3, token="t", actor="a", lookback_hours=24,
@@ -153,12 +157,41 @@ def test_fetch_apify_passes_lookback_in_payload():
     assert "my-actor" in captured["url"]
     assert "my-token" not in captured["url"]
     assert captured["headers"]["Authorization"] == "Bearer my-token"
-    assert captured["payload"]["twitterHandles"] == ["elonmusk"]
-    assert captured["payload"]["maxItems"] == 5
-    assert captured["payload"]["sort"] == "Latest"
-    # start should be a YYYY-MM-DD string for ~3 days ago
-    expected = (datetime.now(timezone.utc) - timedelta(hours=72)).strftime("%Y-%m-%d")
-    assert captured["payload"]["start"] == expected
+    assert captured["payload"]["maxItems"] == 20
+    assert captured["payload"]["queryType"] == "Latest"
+    assert len(captured["payload"]["searchTerms"]) == 1
+    term = captured["payload"]["searchTerms"][0]
+    assert term.startswith("from:elonmusk since_time:")
+    expected = int((datetime.now(timezone.utc) - timedelta(hours=72)).timestamp())
+    actual = int(term.split("since_time:", 1)[1].split(" ", 1)[0])
+    assert abs(actual - expected) < 5
+
+
+def test_fetch_apify_batch_uses_search_terms_and_groups_by_handle():
+    now_iso = datetime.now(timezone.utc).isoformat()
+    payload = [
+        {"text": "sam", "url": "https://x.com/sama/status/1", "createdAt": now_iso},
+        {"text": "andrej", "url": "https://x.com/karpathy/status/2", "createdAt": now_iso},
+    ]
+    captured = {}
+
+    def fake_post(url, json=None, headers=None, timeout=None):
+        captured["payload"] = json
+        return _FakeResp(payload)
+
+    with patch.object(fetch_x.requests, "post", side_effect=fake_post):
+        out = fetch_x._fetch_apify_batch(
+            ["sama", "karpathy"],
+            max_items=2,
+            token="t",
+            actor="a",
+            lookback_hours=24,
+        )
+
+    assert [item["author"] for item in out] == ["sama", "karpathy"]
+    assert len(captured["payload"]["searchTerms"]) == 2
+    assert captured["payload"]["searchTerms"][0].startswith("from:sama ")
+    assert captured["payload"]["searchTerms"][1].startswith("from:karpathy ")
 
 
 # ---------------------------------------------------------------------------
@@ -179,7 +212,7 @@ def test_fetch_user_swallows_apify_failure(monkeypatch, tmp_path):
     def boom(*a, **kw):
         raise RuntimeError("network down")
 
-    monkeypatch.setattr(fetch_x, "_fetch_apify", boom)
+    monkeypatch.setattr(fetch_x, "_fetch_apify_batch", boom)
     assert fetch_x.fetch_user("sama") == []
 
 
@@ -187,10 +220,10 @@ def test_fetch_all_attaches_source_metadata(monkeypatch, tmp_path):
     secrets_file = _write_secrets(tmp_path, {"apify_token": "real_token"})
     monkeypatch.setattr(fetch_x, "SECRETS_PATH", secrets_file)
 
-    def fake_apify(handle, max_items, token, actor, lookback_hours):
-        return [{"kind": "x", "title": "t", "summary": "t", "link": "", "author": handle, "published": None}]
+    def fake_apify(handles, max_items, token, actor, lookback_hours, since=None, until=None):
+        return [{"kind": "x", "title": "t", "summary": "t", "link": "https://x.com/sama/status/1", "author": handles[0], "published": datetime.now(timezone.utc)}]
 
-    monkeypatch.setattr(fetch_x, "_fetch_apify", fake_apify)
+    monkeypatch.setattr(fetch_x, "_fetch_apify_batch", fake_apify)
 
     users = [{"name": "Sam Altman", "handle": "sama", "role": "CEO, OpenAI"}]
     out = fetch_x.fetch_all(users, max_items=3)

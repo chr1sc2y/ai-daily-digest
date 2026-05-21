@@ -450,9 +450,8 @@ CLIENT_JS = r"""
       if (!indexResp.ok) throw new Error("missing index");
       const index = await indexResp.json();
       const segmentPaths = (index.segments || []).map((segment) => segment.path).slice(-56);
-      const archivePaths = segmentPaths.length
-        ? segmentPaths
-        : (index.daily || []).map((day) => day.path).slice(-7);
+      const dailyPaths = (index.daily || []).map((day) => day.path).slice(-7);
+      const archivePaths = Array.from(new Set(dailyPaths.concat(segmentPaths)));
       const payloads = await Promise.all(archivePaths.map(async (path) => {
         const resp = await fetch(path, { cache: "no-store" });
         if (!resp.ok) return null;
@@ -466,7 +465,10 @@ CLIENT_JS = r"""
         });
       });
       const endValues = (index.segments || []).map((segment) => new Date(segment.window_end || 0)).filter((dt) => !Number.isNaN(dt.getTime()));
-      latestEnd = endValues.length ? new Date(Math.max.apply(null, endValues)) : new Date();
+      const itemValues = archiveItems.map((item) => new Date(item.published || 0)).filter((dt) => !Number.isNaN(dt.getTime()));
+      latestEnd = endValues.length
+        ? new Date(Math.max.apply(null, endValues))
+        : (itemValues.length ? new Date(Math.max.apply(null, itemValues)) : new Date());
       if (status) status.textContent = "7d archive ready";
       renderRange("24h");
     } catch (err) {
