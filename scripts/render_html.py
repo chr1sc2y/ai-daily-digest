@@ -324,6 +324,12 @@ CLIENT_JS = r"""
   ];
   let archiveItems = [];
   let latestEnd = null;
+  const cacheKey = document.querySelector('meta[name="digest-generated"]')?.content || String(Date.now());
+
+  function withCacheKey(path) {
+    const glue = path.includes("?") ? "&" : "?";
+    return path + glue + "v=" + encodeURIComponent(cacheKey);
+  }
 
   function text(value) {
     return String(value || "");
@@ -395,8 +401,26 @@ CLIENT_JS = r"""
     return items.slice().sort((a, b) => new Date(b.published || 0) - new Date(a.published || 0));
   }
 
+  function canonicalLink(value) {
+    const raw = text(value).trim();
+    if (!raw) return "";
+    try {
+      const url = new URL(raw, location.href);
+      Array.from(url.searchParams.keys()).forEach((key) => {
+        if (key.toLowerCase().startsWith("utm_")) url.searchParams.delete(key);
+      });
+      url.hash = "";
+      url.pathname = url.pathname.replace(/\/+$/, "");
+      return (url.origin + url.pathname + url.search).toLowerCase();
+    } catch (err) {
+      return raw.toLowerCase();
+    }
+  }
+
   function keyFor(item) {
-    return [item.kind, item.link || "", item.source_handle || "", item.summary || "", item.published || ""].join("|");
+    const link = canonicalLink(item.link);
+    if (link) return item.kind + "|" + link;
+    return [item.kind, item.source_handle || "", item.summary || "", item.published || ""].join("|");
   }
 
   function filtered(hours) {
@@ -446,14 +470,14 @@ CLIENT_JS = r"""
   async function loadArchive() {
     const status = document.querySelector(".range-status");
     try {
-      const indexResp = await fetch("data/index.json", { cache: "no-store" });
+      const indexResp = await fetch(withCacheKey("data/index.json"), { cache: "reload" });
       if (!indexResp.ok) throw new Error("missing index");
       const index = await indexResp.json();
       const segmentPaths = (index.segments || []).map((segment) => segment.path).slice(-56);
       const dailyPaths = (index.daily || []).map((day) => day.path).slice(-7);
       const archivePaths = Array.from(new Set(dailyPaths.concat(segmentPaths)));
       const payloads = await Promise.all(archivePaths.map(async (path) => {
-        const resp = await fetch(path, { cache: "no-store" });
+        const resp = await fetch(withCacheKey(path), { cache: "reload" });
         if (!resp.ok) return null;
         return resp.json();
       }));
@@ -637,6 +661,7 @@ def render(
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="digest-generated" content="{html.escape(generated)}" />
 <title>AI Daily Digest</title>
 <style>{CSS}</style>
 </head>

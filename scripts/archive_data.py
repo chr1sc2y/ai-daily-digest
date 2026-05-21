@@ -205,9 +205,9 @@ def build_index(data_dir: Path, *, tz_name: str = "Asia/Shanghai") -> dict:
 
 def payloads_for_latest_hours(data_dir: Path, hours: int) -> list[dict]:
     payloads = [load_payload(path) for path in sorted((data_dir / "segments").glob("*/*.json"))]
+    daily_payloads = [load_payload(path) for path in sorted((data_dir / "daily").glob("*.json"))[-7:]]
     if not payloads:
-        daily = sorted((data_dir / "daily").glob("*.json"))
-        return [load_payload(daily[-1])] if daily else []
+        return daily_payloads[-1:] if daily_payloads else []
 
     ends = [parse_dt((payload.get("window") or {}).get("end")) for payload in payloads]
     latest_end = max((end for end in ends if end is not None), default=datetime.now(timezone.utc))
@@ -218,12 +218,49 @@ def payloads_for_latest_hours(data_dir: Path, hours: int) -> list[dict]:
         end = parse_dt(window.get("end"))
         if end is None or end > cutoff:
             selected.append(payload)
-    return selected
+    return daily_payloads + selected
+
+
+def latest_end_for_payloads(payloads: list[dict]) -> datetime:
+    window_ends = [
+        parse_dt((payload.get("window") or {}).get("end"))
+        for payload in payloads
+    ]
+    latest_window_end = max(
+        (dt for dt in window_ends if dt is not None),
+        default=None,
+    )
+    if latest_window_end is not None:
+        return latest_window_end
+
+    item_dates = [
+        item_dt(item)
+        for payload in payloads
+        for items in (payload.get("items") or {}).values()
+        for item in items
+    ]
+    return max(
+        (dt for dt in item_dates if dt is not None),
+        default=datetime.now(timezone.utc),
+    )
+
+
+def filter_items_for_hours(items: dict[str, list[dict]], *, latest_end: datetime, hours: int) -> dict[str, list[dict]]:
+    cutoff = latest_end - timedelta(hours=hours)
+    filtered: dict[str, list[dict]] = {}
+    for kind, rows in items.items():
+        filtered[kind] = [
+            item
+            for item in rows
+            if (dt := item_dt(item)) is not None and cutoff <= dt <= latest_end
+        ]
+    return filtered
 
 
 def render_latest(data_dir: Path, dist_dir: Path, *, hours: int = 24) -> None:
     payloads = payloads_for_latest_hours(data_dir, hours)
     items = flatten_items(payloads)
+    items = filter_items_for_hours(items, latest_end=latest_end_for_payloads(payloads), hours=hours)
     html = render_html.render(
         x_items=items["x"],
         blog_items=items["blogs"],
