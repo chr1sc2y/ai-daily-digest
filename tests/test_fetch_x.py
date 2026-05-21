@@ -104,6 +104,24 @@ def test_fetch_apify_drops_items_older_than_cutoff():
     assert out[0]["title"] == "fresh tweet"
 
 
+def test_fetch_apify_drops_provider_mock_text():
+    now_iso = datetime.now(timezone.utc).isoformat()
+    payload = [
+        {
+            "text": "From KaitoEasyAPI, a reminder:Thus, we returned N pieces of mock data.",
+            "createdAt": now_iso,
+        },
+        {"text": "real tweet", "createdAt": now_iso},
+    ]
+    with patch.object(fetch_x.requests, "post", return_value=_FakeResp(payload)):
+        out = fetch_x._fetch_apify(
+            handle="sama", max_items=10, token="t", actor="a", lookback_hours=24,
+        )
+
+    assert len(out) == 1
+    assert out[0]["title"] == "real tweet"
+
+
 def test_fetch_apify_respects_max_items():
     now_iso = datetime.now(timezone.utc).isoformat()
     payload = [{"text": f"#{i}", "createdAt": now_iso} for i in range(50)]

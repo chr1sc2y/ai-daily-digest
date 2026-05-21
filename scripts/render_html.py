@@ -127,6 +127,39 @@ a { color: inherit; }
   max-width: 640px;
   margin: 0;
 }
+.rangebar {
+  margin-top: 30px;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.rangebar button {
+  appearance: none;
+  border: 1px solid var(--rule);
+  background: var(--tag-bg);
+  color: var(--ink-2);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 11px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.rangebar button:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.rangebar button.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.rangebar .range-status {
+  align-self: center;
+  margin-left: 6px;
+  color: var(--ink-3);
+  font-family: var(--mono);
+  font-size: 11px;
+}
 
 /* --- Layout --- */
 .shell {
@@ -271,6 +304,186 @@ footer.page-foot {
 }
 """
 
+CLIENT_JS = r"""
+<script>
+(function () {
+  const ranges = [
+    { id: "3h", label: "3h", hours: 3 },
+    { id: "6h", label: "6h", hours: 6 },
+    { id: "12h", label: "12h", hours: 12 },
+    { id: "24h", label: "24h", hours: 24 },
+    { id: "3d", label: "3d", hours: 72 },
+    { id: "7d", label: "7d", hours: 168 }
+  ];
+  const kinds = [
+    ["posts", "Posts", "x"],
+    ["blogs", "Blogs & Long-form", "blogs"],
+    ["podcasts", "Podcasts", "podcasts"],
+    ["releases", "Trending Repos", "releases"],
+    ["videos", "YouTube", "videos"]
+  ];
+  let archiveItems = [];
+  let latestEnd = null;
+
+  function text(value) {
+    return String(value || "");
+  }
+
+  function escapeHtml(value) {
+    return text(value).replace(/[&<>"']/g, function (ch) {
+      return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[ch];
+    });
+  }
+
+  function stripHtml(value) {
+    const el = document.createElement("div");
+    el.innerHTML = text(value);
+    return el.textContent || el.innerText || "";
+  }
+
+  function initials(name) {
+    const parts = text(name).trim().split(/\s+/).filter(Boolean);
+    if (!parts.length) return "?";
+    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  }
+
+  function fmtTime(value) {
+    if (!value) return "";
+    const dt = new Date(value);
+    if (Number.isNaN(dt.getTime())) return "";
+    return dt.toISOString().replace("T", " ").replace(".000Z", " UTC").replace("Z", " UTC");
+  }
+
+  function tag(kind) {
+    return {x: "Post", blogs: "Blog", podcasts: "Podcast", releases: "Trending", videos: "Video"}[kind] || "Item";
+  }
+
+  function card(item) {
+    const name = item.source_name || item.author || "Unknown";
+    const role = item.kind === "x" && item.source_handle
+      ? "@" + item.source_handle + " · " + text(item.source_role)
+      : text(item.source_role);
+    const title = stripHtml(item.title);
+    const summary = stripHtml(item.summary);
+    const link = text(item.link);
+    const titleBlock = item.kind !== "x" && title
+      ? `<div class="title">${escapeHtml(title)}</div>`
+      : "";
+    const openLink = link
+      ? `<a class="open" href="${escapeHtml(link)}" target="_blank" rel="noreferrer noopener">Open ↗</a>`
+      : "";
+    return `<article class="entry">
+  <div class="row">
+    <div class="avatar">${escapeHtml(initials(name))}</div>
+    <div class="who">
+      <span class="name">${escapeHtml(name)}</span>
+      <span class="role">${escapeHtml(role)}</span>
+    </div>
+    <span class="tag">${escapeHtml(tag(item.kind))}</span>
+  </div>
+  ${titleBlock}
+  <div class="summary">${escapeHtml(summary)}</div>
+  <div class="foot">
+    <span class="when">${escapeHtml(fmtTime(item.published))}</span>
+    ${openLink}
+  </div>
+</article>`;
+  }
+
+  function sortDesc(items) {
+    return items.slice().sort((a, b) => new Date(b.published || 0) - new Date(a.published || 0));
+  }
+
+  function keyFor(item) {
+    return [item.kind, item.link || "", item.source_handle || "", item.summary || "", item.published || ""].join("|");
+  }
+
+  function filtered(hours) {
+    if (!archiveItems.length || !latestEnd) return null;
+    const cutoff = latestEnd.getTime() - hours * 60 * 60 * 1000;
+    const seen = new Set();
+    return sortDesc(archiveItems.filter((item) => {
+      const dt = new Date(item.published || 0);
+      if (Number.isNaN(dt.getTime()) || dt.getTime() < cutoff || dt.getTime() > latestEnd.getTime()) {
+        return false;
+      }
+      const key = keyFor(item);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    }));
+  }
+
+  function renderRange(rangeId) {
+    const range = ranges.find((r) => r.id === rangeId) || ranges[3];
+    const items = filtered(range.hours);
+    if (!items) return;
+    document.querySelectorAll(".rangebar button").forEach((button) => {
+      button.classList.toggle("active", button.dataset.range === range.id);
+    });
+    const byKind = {};
+    kinds.forEach(([, , kind]) => { byKind[kind] = []; });
+    items.forEach((item) => {
+      if (byKind[item.kind]) byKind[item.kind].push(item);
+    });
+    const sections = kinds.map(([slug, title, kind]) => {
+      const rows = byKind[kind] || [];
+      const body = rows.length
+        ? `<div class="feed">${rows.map(card).join("")}</div>`
+        : '<div class="feed"><div class="empty">No fresh items in window</div></div>';
+      return `<section id="${slug}"><header class="s-head"><h2>${escapeHtml(title)}</h2><span class="count">${String(rows.length).padStart(2, "0")} items</span></header>${body}</section>`;
+    }).join("");
+    document.querySelector("main").innerHTML = sections;
+    document.querySelector(".sidenav ol").innerHTML = kinds.map(([slug, title, kind]) => {
+      const rows = byKind[kind] || [];
+      return `<li><a href="#${slug}"><span>${escapeHtml(title)}</span><span class="n">${String(rows.length).padStart(2, "0")}</span></a></li>`;
+    }).join("");
+    const status = document.querySelector(".range-status");
+    if (status) status.textContent = "Loaded " + items.length + " items";
+  }
+
+  async function loadArchive() {
+    const status = document.querySelector(".range-status");
+    try {
+      const indexResp = await fetch("data/index.json", { cache: "no-store" });
+      if (!indexResp.ok) throw new Error("missing index");
+      const index = await indexResp.json();
+      const segmentPaths = (index.segments || []).map((segment) => segment.path).slice(-56);
+      const archivePaths = segmentPaths.length
+        ? segmentPaths
+        : (index.daily || []).map((day) => day.path).slice(-7);
+      const payloads = await Promise.all(archivePaths.map(async (path) => {
+        const resp = await fetch(path, { cache: "no-store" });
+        if (!resp.ok) return null;
+        return resp.json();
+      }));
+      archiveItems = [];
+      payloads.filter(Boolean).forEach((payload) => {
+        const items = payload.items || {};
+        Object.entries({x: "x", blogs: "blogs", podcasts: "podcasts", releases: "releases", videos: "videos"}).forEach(([kind, key]) => {
+          (items[key] || []).forEach((item) => archiveItems.push(Object.assign({}, item, {kind})));
+        });
+      });
+      const endValues = (index.segments || []).map((segment) => new Date(segment.window_end || 0)).filter((dt) => !Number.isNaN(dt.getTime()));
+      latestEnd = endValues.length ? new Date(Math.max.apply(null, endValues)) : new Date();
+      if (status) status.textContent = "7d archive ready";
+      renderRange("24h");
+    } catch (err) {
+      if (status) status.textContent = "Local archive unavailable";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".rangebar button").forEach((button) => {
+      button.addEventListener("click", () => renderRange(button.dataset.range));
+    });
+    loadArchive();
+  });
+})();
+</script>
+"""
+
 
 def _initials(name: str) -> str:
     parts = [p for p in re.split(r"\s+", name.strip()) if p]
@@ -293,6 +506,16 @@ def _strip_html(text: str) -> str:
 def _fmt_time(dt: datetime | None) -> str:
     if not dt:
         return ""
+    if isinstance(dt, str):
+        text = dt.strip()
+        if text.endswith("Z"):
+            text = text[:-1] + "+00:00"
+        try:
+            dt = datetime.fromisoformat(text)
+        except ValueError:
+            return ""
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
     return dt.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
 
@@ -355,6 +578,7 @@ def render(
     release_items: list[dict] | None = None,
     video_items: list[dict] | None = None,
     site: dict | None = None,
+    interactive: bool = False,
 ) -> str:
     blog_items = blog_items or []
     release_items = release_items or []
@@ -422,8 +646,17 @@ def render(
 </div>
 <header class="hero">
   <div class="eyebrow">Issue · {datetime.now(timezone.utc).strftime("%Y.%m.%d")}</div>
-  <h1>The <em>firsthand</em> signal<br/>from the people building AI.</h1>
-  <p class="lede">No takes, no hot summaries — only the leaders' own posts, blogs, podcasts, repos, and videos. Auto-curated daily, straight from the source.</p>
+  <h1><em>Firsthand</em> AI Signal</h1>
+  <p class="lede">Posts, blogs, podcasts, repos, and videos from the people building AI. Auto-curated straight from the source.</p>
+  <div class="rangebar" aria-label="Time range">
+    <button type="button" data-range="3h">3h</button>
+    <button type="button" data-range="6h">6h</button>
+    <button type="button" data-range="12h">12h</button>
+    <button class="active" type="button" data-range="24h">24h</button>
+    <button type="button" data-range="3d">3d</button>
+    <button type="button" data-range="7d">7d</button>
+    <span class="range-status">{'Loading 7d archive' if interactive else ''}</span>
+  </div>
 </header>
 <div class="shell">
   <nav class="sidenav">
@@ -435,6 +668,7 @@ def render(
   </main>
 </div>
 <footer class="page-foot"></footer>
+{CLIENT_JS if interactive else ''}
 </body>
 </html>
 """

@@ -22,7 +22,25 @@ CLI flags:
 | `--podcast-hours`     | 720     | window for podcasts (30 d)                   |
 | `--no-podcast-filter` |         | keep all episodes regardless of leader name  |
 | `--data-output`       |         | optional normalized JSON output path         |
+| `--window-start`      |         | inclusive UTC ISO timestamp for global window |
+| `--window-end`        |         | exclusive UTC ISO timestamp for global window |
 | `--verbose`           |         | DEBUG logging                                |
+
+## `scripts/segment_window.py`
+
+Computes the latest complete 3-hour Asia/Shanghai segment. In GitHub Actions
+it writes `DIGEST_WINDOW_START`, `DIGEST_WINDOW_END`, and
+`DIGEST_SEGMENT_PATH` to `$GITHUB_ENV`.
+
+## `scripts/archive_data.py`
+
+Maintains the committed data archive and deployable data bundle.
+
+- merges complete `data/segments/YYYY-MM-DD/*.json` days into
+  `data/daily/YYYY-MM-DD.json`
+- writes `data/index.json`
+- renders `dist/index.html` from the latest 24 hours
+- copies `data/` into `dist/data/` for frontend prefetching
 
 ## `scripts/fetch_x.py`
 

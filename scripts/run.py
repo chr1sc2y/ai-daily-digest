@@ -48,6 +48,23 @@ def _within_window(item: dict, cutoff: datetime) -> bool:
     return pub >= cutoff
 
 
+def _within_range(item: dict, start: datetime, end: datetime) -> bool:
+    pub = item.get("published")
+    if pub is None:
+        return True
+    return start <= pub < end
+
+
+def _parse_utc_datetime(raw: str) -> datetime:
+    text = raw.strip()
+    if text.endswith("Z"):
+        text = text[:-1] + "+00:00"
+    dt = datetime.fromisoformat(text)
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
 def _sort_desc(items: list[dict]) -> list[dict]:
     return sorted(
         items,
@@ -72,8 +89,10 @@ def _data_payload(
     podcast_items: list[dict],
     release_items: list[dict],
     video_items: list[dict],
+    window_start: datetime | None = None,
+    window_end: datetime | None = None,
 ) -> dict:
-    return {
+    payload = {
         "schema_version": 1,
         "generated_at": generated_at.astimezone(timezone.utc).isoformat(),
         "counts": {
@@ -91,6 +110,12 @@ def _data_payload(
             "videos": [_jsonable_item(i) for i in video_items],
         },
     }
+    if window_start and window_end:
+        payload["window"] = {
+            "start": window_start.astimezone(timezone.utc).isoformat(),
+            "end": window_end.astimezone(timezone.utc).isoformat(),
+        }
+    return payload
 
 
 def _mock_items(now: datetime) -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict]]:
@@ -212,6 +237,10 @@ def main(argv: list[str] | None = None) -> int:
                         help="Render built-in sample data without network calls or secrets.")
     parser.add_argument("--data-output", type=Path,
                         help="Optional JSON path for the normalized digest data.")
+    parser.add_argument("--window-start",
+                        help="UTC ISO timestamp for an inclusive global data window start.")
+    parser.add_argument("--window-end",
+                        help="UTC ISO timestamp for an exclusive global data window end.")
     parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -226,6 +255,14 @@ def main(argv: list[str] | None = None) -> int:
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
     now = datetime.now(timezone.utc)
+    window_start = _parse_utc_datetime(args.window_start) if args.window_start else None
+    window_end = _parse_utc_datetime(args.window_end) if args.window_end else None
+    if (window_start is None) != (window_end is None):
+        log.error("--window-start and --window-end must be provided together.")
+        return 2
+    if window_start and window_end and window_start >= window_end:
+        log.error("--window-start must be before --window-end.")
+        return 2
 
     if args.mock_data:
         log.info("Mock: rendering built-in sample data; no network calls.")
@@ -274,11 +311,18 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     # ---- 4. Time-window filter --------------------------------------------
-    x_items       = [i for i in x_items       if _within_window(i, now - timedelta(hours=args.hours))]
-    blog_items    = [i for i in blog_items    if _within_window(i, now - timedelta(hours=args.blog_hours))]
-    release_items = [i for i in release_items if _within_window(i, now - timedelta(hours=args.release_hours))]
-    video_items   = [i for i in video_items   if _within_window(i, now - timedelta(hours=args.video_hours))]
-    podcast_items = [i for i in podcast_items if _within_window(i, now - timedelta(hours=args.podcast_hours))]
+    if window_start and window_end:
+        x_items       = [i for i in x_items       if _within_range(i, window_start, window_end)]
+        blog_items    = [i for i in blog_items    if _within_range(i, window_start, window_end)]
+        release_items = [i for i in release_items if _within_range(i, window_start, window_end)]
+        video_items   = [i for i in video_items   if _within_range(i, window_start, window_end)]
+        podcast_items = [i for i in podcast_items if _within_range(i, window_start, window_end)]
+    else:
+        x_items       = [i for i in x_items       if _within_window(i, now - timedelta(hours=args.hours))]
+        blog_items    = [i for i in blog_items    if _within_window(i, now - timedelta(hours=args.blog_hours))]
+        release_items = [i for i in release_items if _within_window(i, now - timedelta(hours=args.release_hours))]
+        video_items   = [i for i in video_items   if _within_window(i, now - timedelta(hours=args.video_hours))]
+        podcast_items = [i for i in podcast_items if _within_window(i, now - timedelta(hours=args.podcast_hours))]
 
     # ---- 5. Dedup by canonical URL (cross-category) -----------------------
     # X items are kept untouched (handles can quote-tweet links from other
@@ -312,6 +356,8 @@ def main(argv: list[str] | None = None) -> int:
             podcast_items=podcast_items,
             release_items=release_items,
             video_items=video_items,
+            window_start=window_start,
+            window_end=window_end,
         )
         args.data_output.parent.mkdir(parents=True, exist_ok=True)
         args.data_output.write_text(

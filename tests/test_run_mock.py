@@ -58,3 +58,29 @@ def test_run_with_mock_data_writes_normalized_json(tmp_path):
     }
     assert payload["items"]["x"][0]["source_name"] == "Sam Altman"
     assert payload["items"]["x"][0]["published"].endswith("+00:00")
+
+
+def test_run_with_mock_data_writes_window_metadata(tmp_path):
+    output = tmp_path / "index.html"
+    data_output = tmp_path / "segment.json"
+
+    status = run.main(
+        [
+            "--mock-data",
+            "--output",
+            output.as_posix(),
+            "--data-output",
+            data_output.as_posix(),
+            "--window-start",
+            "2026-05-21T09:00:00Z",
+            "--window-end",
+            "2026-05-21T12:00:00Z",
+        ]
+    )
+
+    payload = json.loads(data_output.read_text(encoding="utf-8"))
+    assert status == 0
+    assert payload["window"] == {
+        "start": "2026-05-21T09:00:00+00:00",
+        "end": "2026-05-21T12:00:00+00:00",
+    }

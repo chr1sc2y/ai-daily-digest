@@ -36,6 +36,10 @@ DEFAULT_APIFY_ACTOR = (
     "kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest"
 )
 DEFAULT_LOOKBACK_HOURS = 24
+MOCK_TEXT_MARKERS = (
+    "From KaitoEasyAPI, a reminder:",
+    "Thus, we returned N pieces of mock data",
+)
 
 
 def _parse_date(raw) -> datetime | None:
@@ -57,6 +61,10 @@ def _load_secrets() -> dict[str, Any]:
             f"config/secrets.json and fill in your Apify token."
         )
     return json.loads(SECRETS_PATH.read_text(encoding="utf-8"))
+
+
+def _is_provider_mock_text(text: str) -> bool:
+    return any(marker in text for marker in MOCK_TEXT_MARKERS)
 
 
 def _fetch_apify(
@@ -88,6 +96,8 @@ def _fetch_apify(
     out: list[dict] = []
     for t in data:
         text = t.get("text") or t.get("full_text") or ""
+        if _is_provider_mock_text(text):
+            continue
         link = t.get("url") or t.get("twitterUrl") or ""
         published = _parse_date(t.get("createdAt") or t.get("created_at"))
         # Drop anything older than the cutoff just in case the actor returns

@@ -2,8 +2,8 @@ name: Daily Digest
 
 on:
   schedule:
-    # 08:00 Asia/Shanghai every day
-    - cron: "0 0 * * *"
+    # Every 3 hours on Asia/Shanghai segment boundaries.
+    - cron: "0 1,4,7,10,13,16,19,22 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -51,7 +54,7 @@ jobs:
                   {
                       "apify_token": os.environ["APIFY_TOKEN"],
                       "apify_actor": "kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest",
-                      "apify_lookback_hours": 24,
+                      "apify_lookback_hours": 3,
                       "github_token": os.environ.get("GH_TRENDING_TOKEN", ""),
                   },
                   indent=2,
@@ -61,22 +64,37 @@ jobs:
           )
           PY
 
-      - name: Build digest
+      - name: Compute segment window
+        run: python scripts/segment_window.py --github-env "$GITHUB_ENV"
+
+      - name: Build digest segment
         run: |
-          DIGEST_DATE="$(TZ=Asia/Shanghai date +%F)"
-          python scripts/run.py --verbose --data-output "data/${DIGEST_DATE}.json"
+          python scripts/run.py \
+            --verbose \
+            --hours 3 \
+            --blog-hours 3 \
+            --release-hours 3 \
+            --video-hours 3 \
+            --podcast-hours 3 \
+            --window-start "$DIGEST_WINDOW_START" \
+            --window-end "$DIGEST_WINDOW_END" \
+            --data-output "$DIGEST_SEGMENT_PATH" \
+            --output dist/index.html
+
+      - name: Build archive and site
+        run: python scripts/archive_data.py --render-hours 24
 
       - name: Commit digest data
         run: |
-          DIGEST_DATE="$(TZ=Asia/Shanghai date +%F)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "data/${DIGEST_DATE}.json"
+          git add data
           if git diff --cached --quiet; then
             echo "No digest data changes to commit."
           else
-            git commit -m "Add digest data for ${DIGEST_DATE}"
-            git push
+            git commit -m "Add digest segment ${DIGEST_SEGMENT_DATE} ${DIGEST_SEGMENT_HOUR}:00"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
       - name: Upload Pages artifact

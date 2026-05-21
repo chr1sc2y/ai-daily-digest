@@ -1,9 +1,9 @@
 # AI Daily Digest
 
-A self-hosted, zero-server daily digest of what AI's leaders are saying — across X posts, blogs, podcasts, GitHub trending, and YouTube.
+A self-hosted, zero-server digest of what AI's leaders are saying — across X posts, blogs, podcasts, GitHub trending, and YouTube.
 
 ```
-GitHub Actions (cron) ──▶ Apify (X) + RSS + GitHub Search ──▶ dist/index.html ──▶ GitHub Pages
+GitHub Actions (3h cron) ──▶ Apify + RSS + GitHub Search ──▶ data/segments + dist/index.html ──▶ GitHub Pages
 ```
 
 ## Run locally
@@ -26,7 +26,8 @@ open dist/index.html
 Write a dated normalized data snapshot while building:
 
 ```bash
-python scripts/run.py --output dist/index.html --data-output data/$(date +%F).json
+python scripts/run.py --output dist/index.html --data-output data/segments/$(date +%F)/00.json
+python scripts/archive_data.py
 ```
 
 ## Deploy

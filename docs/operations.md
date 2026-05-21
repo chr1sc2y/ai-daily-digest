@@ -34,14 +34,17 @@ variables; the Apify token must be in the file.
 ## CI / cron
 
 [`.github/workflows/daily.yml`](../.github/workflows/daily.yml) runs every
-day at 08:00 Asia/Shanghai (00:00 UTC) and on manual dispatch. It:
+3 hours on Asia/Shanghai segment boundaries and on manual dispatch. It:
 
 1. Installs `requirements.txt`
 2. Runs `pytest` (unit only — `integration` is skipped)
 3. Materialises `config/secrets.json` from the repo secret `APIFY_TOKEN`
-4. Builds `dist/index.html` and `data/YYYY-MM-DD.json`
-5. Commits the dated JSON data snapshot back to the repository
-6. Uploads `dist/` as the Pages artifact and deploys it
+4. Computes the latest complete 3-hour Asia/Shanghai window
+5. Builds `data/segments/YYYY-MM-DD/HH.json`
+6. Merges complete days into `data/daily/YYYY-MM-DD.json`
+7. Writes `data/index.json`, renders latest 24h, and copies `data/` into `dist/data/`
+8. Commits JSON archive changes back to the repository
+9. Uploads `dist/` as the Pages artifact and deploys it
 
 [`.github/workflows/tests.yml`](../.github/workflows/tests.yml) runs the
 unit tests on every push and PR.
@@ -83,11 +86,15 @@ they don't run by default.
 - For trending: `python -c "import sys;sys.path.insert(0,'scripts');import fetch_github_trending as g;print(len(g.fetch_trending(['llm'])))"`.
 - GitHub Pages deploy errors: check Actions → most recent run → `deploy`
   step.
+- Segment debugging: `python scripts/segment_window.py` prints the latest
+  complete 3-hour bucket; `python scripts/archive_data.py` rebuilds
+  `data/index.json` and `dist/index.html` from committed JSON.
 
 ## Cost
 
-- **Apify** — ~$0.25 per 1k tweets. A 12-handle / 24h run is well under
-  100 tweets, costs cents per day.
+- **Apify** — billed by returned data, with provider-specific minimums per
+  actor call. The 3-hour schedule lowers each window size but increases call
+  count unless the X fetcher batches handles.
 - **GitHub Actions** — free tier covers daily cron easily.
 - **GitHub Pages** — free.
 - **GitHub Search API** — free.
