@@ -1,0 +1,80 @@
+name: Daily Digest
+
+on:
+  schedule:
+    # 01:00 UTC every day
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m pytest
+
+      - name: Generate config/secrets.json
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          GH_TRENDING_TOKEN: ${{ secrets.GH_TRENDING_TOKEN }}
+        run: |
+          if [ -z "$APIFY_TOKEN" ]; then
+            echo "::error::Repository secret APIFY_TOKEN is not set."
+            exit 1
+          fi
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          Path("config/secrets.json").write_text(
+              json.dumps(
+                  {
+                      "apify_token": os.environ["APIFY_TOKEN"],
+                      "apify_actor": "kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest",
+                      "apify_lookback_hours": 24,
+                      "github_token": os.environ.get("GH_TRENDING_TOKEN", ""),
+                  },
+                  indent=2,
+              )
+              + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Build digest
+        run: python scripts/run.py --verbose
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

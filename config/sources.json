@@ -1,0 +1,68 @@
+{
+  "site": {
+    "repo":     "chr1sc2y/ai-daily-digest",
+    "repo_url": "https://github.com/chr1sc2y/ai-daily-digest"
+  },
+  "x_users": [
+    { "name": "Andrej Karpathy",     "handle": "karpathy",       "role": "Eureka Labs / ex-OpenAI, Tesla" },
+    { "name": "Swyx",                "handle": "swyx",           "role": "Smol AI / Latent Space" },
+    { "name": "Josh Woodward",       "handle": "joshwoodward",   "role": "VP, Google Labs" },
+    { "name": "Kevin Weil",          "handle": "kevinweil",      "role": "Chief Product Officer, OpenAI" },
+    { "name": "Peter Yang",          "handle": "petergyang",     "role": "Product, Roblox / AI writer" },
+    { "name": "Nan Yu",              "handle": "nanyu",          "role": "Head of Product, Linear" },
+    { "name": "Madhu Guru",          "handle": "madhuguru",      "role": "AI builder" },
+    { "name": "Amanda Askell",       "handle": "AmandaAskell",   "role": "Philosopher, Anthropic" },
+    { "name": "Cat Wu",              "handle": "_catwu",         "role": "Product, Claude Code (Anthropic)" },
+    { "name": "Thariq",              "handle": "thariqshihipar", "role": "Co-founder, Cluely / AI builder" },
+    { "name": "Google Labs",         "handle": "GoogleLabs",     "role": "Google's AI experiments group" },
+    { "name": "Amjad Masad",         "handle": "amasad",         "role": "CEO, Replit" },
+    { "name": "Guillermo Rauch",     "handle": "rauchg",         "role": "CEO, Vercel" },
+    { "name": "Alex Albert",         "handle": "alexalbert__",   "role": "Head of Claude Relations, Anthropic" },
+    { "name": "Aaron Levie",         "handle": "levie",          "role": "CEO, Box" },
+    { "name": "Ryo Lu",              "handle": "ryolu_",         "role": "Head of Design, Cursor" },
+    { "name": "Garry Tan",           "handle": "garrytan",       "role": "CEO, Y Combinator" },
+    { "name": "Matt Turck",          "handle": "mattturck",      "role": "Managing Director, FirstMark" },
+    { "name": "Zara Zhang",          "handle": "zarazhang",      "role": "Investor / writer" },
+    { "name": "Nikunj Kothari",      "handle": "nikunjk",        "role": "Investor, Khosla Ventures" },
+    { "name": "Peter Steinberger",   "handle": "steipete",       "role": "Indie hacker, ex-PSPDFKit" },
+    { "name": "Dan Shipper",         "handle": "danshipper",     "role": "CEO, Every" },
+    { "name": "Aditya Agarwal",      "handle": "adityaag",       "role": "Partner, South Park Commons" },
+    { "name": "Sam Altman",          "handle": "sama",           "role": "CEO, OpenAI" },
+    { "name": "Dario Amodei",        "handle": "DarioAmodei",    "role": "CEO, Anthropic" },
+    { "name": "Claude",              "handle": "claudeai",       "role": "Anthropic's Claude" }
+  ],
+  "podcasts": [
+    { "name": "Latent Space",                   "rss": "https://api.substack.com/feed/podcast/1084089.rss",  "host": "swyx & Alessio" },
+    { "name": "Training Data",                  "rss": "https://feeds.megaphone.fm/trainingdata",            "host": "Sequoia Capital" },
+    { "name": "No Priors",                      "rss": "https://feeds.megaphone.fm/nopriors",                "host": "Sarah Guo & Elad Gil" },
+    { "name": "Unsupervised Learning",          "rss": "https://feeds.simplecast.com/dOSE_bdP",              "host": "Jacob Effron (Redpoint)" },
+    { "name": "The MAD Podcast with Matt Turck","rss": "https://anchor.fm/s/f2ee4948/podcast/rss",           "host": "Matt Turck" },
+    { "name": "AI & I",                         "rss": "https://feeds.transistor.fm/how-do-you-use-chatgpt", "host": "Dan Shipper (Every)" }
+  ],
+  "blogs": [
+    { "name": "OpenAI Blog",         "rss": "https://openai.com/blog/rss.xml",                   "publisher": "OpenAI" },
+    { "name": "Google DeepMind",     "rss": "https://deepmind.google/blog/rss.xml",              "publisher": "Google DeepMind" },
+    { "name": "Sam Altman",          "rss": "https://blog.samaltman.com/posts.atom",             "publisher": "Sam Altman" },
+    { "name": "Andrej Karpathy",     "rss": "https://karpathy.github.io/feed.xml",               "publisher": "Andrej Karpathy" },
+    { "name": "Simon Willison",      "rss": "https://simonwillison.net/atom/everything/",        "publisher": "Simon Willison" },
+    { "name": "Lilian Weng",         "rss": "https://lilianweng.github.io/index.xml",            "publisher": "Lilian Weng" },
+    { "name": "Import AI (Jack Clark)", "rss": "https://jack-clark.net/feed/",                   "publisher": "Jack Clark" }
+  ],
+  "github_trending": {
+    "topics":        ["llm", "ai-agents", "generative-ai", "agentic-ai", "rag", "transformers", "vector-database"],
+    "min_stars":     2000,
+    "lookback_days": 14,
+    "max_repos":     20
+  },
+  "youtube": [
+    { "name": "Lex Fridman",         "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA", "channel": "Lex Fridman" },
+    { "name": "Dwarkesh Patel",      "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZa18YV7qayTh-MRIrBhDpA", "channel": "Dwarkesh Patel" },
+    { "name": "Two Minute Papers",   "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg", "channel": "Two Minute Papers" },
+    { "name": "Yannic Kilcher",      "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew", "channel": "Yannic Kilcher" },
+    { "name": "AI Explained",        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw", "channel": "AI Explained" },
+    { "name": "OpenAI",              "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A", "channel": "OpenAI" },
+    { "name": "Google DeepMind",     "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A", "channel": "Google DeepMind" },
+    { "name": "Anthropic",           "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA", "channel": "Anthropic" },
+    { "name": "Hugging Face",        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHlNU7kIZhRgSbhHvFoy72w", "channel": "Hugging Face" }
+  ]
+}

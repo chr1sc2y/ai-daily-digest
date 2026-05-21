@@ -1,0 +1,20 @@
+# Secrets — never commit
+config/secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
+
+# Build output
+dist/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
