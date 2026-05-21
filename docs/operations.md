@@ -34,13 +34,14 @@ variables; the Apify token must be in the file.
 ## CI / cron
 
 [`.github/workflows/daily.yml`](../.github/workflows/daily.yml) runs every
-day at 01:00 UTC and on manual dispatch. It:
+day at 08:00 Asia/Shanghai (00:00 UTC) and on manual dispatch. It:
 
 1. Installs `requirements.txt`
 2. Runs `pytest` (unit only — `integration` is skipped)
 3. Materialises `config/secrets.json` from the repo secret `APIFY_TOKEN`
-4. Builds `dist/index.html`
-5. Uploads `dist/` as the Pages artifact and deploys it
+4. Builds `dist/index.html` and `data/YYYY-MM-DD.json`
+5. Commits the dated JSON data snapshot back to the repository
+6. Uploads `dist/` as the Pages artifact and deploys it
 
 [`.github/workflows/tests.yml`](../.github/workflows/tests.yml) runs the
 unit tests on every push and PR.

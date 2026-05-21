@@ -1,6 +1,8 @@
 """Smoke tests for the top-level pipeline using built-in mock data."""
 from __future__ import annotations
 
+import json
+
 import run
 
 
@@ -28,3 +30,31 @@ def test_run_with_mock_data_removes_stale_output_cname(tmp_path):
 
     assert status == 0
     assert not stale_cname.exists()
+
+
+def test_run_with_mock_data_writes_normalized_json(tmp_path):
+    output = tmp_path / "index.html"
+    data_output = tmp_path / "data" / "2026-05-21.json"
+
+    status = run.main(
+        [
+            "--mock-data",
+            "--output",
+            output.as_posix(),
+            "--data-output",
+            data_output.as_posix(),
+        ]
+    )
+
+    payload = json.loads(data_output.read_text(encoding="utf-8"))
+    assert status == 0
+    assert payload["schema_version"] == 1
+    assert payload["counts"] == {
+        "x": 2,
+        "blogs": 2,
+        "podcasts": 1,
+        "releases": 1,
+        "videos": 1,
+    }
+    assert payload["items"]["x"][0]["source_name"] == "Sam Altman"
+    assert payload["items"]["x"][0]["published"].endswith("+00:00")

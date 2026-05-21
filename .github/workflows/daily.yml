@@ -2,12 +2,12 @@ name: Daily Digest
 
 on:
   schedule:
-    # 01:00 UTC every day
-    - cron: "0 1 * * *"
+    # 08:00 Asia/Shanghai every day
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -62,7 +62,22 @@ jobs:
           PY
 
       - name: Build digest
-        run: python scripts/run.py --verbose
+        run: |
+          DIGEST_DATE="$(TZ=Asia/Shanghai date +%F)"
+          python scripts/run.py --verbose --data-output "data/${DIGEST_DATE}.json"
+
+      - name: Commit digest data
+        run: |
+          DIGEST_DATE="$(TZ=Asia/Shanghai date +%F)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/${DIGEST_DATE}.json"
+          if git diff --cached --quiet; then
+            echo "No digest data changes to commit."
+          else
+            git commit -m "Add digest data for ${DIGEST_DATE}"
+            git push
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

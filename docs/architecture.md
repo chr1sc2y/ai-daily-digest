@@ -26,10 +26,12 @@ with zero servers to maintain.
         └─────┬─────────┴─────┴─────┴───────────────┘
               │
               ▼
-       window-filter → cross-category dedup → sort → render
+       window-filter → cross-category dedup → sort
+              │
+              ├──▶ data/YYYY-MM-DD.json ───▶ commit to repo
               │
               ▼
-        dist/index.html  ───▶ GitHub Pages ───▶ ai.<domain>
+        render → dist/index.html ───▶ GitHub Pages ───▶ ai.<domain>
 ```
 
 ## Pipeline (run.py)
@@ -44,7 +46,8 @@ with zero servers to maintain.
 | 6 | Window-filter      | `run.py`                   | per-category cutoff (hours)            |
 | 7 | Cross-cat dedup    | `fetch_rss.dedup`          | canonical URL (strip utm, lowercase)   |
 | 8 | Sort + clip        | `run.py`                   | newest first, max-per-source           |
-| 9 | Render             | `render_html.py`           | self-contained HTML, no external CSS   |
+| 9 | Data snapshot      | `run.py`                   | normalized `data/YYYY-MM-DD.json`      |
+|10 | Render             | `render_html.py`           | self-contained HTML, no external CSS   |
 
 ## Failure model
 

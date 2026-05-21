@@ -23,6 +23,12 @@ python scripts/run.py --mock-data --output dist/index.html
 open dist/index.html
 ```
 
+Write a dated normalized data snapshot while building:
+
+```bash
+python scripts/run.py --output dist/index.html --data-output data/$(date +%F).json
+```
+
 ## Deploy
 
 Push to GitHub, then:

@@ -21,6 +21,7 @@ CLI flags:
 | `--video-hours`       | 168     | window for YouTube (7 d)                     |
 | `--podcast-hours`     | 720     | window for podcasts (30 d)                   |
 | `--no-podcast-filter` |         | keep all episodes regardless of leader name  |
+| `--data-output`       |         | optional normalized JSON output path         |
 | `--verbose`           |         | DEBUG logging                                |
 
 ## `scripts/fetch_x.py`

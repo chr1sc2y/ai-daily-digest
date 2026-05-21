@@ -56,6 +56,43 @@ def _sort_desc(items: list[dict]) -> list[dict]:
     )
 
 
+def _jsonable_item(item: dict) -> dict:
+    out = dict(item)
+    published = out.get("published")
+    if isinstance(published, datetime):
+        out["published"] = published.astimezone(timezone.utc).isoformat()
+    return out
+
+
+def _data_payload(
+    *,
+    generated_at: datetime,
+    x_items: list[dict],
+    blog_items: list[dict],
+    podcast_items: list[dict],
+    release_items: list[dict],
+    video_items: list[dict],
+) -> dict:
+    return {
+        "schema_version": 1,
+        "generated_at": generated_at.astimezone(timezone.utc).isoformat(),
+        "counts": {
+            "x": len(x_items),
+            "blogs": len(blog_items),
+            "podcasts": len(podcast_items),
+            "releases": len(release_items),
+            "videos": len(video_items),
+        },
+        "items": {
+            "x": [_jsonable_item(i) for i in x_items],
+            "blogs": [_jsonable_item(i) for i in blog_items],
+            "podcasts": [_jsonable_item(i) for i in podcast_items],
+            "releases": [_jsonable_item(i) for i in release_items],
+            "videos": [_jsonable_item(i) for i in video_items],
+        },
+    }
+
+
 def _mock_items(now: datetime) -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict]]:
     """Deterministic-ish sample payload for local smoke tests and screenshots."""
 
@@ -173,6 +210,8 @@ def main(argv: list[str] | None = None) -> int:
                         help="Keep all podcast episodes (don't filter by leader name).")
     parser.add_argument("--mock-data", action="store_true",
                         help="Render built-in sample data without network calls or secrets.")
+    parser.add_argument("--data-output", type=Path,
+                        help="Optional JSON path for the normalized digest data.")
     parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -264,6 +303,23 @@ def main(argv: list[str] | None = None) -> int:
         len(x_items), len(blog_items), len(podcast_items),
         len(release_items), len(video_items),
     )
+
+    if args.data_output:
+        payload = _data_payload(
+            generated_at=now,
+            x_items=x_items,
+            blog_items=blog_items,
+            podcast_items=podcast_items,
+            release_items=release_items,
+            video_items=video_items,
+        )
+        args.data_output.parent.mkdir(parents=True, exist_ok=True)
+        args.data_output.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        log.info("Wrote data %s", args.data_output)
+
     html_text = render_html.render(
         x_items=x_items,
         podcast_items=podcast_items,
