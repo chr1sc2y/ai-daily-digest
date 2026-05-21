@@ -1,57 +1,51 @@
-# AI Daily Digest
+# Firsthand AI Digest
 
-A self-hosted, zero-server digest of what AI's leaders are saying — across X posts, blogs, podcasts, GitHub trending, and YouTube.
+**Every 3 hours, the sharpest AI voices in one place.**
 
-```
-GitHub Actions (3h cron) ──▶ Apify + RSS + GitHub Search ──▶ data/segments + dist/index.html ──▶ GitHub Pages
-```
+A self-hosted digest that automatically aggregates what AI's leading researchers, founders, and builders are saying — across X posts, long-form blogs, podcasts, GitHub trending repos, and YouTube — then publishes it as a clean, interactive site on GitHub Pages.
 
-## Run locally
+No login. No algorithm. No noise.
+
+---
+
+## What it tracks
+
+| Source | What you get |
+|--------|-------------|
+| **X / Twitter** | Real-time posts from 50+ AI leaders |
+| **Blogs** | Long-form writing from OpenAI, Anthropic, DeepMind, and independent researchers |
+| **Podcasts** | Episodes featuring leaders you follow, filtered by name |
+| **GitHub Trending** | High-momentum AI repos, refreshed every 3 hours |
+| **YouTube** | Recent uploads from AI research channels |
+
+---
+
+## How it works
+
+GitHub Actions fetches from every source on a 3-hour schedule and commits normalized data segments to this repo. GitHub Pages serves the static site — no backend, no database, no cost.
+
+Flip between time windows (3h · 6h · 12h · 24h · 3d · 7d) to see what's fresh or catch up on the week.
+
+---
+
+## Quick start
 
 ```bash
 pip install -r requirements.txt
-cp config/secrets.example.json config/secrets.json
-# paste your Apify token into config/secrets.json
-python scripts/run.py --verbose
-open dist/index.html
-```
-
-Smoke-test the full renderer without network calls or secrets:
-
-```bash
 python scripts/run.py --mock-data --output dist/index.html
 open dist/index.html
 ```
 
-Write a dated normalized data snapshot while building:
+To deploy your own instance, see **[docs/operations.md](docs/operations.md)**.
 
-```bash
-python scripts/run.py --output dist/index.html --data-output data/segments/$(date +%F)/00.json
-python scripts/archive_data.py
-```
-
-## Deploy
-
-Push to GitHub, then:
-
-1. **Settings → Secrets → Actions**: add `APIFY_TOKEN`.
-2. **Settings → Pages**: source = *GitHub Actions*.
-3. Optional custom domain: create a repo-root `CNAME` with `ai.<your-domain>`, add DNS `CNAME ai <username>.github.io`, then enable HTTPS in Pages.
-4. Pushes to `main` deploy the committed archive via **Deploy Site**. Use **Actions → Daily Digest → Run workflow** when you want to fetch a fresh segment immediately.
-
-## Tests
-
-```bash
-pytest                  # unit tests, offline
-pytest -m integration   # live RSS reachability
-```
+---
 
 ## Docs
 
-See [`docs/`](docs/README.md) — architecture, modules, data sources, tech stack, operations.
+Full engineering reference: **[docs/](docs/README.md)**
+
+---
 
 ## License
 
-MIT.
-
-Inspired by [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders).
+MIT · Inspired by [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders)
