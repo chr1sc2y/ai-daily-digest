@@ -50,36 +50,13 @@ html, body {
 }
 a { color: inherit; }
 
-/* --- Top bar --- */
-.topbar {
-  position: sticky; top: 0; z-index: 10;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 14px 32px;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: saturate(160%) blur(14px);
-  -webkit-backdrop-filter: saturate(160%) blur(14px);
-  border-bottom: 1px solid var(--rule);
-  font-family: var(--sans);
-  font-size: 13px;
-  color: var(--ink-2);
-}
-.topbar .brand {
-  display: flex; align-items: center; gap: 10px;
-  color: var(--ink); font-weight: 600;
-  font-size: 14px; letter-spacing: -0.01em;
-}
-.topbar .brand .dot {
-  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--accent);
-}
-.topbar .gen {
-  font-family: var(--mono); font-size: 11px;
-  color: var(--ink-3); letter-spacing: 0.02em;
-}
-.topbar .gh {
+/* --- Hero top row (title + GitHub links) --- */
+.hero .gh {
   display: flex; align-items: center; gap: 8px;
+  flex-shrink: 0;
+  padding-top: 12px;
 }
-.topbar .gh a {
+.hero .gh a {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 6px 12px;
   border: 1px solid var(--rule);
@@ -90,25 +67,23 @@ a { color: inherit; }
   background: var(--bg-elev);
   transition: border-color .15s ease, transform .15s ease;
 }
-.topbar .gh a:hover { border-color: var(--accent); transform: translateY(-1px); }
-.topbar .gh a svg { width: 14px; height: 14px; }
-.topbar .gh a.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.topbar .gh a.primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.hero .gh a:hover { border-color: var(--accent); transform: translateY(-1px); }
+.hero .gh a svg { width: 14px; height: 14px; }
+.hero .gh a.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.hero .gh a.primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 @media (max-width: 720px) {
-  .topbar { padding: 12px 20px; gap: 12px; flex-wrap: wrap; }
-  .topbar .gen { display: none; }
+  .hero .gh { padding-top: 8px; }
 }
 
 /* --- Hero --- */
 .hero {
   max-width: 1180px; margin: 0 auto;
-  padding: 96px 32px 48px;
-  border-bottom: 1px solid var(--rule);
+  padding: 48px 32px;
 }
-.hero .eyebrow {
-  font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--ink-3); margin-bottom: 18px;
+.hero-top {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 24px; flex-wrap: wrap;
 }
 .hero h1 {
   font-family: var(--serif);
@@ -127,8 +102,12 @@ a { color: inherit; }
   max-width: 640px;
   margin: 0;
 }
+.rangebar-wrap {
+  max-width: 1180px; margin: 0 auto;
+  padding: 24px 32px 0;
+  border-top: 1px solid var(--rule);
+}
 .rangebar {
-  margin-top: 30px;
   display: flex; flex-wrap: wrap; gap: 8px;
 }
 .rangebar button {
@@ -173,9 +152,13 @@ a { color: inherit; }
   .shell { grid-template-columns: 1fr; gap: 32px; padding: 40px 24px 64px; }
   .sidenav { position: static !important; }
 }
+@media (max-width: 720px) {
+  .hero { padding: 32px 20px; }
+  .rangebar-wrap { padding: 20px 20px 0; }
+}
 
 .sidenav {
-  position: sticky; top: 64px; align-self: start;
+  position: sticky; top: 24px; align-self: start;
   font-family: var(--sans); font-size: 13px;
 }
 .sidenav .label {
@@ -219,7 +202,7 @@ section header.s-head .count {
 /* --- Cards --- */
 .feed {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1px;
   background: var(--rule);
   border: 1px solid var(--rule);
@@ -419,8 +402,8 @@ CLIENT_JS = r"""
 
   function keyFor(item) {
     const link = canonicalLink(item.link);
-    if (link) return item.kind + "|" + link;
-    return [item.kind, item.source_handle || "", item.summary || "", item.published || ""].join("|");
+    if (link) return link;
+    return [item.source_handle || "", item.summary || "", item.published || ""].join("|");
   }
 
   function filtered(hours) {
@@ -612,7 +595,7 @@ def render(
     site = site or {}
     repo = site.get("repo", "")
     repo_url = site.get("repo_url", f"https://github.com/{repo}" if repo else "")
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")  # used in meta tag
 
     sections_meta = [
         ("posts", "Posts", x_items),
@@ -662,19 +645,18 @@ def render(
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="digest-generated" content="{html.escape(generated)}" />
-<title>AI Daily Digest</title>
+<title>Firsthand AI Digest</title>
 <style>{CSS}</style>
 </head>
 <body>
-<div class="topbar">
-  <span class="brand"><span class="dot"></span>AI Daily Digest</span>
-  <span class="gen">{html.escape(generated)}</span>
-  {gh_block}
-</div>
 <header class="hero">
-  <div class="eyebrow">Issue · {datetime.now(timezone.utc).strftime("%Y.%m.%d")}</div>
-  <h1><em>Firsthand</em> AI Signal</h1>
+  <div class="hero-top">
+    <h1><em>Firsthand</em> AI Digest</h1>
+    {gh_block}
+  </div>
   <p class="lede">Posts, blogs, podcasts, repos, and videos from the people building AI. Auto-curated straight from the source.</p>
+</header>
+<div class="rangebar-wrap">
   <div class="rangebar" aria-label="Time range">
     <button type="button" data-range="3h">3h</button>
     <button type="button" data-range="6h">6h</button>
@@ -684,7 +666,7 @@ def render(
     <button type="button" data-range="7d">7d</button>
     <span class="range-status">{'Loading 7d archive' if interactive else ''}</span>
   </div>
-</header>
+</div>
 <div class="shell">
   <nav class="sidenav">
     <div class="label">Sections</div>
