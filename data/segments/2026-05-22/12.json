@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-22T11:38:27.000079+00:00",
+  "generated_at": "2026-05-22T12:20:10.189764+00:00",
   "counts": {
-    "x": 13,
+    "x": 4,
     "blogs": 1,
     "podcasts": 0,
     "videos": 0
@@ -11,80 +11,25 @@
     "x": [
       {
         "kind": "x",
-        "title": "@PlatoonPod 🎯",
-        "summary": "@PlatoonPod 🎯",
-        "link": "https://x.com/elonmusk/status/2057758978021429333",
+        "title": "True",
+        "summary": "True",
+        "link": "https://x.com/elonmusk/status/2057730335413063917",
         "author": "elonmusk",
-        "published": "2026-05-22T09:42:26+00:00",
+        "published": "2026-05-22T07:48:37+00:00",
         "source_name": "Elon Musk",
         "source_role": "CEO, Tesla / xAI",
         "source_handle": "elonmusk"
       },
       {
         "kind": "x",
-        "title": "@therealKripke @TheBoysTV I didn’t watch the show tbh\n\nHere’s the second best review:",
-        "summary": "@therealKripke @TheBoysTV I didn’t watch the show tbh\n\nHere’s the second best review:",
-        "link": "https://x.com/elonmusk/status/2057757762277257405",
-        "author": "elonmusk",
-        "published": "2026-05-22T09:37:36+00:00",
-        "source_name": "Elon Musk",
-        "source_role": "CEO, Tesla / xAI",
-        "source_handle": "elonmusk"
-      },
-      {
-        "kind": "x",
-        "title": "@dvorstone Kripke probably got flack from his wife’s bf for Homelander being used in based memes and had to write that e",
-        "summary": "@dvorstone Kripke probably got flack from his wife’s bf for Homelander being used in based memes and had to write that ending as a groveling apology",
-        "link": "https://x.com/elonmusk/status/2057749265615609905",
-        "author": "elonmusk",
-        "published": "2026-05-22T09:03:50+00:00",
-        "source_name": "Elon Musk",
-        "source_role": "CEO, Tesla / xAI",
-        "source_handle": "elonmusk"
-      },
-      {
-        "kind": "x",
-        "title": "@Truthhurts101UK Hmm",
-        "summary": "@Truthhurts101UK Hmm",
-        "link": "https://x.com/elonmusk/status/2057748377610166576",
-        "author": "elonmusk",
-        "published": "2026-05-22T09:00:18+00:00",
-        "source_name": "Elon Musk",
-        "source_role": "CEO, Tesla / xAI",
-        "source_handle": "elonmusk"
-      },
-      {
-        "kind": "x",
-        "title": "@blightersort It is what he would do",
-        "summary": "@blightersort It is what he would do",
-        "link": "https://x.com/elonmusk/status/2057747951976436006",
-        "author": "elonmusk",
-        "published": "2026-05-22T08:58:37+00:00",
-        "source_name": "Elon Musk",
-        "source_role": "CEO, Tesla / xAI",
-        "source_handle": "elonmusk"
-      },
-      {
-        "kind": "x",
-        "title": "@valani_ilhan @sdianahu @AnjneyMidha Big praise, really appreciate that. The whole series is fire.",
-        "summary": "@valani_ilhan @sdianahu @AnjneyMidha Big praise, really appreciate that. The whole series is fire.",
-        "link": "https://x.com/garrytan/status/2057724027352072477",
-        "author": "garrytan",
-        "published": "2026-05-22T07:23:33+00:00",
-        "source_name": "Garry Tan",
-        "source_role": "CEO, Y Combinator",
-        "source_handle": "garrytan"
-      },
-      {
-        "kind": "x",
-        "title": "@ryancarson not so long ago\nyet so much has changed",
-        "summary": "@ryancarson not so long ago\nyet so much has changed",
-        "link": "https://x.com/ryolu_/status/2057712199054004692",
-        "author": "ryolu_",
-        "published": "2026-05-22T06:36:33+00:00",
-        "source_name": "Ryo Lu",
-        "source_role": "Head of Design, Cursor",
-        "source_handle": "ryolu_"
+        "title": "trying to remember what it was like to code before codex",
+        "summary": "trying to remember what it was like to code before codex",
+        "link": "https://x.com/gdb/status/2057704270531903811",
+        "author": "gdb",
+        "published": "2026-05-22T06:05:03+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
       },
       {
         "kind": "x",
@@ -99,55 +44,11 @@
       },
       {
         "kind": "x",
-        "title": "@debamitro broken clock is right every 2-5 years",
-        "summary": "@debamitro broken clock is right every 2-5 years",
-        "link": "https://x.com/swyx/status/2057700892439388248",
-        "author": "swyx",
-        "published": "2026-05-22T05:51:37+00:00",
-        "source_name": "Swyx",
-        "source_role": "Smol AI / Latent Space",
-        "source_handle": "swyx"
-      },
-      {
-        "kind": "x",
-        "title": "more here https://t.co/gW0xMn7dcI",
-        "summary": "more here https://t.co/gW0xMn7dcI",
-        "link": "https://x.com/swyx/status/2057700807576043825",
-        "author": "swyx",
-        "published": "2026-05-22T05:51:17+00:00",
-        "source_name": "Swyx",
-        "source_role": "Smol AI / Latent Space",
-        "source_handle": "swyx"
-      },
-      {
-        "kind": "x",
-        "title": "@moriisoba @TheHogAi lmao https://t.co/p0QYrlu09a",
-        "summary": "@moriisoba @TheHogAi lmao https://t.co/p0QYrlu09a",
-        "link": "https://x.com/garrytan/status/2057690869483135400",
-        "author": "garrytan",
-        "published": "2026-05-22T05:11:47+00:00",
-        "source_name": "Garry Tan",
-        "source_role": "CEO, Y Combinator",
-        "source_handle": "garrytan"
-      },
-      {
-        "kind": "x",
         "title": "Game changer Codex automation 🙂 https://t.co/XUR4q6gI7v",
         "summary": "Game changer Codex automation 🙂 https://t.co/XUR4q6gI7v",
         "link": "https://x.com/petergyang/status/2057674020481593710",
         "author": "petergyang",
         "published": "2026-05-22T04:04:50+00:00",
-        "source_name": "Peter Yang",
-        "source_role": "Product, Roblox / AI writer",
-        "source_handle": "petergyang"
-      },
-      {
-        "kind": "x",
-        "title": "@soupisgood @AdamNMayer Netflix because Nvidia ppl are retired",
-        "summary": "@soupisgood @AdamNMayer Netflix because Nvidia ppl are retired",
-        "link": "https://x.com/petergyang/status/2057673701508952220",
-        "author": "petergyang",
-        "published": "2026-05-22T04:03:34+00:00",
         "source_name": "Peter Yang",
         "source_role": "Product, Roblox / AI writer",
         "source_handle": "petergyang"
