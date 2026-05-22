@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-22T23:00:15.900548+00:00",
+  "counts": {
+    "x": 17,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 4
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "Critical feedback is much appreciated",
+        "summary": "Critical feedback is much appreciated",
+        "link": "https://x.com/elonmusk/status/2057933447541219630",
+        "author": "elonmusk",
+        "published": "2026-05-22T21:15:43+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "T-zero is currently 5:30 Texas time https://t.co/4825ksJHiQ",
+        "summary": "T-zero is currently 5:30 Texas time https://t.co/4825ksJHiQ",
+        "link": "https://x.com/elonmusk/status/2057927486998978691",
+        "author": "elonmusk",
+        "published": "2026-05-22T20:52:02+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "AI progress has been pretty wild over the last few months but behind the scenes at @OpenAI, it's continuous progress com",
+        "summary": "AI progress has been pretty wild over the last few months but behind the scenes at @OpenAI, it's continuous progress compounding - @yanndubs https://t.co/vOxBkVRxkU",
+        "link": "https://x.com/mattturck/status/2057913362608972256",
+        "author": "mattturck",
+        "published": "2026-05-22T19:55:54+00:00",
+        "source_name": "Matt Turck",
+        "source_role": "Managing Director, FirstMark",
+        "source_handle": "mattturck"
+      },
+      {
+        "kind": "x",
+        "title": "Last month we launched Project Glasswing, our collaborative AI cybersecurity initiative. Since then, we and our partners",
+        "summary": "Last month we launched Project Glasswing, our collaborative AI cybersecurity initiative. Since then, we and our partners have found more than ten thousand high- or critical-severity vulnerabilities in essential software.",
+        "link": "https://x.com/AnthropicAI/status/2057909102542549503",
+        "author": "AnthropicAI",
+        "published": "2026-05-22T19:38:58+00:00",
+        "source_name": "Anthropic",
+        "source_role": "Anthropic (official)",
+        "source_handle": "AnthropicAI"
+      },
+      {
+        "kind": "x",
+        "title": "The new White House policy requiring green card applicants to apply from outside the US is a capricious attack on legal ",
+        "summary": "The new White House policy requiring green card applicants to apply from outside the US is a capricious attack on legal immigration. It will hurt families, leave us with fewer doctors, teachers and scientists, and hurt American competitiveness in AI.",
+        "link": "https://x.com/AndrewYNg/status/2057907324380217821",
+        "author": "AndrewYNg",
+        "published": "2026-05-22T19:31:54+00:00",
+        "source_name": "Andrew Ng",
+        "source_role": "Founder, DeepLearning.AI / Landing AI",
+        "source_handle": "AndrewYNg"
+      },
+      {
+        "kind": "x",
+        "title": "Just driving in my OpenClaw Ferrari over here",
+        "summary": "Just driving in my OpenClaw Ferrari over here",
+        "link": "https://x.com/garrytan/status/2057899739799224549",
+        "author": "garrytan",
+        "published": "2026-05-22T19:01:46+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "SynthID, our imperceptible watermark for AI-generated content, is expanding to more partners.\n\nWe’re also adding new way",
+        "summary": "SynthID, our imperceptible watermark for AI-generated content, is expanding to more partners.\n\nWe’re also adding new ways to find out if content was generated using AI - just ask in the @GeminiApp or in @Google Search. https://t.co/L547EVMqIv",
+        "link": "https://x.com/GoogleDeepMind/status/2057898089621459434",
+        "author": "GoogleDeepMind",
+        "published": "2026-05-22T18:55:13+00:00",
+        "source_name": "Google DeepMind",
+        "source_role": "Google DeepMind (official)",
+        "source_handle": "GoogleDeepMind"
+      },
+      {
+        "kind": "x",
+        "title": "You would be crazy to vote for Natalie Gee or anyone who supports her\n\nSF supervisor races matter. Tell everyone you kno",
+        "summary": "You would be crazy to vote for Natalie Gee or anyone who supports her\n\nSF supervisor races matter. Tell everyone you know on the westside: a vote for Gee is a vote to crumble SF back to dust",
+        "link": "https://x.com/garrytan/status/2057888430974226902",
+        "author": "garrytan",
+        "published": "2026-05-22T18:16:50+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "GBrain is SOTA for this kind of use case https://t.co/Wfbbe8rdYn",
+        "summary": "GBrain is SOTA for this kind of use case https://t.co/Wfbbe8rdYn",
+        "link": "https://x.com/garrytan/status/2057885413277340044",
+        "author": "garrytan",
+        "published": "2026-05-22T18:04:50+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "I’ll be talking about my piece: After Automation!",
+        "summary": "I’ll be talking about my piece: After Automation!",
+        "link": "https://x.com/danshipper/status/2057885219936473195",
+        "author": "danshipper",
+        "published": "2026-05-22T18:04:04+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Take a quick break from scrolling and check out https://t.co/TcBfiPohNK. 👀 We had a bit of a refresh! Our goal was simpl",
+        "summary": "Take a quick break from scrolling and check out https://t.co/TcBfiPohNK. 👀 We had a bit of a refresh! Our goal was simply to make sure you can easily find the latest and greatest innovations from the Lab, including those we just announced at I/O.\n\nExplore our portfolio, test a few experiments out, learn more about Google Labs, and help us shape what’s next. 🚀",
+        "link": "https://x.com/GoogleLabs/status/2057884277384360416",
+        "author": "GoogleLabs",
+        "published": "2026-05-22T18:00:20+00:00",
+        "source_name": "Google Labs",
+        "source_role": "Google's AI experiments group",
+        "source_handle": "GoogleLabs"
+      },
+      {
+        "kind": "x",
+        "title": "Kakuna: skills with checklists that only know how to harden your codebase\n\n/plan with it then let it /goal for a day, it",
+        "summary": "Kakuna: skills with checklists that only know how to harden your codebase\n\n/plan with it then let it /goal for a day, it comes back with same functionality but all the boring stuff done for you + an audit of its own work. \n\nfocus on subagent parallelism and encodes strong opinions on how AI engineers should design apps for human and agent access/devops/product mgmt.\n\ninstead of dark factory, go \"mullet factory\" - party in front (ship unique lovable features), dark in the back (timeless production principles). basically its the antientropy/antislop part of symphony broken out as its own thing\n\nnot gonna go psychosis further than this but extend as you will. link below",
+        "link": "https://x.com/swyx/status/2057876022553690327",
+        "author": "swyx",
+        "published": "2026-05-22T17:27:31+00:00",
+        "source_name": "Swyx",
+        "source_role": "Smol AI / Latent Space",
+        "source_handle": "swyx"
+      },
+      {
+        "kind": "x",
+        "title": "Harvard University just voted to limit the number of A grades given in undergraduate classes to about 20% of the class. ",
+        "summary": "Harvard University just voted to limit the number of A grades given in undergraduate classes to about 20% of the class. I’m not in favor of this. It deeply runs counter to how I believe education should be. We should hold a high bar, but also work mightily to support the success of 100% of learners, rather than a fraction.\n\nHarvard’s administration took this step — over the objections of a large fraction of the student body — to counter grade inflation. Grade inflation is real: Many universities have been awarding A and B grades to ever larger fractions of students, and this has caused grade point averages (GPAs) to become less useful as signals of student skill. At the same time, we want students to succeed. The heart of the question is the role of educational institutions. Should our goal be:\n- To help students succeed?\n- To judge students?\n\nBoth of these have value. But my focus when working in education is almost entirely helping students succeed.\n\nTo me, it is clear that many people want to learn, to be empowered, to build skills that let them do new things! This is what we focus on at DeepLearningAI. This philosophy is also why my online courses (going back to my early online Stanford courses on Coursera) permitted an unlimited number of retries for graded assignments. \n\nI believe in letting — and even encouraging — someone to redo something until they succeed. This is as opposed to standing in judgement of the fact they didn’t get it right the first time. Further, I want homework assignments to be designed primarily to help people practice and learn, rather than to judge their skill level. This is why I prefer to create “Practice Problems” and “Practice Labs” — questions that, when you think through them, help you to gain practice and reinforce what you know. As opposed to “Assessment Problems” designed primarily to judge skill.\n\nBut won’t Harvard’s move make GPAs more meaningful and help prospective employers identify strong candidates? Having hired a large number of people from Harvard and other institutions, I can say confidently that GPA is not an important signal. We have screening and interviewing processes that give far more accurate ways to figure out if someone is truly skilled. I do not need a wider spread in applicant GPA scores to figure out who's really good!\n\nTo be clear, there is also value in assessment. Even though standardized testing is much hated, high-quality tests like the SAT, ACT, GRE, TOEFL, etc. provide objective measures of ability in a domain. I find that most people want to learn and succeed. There are also people who want rigorous assessment (for example, to apply for school admissions), but this is a lesser need, and is not my focus when building educational products.\n\nHarvard is often described as an “elite” educational institution. There are two ways to be elite: One option involves limiting enrollments, and then even among admitted students, cap the number of people that do well at 20%. I would rather pursue a different path: Set a high bar and teach elite, cutting-edge skills, but strive relentlessly to help everyone succeed. This way, eliteness is defined not by excluding people but by helping as many people as possible to be excellent.\n\n[Original text: The Batch newsletter]",
+        "link": "https://x.com/AndrewYNg/status/2057874024672469493",
+        "author": "AndrewYNg",
+        "published": "2026-05-22T17:19:35+00:00",
+        "source_name": "Andrew Ng",
+        "source_role": "Founder, DeepLearning.AI / Landing AI",
+        "source_handle": "AndrewYNg"
+      },
+      {
+        "kind": "x",
+        "title": "To get Perplexity Computer and similar tools deeply embedded in enterprises, a continuous investment in security enginee",
+        "summary": "To get Perplexity Computer and similar tools deeply embedded in enterprises, a continuous investment in security engineering is necessary. \n\nWhat's interesting in the way we're approaching it is putting these tools insde agentic sandboxes and having security workflows run autonomously.\n\nReach out to @kpolley if you're interested in joining and contributing to projects of this nature!",
+        "link": "https://x.com/AravSrinivas/status/2057873563156402448",
+        "author": "AravSrinivas",
+        "published": "2026-05-22T17:17:45+00:00",
+        "source_name": "Aravind Srinivas",
+        "source_role": "CEO, Perplexity",
+        "source_handle": "AravSrinivas"
+      },
+      {
+        "kind": "x",
+        "title": "We asked the team: What’s the most underrated or surprising feature from their product?\n\nHere’s what they said. 👇 https:",
+        "summary": "We asked the team: What’s the most underrated or surprising feature from their product?\n\nHere’s what they said. 👇 https://t.co/ZzFOPyyvIX",
+        "link": "https://x.com/GoogleLabs/status/2057863565328134604",
+        "author": "GoogleLabs",
+        "published": "2026-05-22T16:38:01+00:00",
+        "source_name": "Google Labs",
+        "source_role": "Google's AI experiments group",
+        "source_handle": "GoogleLabs"
+      },
+      {
+        "kind": "x",
+        "title": "What a difference a month has made. My personal AI has grown a ton. GBrain has become a necessity because grep can't cut",
+        "summary": "What a difference a month has made. My personal AI has grown a ton. GBrain has become a necessity because grep can't cut it on my dataset\n\npages 17,888 → 146,646 (8.2x)\npeople 4,383 → 24,585 (5.6x)\ncompanies 723 → 5,339 (7.4x)\ncron jobs 21 → 66 https://t.co/nW41GcZShb",
+        "link": "https://x.com/garrytan/status/2057860964951928842",
+        "author": "garrytan",
+        "published": "2026-05-22T16:27:41+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI workspace built on Claude.\n\nIn a market moving this",
+        "summary": "Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI workspace built on Claude.\n\nIn a market moving this fast, where anyone can build, he thinks the team is what makes the difference: https://t.co/1fdpKpxjqj",
+        "link": "https://x.com/claudeai/status/2057854403558653983",
+        "author": "claudeai",
+        "published": "2026-05-22T16:01:37+00:00",
+        "source_name": "Claude",
+        "source_role": "Anthropic's Claude",
+        "source_handle": "claudeai"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "Create and edit presentations faster in PowerPoint",
+        "summary": "ChatGPT now works directly inside PowerPoint. \n\nSee how ChatGPT can help you turn source material into a polished presentation, right inside PowerPoint. Bring in files and context, draft a deck, refine the structure, and edit slide content without switching tools.\n\nChatGPT for PowerPoint is now available in beta to all customers. \n\nGet started today: https://chatgpt.com/apps/powerpoint/",
+        "link": "https://www.youtube.com/watch?v=ECkHTfvf2e8",
+        "author": "OpenAI",
+        "keywords": "",
+        "published": "2026-05-22T19:41:41+00:00",
+        "kind": "video",
+        "source_name": "OpenAI",
+        "source_handle": "OpenAI",
+        "source_role": "Channel · OpenAI"
+      },
+      {
+        "title": "Did population size speed up human evolution? – David Reich",
+        "summary": "Full episode: https://youtu.be/sRKBGVFVYAw\nMe on twitter: https://x.com/dwarkesh_sp\n\nDavid Reich is back. \n\nHe and collaborator Ali Akbari just published a paper that overturns a long-standing consensus about human evolution - that natural selection has been dormant in our species for the last 10s of 1000s of years.\n\nDavid is a very brilliant and rigorous scholar. It was a real delight to learn from him again.",
+        "link": "https://www.youtube.com/watch?v=VgMnHIzAGps",
+        "author": "Dwarkesh Clips",
+        "keywords": "",
+        "published": "2026-05-22T18:45:08+00:00",
+        "kind": "video",
+        "source_name": "Dwarkesh Patel",
+        "source_handle": "Dwarkesh Patel",
+        "source_role": "Channel · Dwarkesh Patel"
+      },
+      {
+        "title": "Personal Finance in ChatGPT",
+        "summary": "Today we’re releasing a preview of a new personal finance experience in ChatGPT to Pro users in the U.S. \n\nNow you can securely connect your financial accounts, see a dashboard of where your money is going, and ask ChatGPT questions grounded in your financial context – all while staying in control of your data. \n\nWe’re starting with a preview to a smaller group so we can learn from real-world use, improve the experience, and expand thoughtfully. \nhttps://openai.com/index/personal-finance-chatgpt/",
+        "link": "https://www.youtube.com/watch?v=ksfHQLmV-Fg",
+        "author": "OpenAI",
+        "keywords": "",
+        "published": "2026-05-22T16:56:18+00:00",
+        "kind": "video",
+        "source_name": "OpenAI",
+        "source_handle": "OpenAI",
+        "source_role": "Channel · OpenAI"
+      },
+      {
+        "title": "SynthID, our imperceptible watermark for AI-generated content, is expanding to more partners.",
+        "summary": "",
+        "link": "https://www.youtube.com/shorts/EF1BFaNZN9U",
+        "author": "Google DeepMind",
+        "keywords": "",
+        "published": "2026-05-22T16:09:49+00:00",
+        "kind": "video",
+        "source_name": "Google DeepMind",
+        "source_handle": "Google DeepMind",
+        "source_role": "Channel · Google DeepMind"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-22T16:00:00+00:00",
+    "end": "2026-05-22T22:00:00+00:00"
+  }
+}
