@@ -50,6 +50,18 @@ MOCK_TEXT_MARKERS = (
 )
 HANDLE_RE = re.compile(r"^[A-Za-z0-9_]{1,15}$")
 STATUS_URL_RE = re.compile(r"https?://(?:www\.)?(?:x|twitter)\.com/([^/?#]+)/status/", re.I)
+LEADING_MENTION_RE = re.compile(r"^\s*@[A-Za-z0-9_]{1,15}\b")
+RETWEET_PREFIX_RE = re.compile(r"^\s*RT\s+@[A-Za-z0-9_]{1,15}:")
+REPLY_FLAG_KEYS = ("isReply", "is_reply")
+REPLY_ID_KEYS = (
+    "inReplyToId",
+    "inReplyToStatusId",
+    "in_reply_to_status_id",
+    "inReplyToUserId",
+    "in_reply_to_user_id",
+    "replyToId",
+)
+RETWEET_FLAG_KEYS = ("isRetweet", "retweeted", "is_retweet")
 
 
 def _parse_date(raw) -> datetime | None:
@@ -75,6 +87,20 @@ def _load_secrets() -> dict[str, Any]:
 
 def _is_provider_mock_text(text: str) -> bool:
     return any(marker in text for marker in MOCK_TEXT_MARKERS)
+
+
+def _is_reply(tweet: dict, text: str) -> bool:
+    if any(tweet.get(key) is True for key in REPLY_FLAG_KEYS):
+        return True
+    if any(tweet.get(key) for key in REPLY_ID_KEYS):
+        return True
+    return bool(LEADING_MENTION_RE.match(text))
+
+
+def _is_retweet(tweet: dict, text: str) -> bool:
+    if any(tweet.get(key) for key in RETWEET_FLAG_KEYS):
+        return True
+    return bool(RETWEET_PREFIX_RE.match(text))
 
 
 def _normalize_handle(raw: Any) -> str:
@@ -126,6 +152,8 @@ def _tweet_id(tweet: dict) -> str:
 def _tweet_to_item(tweet: dict, *, handle: str, since: datetime) -> dict | None:
     text = tweet.get("text") or tweet.get("full_text") or tweet.get("fullText") or tweet.get("tweetText") or ""
     if not text or _is_provider_mock_text(text):
+        return None
+    if _is_reply(tweet, text) or _is_retweet(tweet, text):
         return None
 
     published = _parse_date(tweet.get("createdAt") or tweet.get("created_at") or tweet.get("createdAtISO"))

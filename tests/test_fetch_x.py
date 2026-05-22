@@ -123,6 +123,35 @@ def test_fetch_apify_drops_provider_mock_text():
     assert out[0]["title"] == "real tweet"
 
 
+def test_fetch_apify_drops_replies_by_flag_and_leading_mention():
+    now_iso = datetime.now(timezone.utc).isoformat()
+    payload = [
+        {"text": "@someone thanks!", "url": "https://x.com/sama/status/r1", "createdAt": now_iso},
+        {"text": "original thought", "url": "https://x.com/sama/status/r2", "createdAt": now_iso, "isReply": True},
+        {"text": "real post about agents", "url": "https://x.com/sama/status/r3", "createdAt": now_iso},
+        {"text": "another", "url": "https://x.com/sama/status/r4", "createdAt": now_iso, "inReplyToId": "9999"},
+    ]
+    with patch.object(fetch_x.requests, "post", return_value=_FakeResp(payload)):
+        out = fetch_x._fetch_apify(
+            handle="sama", max_items=10, token="t", actor="a", lookback_hours=24,
+        )
+    assert [item["title"] for item in out] == ["real post about agents"]
+
+
+def test_fetch_apify_drops_retweets():
+    now_iso = datetime.now(timezone.utc).isoformat()
+    payload = [
+        {"text": "RT @someone: cool paper", "url": "https://x.com/sama/status/rt1", "createdAt": now_iso},
+        {"text": "fresh original tweet", "url": "https://x.com/sama/status/rt2", "createdAt": now_iso},
+        {"text": "via flag", "url": "https://x.com/sama/status/rt3", "createdAt": now_iso, "isRetweet": True},
+    ]
+    with patch.object(fetch_x.requests, "post", return_value=_FakeResp(payload)):
+        out = fetch_x._fetch_apify(
+            handle="sama", max_items=10, token="t", actor="a", lookback_hours=24,
+        )
+    assert [item["title"] for item in out] == ["fresh original tweet"]
+
+
 def test_fetch_apify_respects_max_items():
     now_iso = datetime.now(timezone.utc).isoformat()
     payload = [
