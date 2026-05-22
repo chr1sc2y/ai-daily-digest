@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-22T17:52:19.169362+00:00",
+  "counts": {
+    "x": 11,
+    "blogs": 0,
+    "podcasts": 1,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "A couple of weeks ago my favorite thing to do with GBrain was to have it read and rewrite books written personalized for",
+        "summary": "A couple of weeks ago my favorite thing to do with GBrain was to have it read and rewrite books written personalized for me and my life, and the things I think about. (book-mirror skill, now a skillpack)\n\nToday, it's to take any space and say \"Brainstorm with LSD (lateral synaptic drift)\" which is gbrain function I built that uses the vectorspace to mash together and collide the craziest ideas that might be right",
+        "link": "https://x.com/garrytan/status/2057852681197388173",
+        "author": "garrytan",
+        "published": "2026-05-22T15:54:46+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "MiniMax, a leading open source model and agent, is now powered by Perplexity’s search infrastructure",
+        "summary": "MiniMax, a leading open source model and agent, is now powered by Perplexity’s search infrastructure",
+        "link": "https://x.com/AravSrinivas/status/2057848932882170152",
+        "author": "AravSrinivas",
+        "published": "2026-05-22T15:39:53+00:00",
+        "source_name": "Aravind Srinivas",
+        "source_role": "CEO, Perplexity",
+        "source_handle": "AravSrinivas"
+      },
+      {
+        "kind": "x",
+        "title": "so fun to speak at this!",
+        "summary": "so fun to speak at this!",
+        "link": "https://x.com/danshipper/status/2057847013325086870",
+        "author": "danshipper",
+        "published": "2026-05-22T15:32:15+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Try it out!",
+        "summary": "Try it out!",
+        "link": "https://x.com/elonmusk/status/2057842724649209878",
+        "author": "elonmusk",
+        "published": "2026-05-22T15:15:13+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Project Genie 🤝 @GoogleMaps Street View\n\nYou can now take real U.S. places and transform them into new, interactive worl",
+        "summary": "Project Genie 🤝 @GoogleMaps Street View\n\nYou can now take real U.S. places and transform them into new, interactive worlds. 🌍 https://t.co/uG7RyZoOGT",
+        "link": "https://x.com/GoogleDeepMind/status/2057842131142590512",
+        "author": "GoogleDeepMind",
+        "published": "2026-05-22T15:12:51+00:00",
+        "source_name": "Google DeepMind",
+        "source_role": "Google DeepMind (official)",
+        "source_handle": "GoogleDeepMind"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/yjHT8jvxKJ",
+        "summary": "https://t.co/yjHT8jvxKJ",
+        "link": "https://x.com/elonmusk/status/2057839480350834878",
+        "author": "elonmusk",
+        "published": "2026-05-22T15:02:19+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "I hate seeing all the mass layoffs. Here are 6 things you can do as an employee to take back control:\n\n1. Read the signa",
+        "summary": "I hate seeing all the mass layoffs. Here are 6 things you can do as an employee to take back control:\n\n1. Read the signals\n\nIf business growth is stagnant and leadership is suddenly obsessed with \"flatter orgs\" or \"restructuring for the agentic era,\" you already know what's coming.\n\n2. Learn Codex or Claude Code\n\nThese apps are the best training grounds for working with AI agents. Tell them about your job and ask them what you can build. If your company doesn’t let you use these tools, use them for your personal projects.\n\n3. Build side projects\n\nShip a small product or make an open-source contribution. If you work at a large company, your builder skills have probably atrophied. It’s time to bring them back.\n\n4. Develop a GitHub history\n\nIf you do step 3 consistently, you’ll develop a body of work on GitHub over time. My friend @zarazhangrui is a great example — she built a frontend-slides skill that now has 16K GitHub stars and has been shipping non-stop since.\n\n5. Become top 10% at your craft\n\nAI gets people to average really fast. But that just means customers are willing to pay more for human craft and taste. Pick one skill you genuinely enjoy working on and put in the reps until you’re in the top 10% at it.\n\n6. Let the market determine your value\n\nBuild in public, solve real user problems, and craft great products. That’s how you’ll get noticed by great employers, not by submitting 100s of resumes. And if all else fails, consider becoming a founder. I think entrepreneurship is the safest job in the AI era anyway.",
+        "link": "https://x.com/petergyang/status/2057830781352034322",
+        "author": "petergyang",
+        "published": "2026-05-22T14:27:45+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Western civilization is amazing",
+        "summary": "Western civilization is amazing",
+        "link": "https://x.com/elonmusk/status/2057807177012613561",
+        "author": "elonmusk",
+        "published": "2026-05-22T12:53:57+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "lol https://t.co/HEgca23GD6",
+        "summary": "lol https://t.co/HEgca23GD6",
+        "link": "https://x.com/elonmusk/status/2057806372935254370",
+        "author": "elonmusk",
+        "published": "2026-05-22T12:50:46+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "try Appshots in the Codex app:",
+        "summary": "try Appshots in the Codex app:",
+        "link": "https://x.com/gdb/status/2057802037757157838",
+        "author": "gdb",
+        "published": "2026-05-22T12:33:32+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "In both cases, police were uncaring, but only in one case does Starmer bend the knee",
+        "summary": "In both cases, police were uncaring, but only in one case does Starmer bend the knee",
+        "link": "https://x.com/elonmusk/status/2057764883773407535",
+        "author": "elonmusk",
+        "published": "2026-05-22T10:05:54+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [
+      {
+        "title": "Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning",
+        "summary": "Oriol Vinyals, VP of Research at Google DeepMind and co-lead of the Gemini program, joins Jacob the day after Google I/O to unpack the research underpinning Google's latest announcements and where frontier AI is heading. The conversation moves from world models (why Google has uniquely bet on them as a path to AGI, what the \"GPT moment\" for video and images would look like, and how they connect to robotics and simulation) to agents (the Spark release, why the system and model need to be optimized jointly, and why scaffolding will eventually be written by models themselves). Oriol gets into the mechanics of memory in models, drawing on his cognitive neuroscience background to argue that file-system-style non-parametric memory is more practical than baking memory into weights at serving scale. He shares his views on the limits of RL today (LLMs are data-limited in a way that game-playing RL never was), why training on narrow domains like math and code generalizes surprisingly well, and what a true \"Move 37\" moment for science or ML research would look like. Throughout, he reflects on the unique advantages of being inside Google (TPU co-design, end-to-end revenue stability, the merger of Brain and DeepMind), the trade-offs between focus and exploration in research orgs, and why he believes AGI in some meaningful sense may already be here, even if the goalposts keep moving.",
+        "link": "https://unsupervised-learning.simplecast.com/episodes/ep-87-gemini-co-lead-on-world-models-rls-next-domains-continual-learning-GVbiENRb",
+        "author": "Jacob Effron, Oriol Vinyals",
+        "keywords": "",
+        "published": "2026-05-22T12:50:04+00:00",
+        "kind": "podcast",
+        "source_name": "Unsupervised Learning",
+        "source_role": "Featuring Google DeepMind",
+        "source_handle": "Unsupervised Learning"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Cisco Builds AI Defense with Codex",
+        "summary": "AI Defense is Cisco's end-to-end AI security solution that protects against safety and security risks introduced by AI. Codex was used by Cisco's team to write the majority of AI Defense and nearly every new feature that Cisco is building. \n\n\"Features that would have taken several quarters to get into customers' hands dropped to weeks.\" - DJ Sampath \n\n➡️ Read how Cisco is making AI-native development a core part of how enterprise software gets built: https://lnkd.in/e4CWAtpf",
+        "link": "https://www.youtube.com/watch?v=oRsn3pyeXuw",
+        "author": "OpenAI",
+        "keywords": "",
+        "published": "2026-05-22T13:59:47+00:00",
+        "kind": "video",
+        "source_name": "OpenAI",
+        "source_handle": "OpenAI",
+        "source_role": "Channel · OpenAI"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-22T10:00:00+00:00",
+    "end": "2026-05-22T16:00:00+00:00"
+  }
+}
