@@ -29,6 +29,13 @@ USER_AGENT = (
 _FETCH_PARALLELISM = 8
 _RETRIES = 2
 
+# Some RSS feeds append anchor fragments like "#atom-everything" that route
+# browsers to the feed view instead of the article page. Strip them.
+def _strip_feed_fragment(url: str) -> str:
+    if "#" in url:
+        return url.split("#")[0]
+    return url
+
 
 def fetch_feed(rss_url: str, timeout: int = 12) -> list[dict]:
     """Return a list of normalized entry dicts for a single RSS/Atom feed.
@@ -81,7 +88,7 @@ def fetch_feed(rss_url: str, timeout: int = 12) -> list[dict]:
             {
                 "title": (entry.get("title") or "").strip(),
                 "summary": summary.strip() if summary else "",
-                "link": (entry.get("link") or "").strip(),
+                "link": _strip_feed_fragment((entry.get("link") or "").strip()),
                 "author": (entry.get("author") or "").strip(),
                 "keywords": keywords.strip(),
                 "published": published,

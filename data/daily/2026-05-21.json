@@ -307,7 +307,7 @@
       {
         "title": "Quoting SpaceX S-1",
         "summary": "<blockquote cite=\"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm\"><p>We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers. For example, in May 2026, we entered into <strong>Cloud Services Agreements with Anthropic PBC</strong> (“Anthropic”), an AI research and development public benefit corporation, with respect to access to <strong>compute capacity across COLOSSUS and COLOSSUS II</strong>. Pursuant to these agreements, the customer <strong>has agreed to pay us $1.25 billion per month</strong> through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days’ notice.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm\">SpaceX S-1</a>, highlights mine</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a>, <a href=\"https://simonwillison.net/tags/grok\">grok</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a></p>",
-        "link": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
+        "link": "https://simonwillison.net/2026/May/20/spacex-s1/",
         "author": "",
         "keywords": "anthropic grok generative-ai ai llms",
         "published": "2026-05-20T22:26:36+00:00",
@@ -319,7 +319,7 @@
       {
         "title": "How fast is 10 tokens per second really?",
         "summary": "<p><strong><a href=\"https://mikeveerman.github.io/tokenspeed/\">How fast is 10 tokens per second really?</a></strong></p>\nNeat little HTML app by Mike Veerman (<a href=\"https://github.com/MikeVeerman/tokenspeed/blob/master/index.html\">source code here</a>) which simulates LLM token output speeds from 5/second to 800/second.</p>\n<p>Useful if you see a model advertised as \"30 tokens/second\" and want to get a feel for what that actually looks like.\n\n    <p><small></small>Via <a href=\"https://news.ycombinator.com/item?id=48174920\">Hacker News</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a></p>",
-        "link": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
+        "link": "https://simonwillison.net/2026/May/20/tokens-per-second/",
         "author": "",
         "keywords": "ai generative-ai llms",
         "published": "2026-05-20T17:57:45+00:00",
