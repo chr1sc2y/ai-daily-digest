@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-23T11:12:29.594413+00:00",
+  "counts": {
+    "x": 7,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "This seems more ideological than technical.",
+        "summary": "This seems more ideological than technical.",
+        "link": "https://x.com/steipete/status/2058101804202602949",
+        "author": "steipete",
+        "published": "2026-05-23T08:24:42+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "I'm late to the party, but cmux is great. https://t.co/8uuStvqwcm\n\ncurrent split:\ncodex mac app: knowledege work, learni",
+        "summary": "I'm late to the party, but cmux is great. https://t.co/8uuStvqwcm\n\ncurrent split:\ncodex mac app: knowledege work, learning, reading\ncmux + codex cli: coding https://t.co/ozQZ8vZQ8k",
+        "link": "https://x.com/steipete/status/2058093406874689770",
+        "author": "steipete",
+        "published": "2026-05-23T07:51:20+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "co-sign. a very handy mental framework for what kinds of learning transformers do well today, and why it runs into limit",
+        "summary": "co-sign. a very handy mental framework for what kinds of learning transformers do well today, and why it runs into limitations. when @ankit2119 and i wrote about the need for adversarial world models earlier this year, we were describing a couple of the functions of these rungs of thinking that bring us ever closer to the kolmogorov-limit generator of reality. throwing more params, more power, more everything at a demonstrably inefficient paradigm will be outclassed by the simple solution that can hypothesize and seek truth rather than backfit a house of cards - although the bitter lesson is it is simpler to scale and we may hit agi anyway because human intelligence just isn’t that smart nor plentiful",
+        "link": "https://x.com/swyx/status/2058073815301972368",
+        "author": "swyx",
+        "published": "2026-05-23T06:33:29+00:00",
+        "source_name": "Swyx",
+        "source_role": "Smol AI / Latent Space",
+        "source_handle": "swyx"
+      },
+      {
+        "kind": "x",
+        "title": "GBrain just shipped v0.40.0 gives your OpenClaw/Hermes Agent + GBrain a voice agent. \n\nIt's based on Gemini Live. (Thank",
+        "summary": "GBrain just shipped v0.40.0 gives your OpenClaw/Hermes Agent + GBrain a voice agent. \n\nIt's based on Gemini Live. (Thanks @demishassabis it's amazing) Large context, great tool use, full brain access.\n\nMars is a friend, Venus is your EA.\n\nMy open source gift to you. https://t.co/VedauyKYl8",
+        "link": "https://x.com/garrytan/status/2058053659527913566",
+        "author": "garrytan",
+        "published": "2026-05-23T05:13:23+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "GPT-5.5 is a very good model",
+        "summary": "GPT-5.5 is a very good model",
+        "link": "https://x.com/gdb/status/2058048121674907670",
+        "author": "gdb",
+        "published": "2026-05-23T04:51:23+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "Geoffrey Moore says startups die in the chasm because pragmatist buyers demand a \"whole product.\" These folks won't tole",
+        "summary": "Geoffrey Moore says startups die in the chasm because pragmatist buyers demand a \"whole product.\" These folks won't tolerate gaps. They need references. They need the complete solution. The chasm is lethal because because the buyers won't buy without perfection.\n\nBut Moore's model assumes there's an EXISTING solution the buyer is comparing you to. The whole framework assumes the buyer has a status quo they're comfortable with.\n\nWhen the *bar is zero*, when the alternative is literally \"we die\" or \"we do this entirely by hand with 2,000 people\" (Block's compliance team) or \"we just don't have this capability at all\"?  \n\nThe chasm doesn't exist for those. \n\nBuyers start acting like visionaries instead of skeptics, because they have to buy. The alternative doesn't exist. They'll tolerate a 60% solution, missing features, no references, because 60% of something beats 100% of nothing.\n\nThe companies I get most excited about aren't disrupting incumbents. They're filling voids. 9 Mothers in the YC Spring 2026 batch is a counter-drone defense co for whom bar is zero, there is no viable close quarters defense otherwise! There's no chasm to cross for that. \n\nThe practical implication for founders: if you're in a market where the bar is zero, stop worrying about whole product, stop worrying about crossing the chasm, stop worrying about pragmatist references. Ship the 60% solution. They're begging for it.\n\nIf you're NOT in a bar-is-zero market (if there's an incumbent, a status quo, a \"good enough\") then Moore applies in full and you need the whole playbook (beachhead, bowling alley, whole product, the works).\n\nThe question every founder should ask: is my customer's current alternative literally nothing? If yes, you're in a different game than the textbooks describe. Ship it in whatever form you have. You'll know. And it's a great place to be.",
+        "link": "https://x.com/garrytan/status/2058043367704195271",
+        "author": "garrytan",
+        "published": "2026-05-23T04:32:30+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "Breathtakingly Beautiful https://t.co/uXAKRCBmjG",
+        "summary": "Breathtakingly Beautiful https://t.co/uXAKRCBmjG",
+        "link": "https://x.com/elonmusk/status/2058039896279745004",
+        "author": "elonmusk",
+        "published": "2026-05-23T04:18:42+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-23T04:00:00+00:00",
+    "end": "2026-05-23T10:00:00+00:00"
+  }
+}
