@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-23T22:54:59.539631+00:00",
+  "counts": {
+    "x": 12,
+    "blogs": 1,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "It’s going to be epic!",
+        "summary": "It’s going to be epic!",
+        "link": "https://x.com/amasad/status/2058292230700372356",
+        "author": "amasad",
+        "published": "2026-05-23T21:01:23+00:00",
+        "source_name": "Amjad Masad",
+        "source_role": "CEO, Replit",
+        "source_handle": "amasad"
+      },
+      {
+        "kind": "x",
+        "title": "It Twitter's too busy for you, try https://t.co/eykEElx1Ez https://t.co/dlq25G9hno",
+        "summary": "It Twitter's too busy for you, try https://t.co/eykEElx1Ez https://t.co/dlq25G9hno",
+        "link": "https://x.com/steipete/status/2058263360525730087",
+        "author": "steipete",
+        "published": "2026-05-23T19:06:40+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Boring Company’s goal is to solve traffic in cities and one day build Hyperloop high-speed transit between city centers",
+        "summary": "Boring Company’s goal is to solve traffic in cities and one day build Hyperloop high-speed transit between city centers",
+        "link": "https://x.com/elonmusk/status/2058252485823750516",
+        "author": "elonmusk",
+        "published": "2026-05-23T18:23:27+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "saikat chakrabarti\n&gt; be first 10 at stripe\n&gt; clear 9 figures\n&gt; ladder-pull: don't want people to start startups",
+        "summary": "saikat chakrabarti\n&gt; be first 10 at stripe\n&gt; clear 9 figures\n&gt; ladder-pull: don't want people to start startups\n&gt; donate $500K to Prop D, the 800% increase in gross receipts tax that blocks startups from staying in SF\n\n^^ don't be this guy. don't be the ladder puller. https://t.co/DtfH7qoQsH",
+        "link": "https://x.com/garrytan/status/2058251535059210314",
+        "author": "garrytan",
+        "published": "2026-05-23T18:19:41+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "Show me the thing you’ve built with AI you’re most proud of. Reply with a working product URL and what model / agent you",
+        "summary": "Show me the thing you’ve built with AI you’re most proud of. Reply with a working product URL and what model / agent you primarily used.",
+        "link": "https://x.com/rauchg/status/2058245330836271263",
+        "author": "rauchg",
+        "published": "2026-05-23T17:55:01+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "The latest version of GBrain doesn't just do basic retrieval. It now can do synthesized answers to the specific question",
+        "summary": "The latest version of GBrain doesn't just do basic retrieval. It now can do synthesized answers to the specific questions you're looking for. \n\nHere's an AB test of gbrain search vs gbrain think\n\nGBrain gets better every single day. https://t.co/8FLBXiM994",
+        "link": "https://x.com/garrytan/status/2058242820188893210",
+        "author": "garrytan",
+        "published": "2026-05-23T17:45:03+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "gm 🏃‍♂️ https://t.co/VI6wkRSrTV",
+        "summary": "gm 🏃‍♂️ https://t.co/VI6wkRSrTV",
+        "link": "https://x.com/rauchg/status/2058239837195628941",
+        "author": "rauchg",
+        "published": "2026-05-23T17:33:12+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "Can you imagine that we lived in a world 6 months (Nov 2025) ago when we would mostly just chat with LLMs and would be s",
+        "summary": "Can you imagine that we lived in a world 6 months (Nov 2025) ago when we would mostly just chat with LLMs and would be so happy about AI??\n\nIt's May 2026 and these LLMs now have produced more code than we have written over all time.",
+        "link": "https://x.com/adityaag/status/2058233900464238801",
+        "author": "adityaag",
+        "published": "2026-05-23T17:09:36+00:00",
+        "source_name": "Aditya Agarwal",
+        "source_role": "Partner, South Park Commons",
+        "source_handle": "adityaag"
+      },
+      {
+        "kind": "x",
+        "title": "Codex for building and debugging an iPhone simulator end to end:",
+        "summary": "Codex for building and debugging an iPhone simulator end to end:",
+        "link": "https://x.com/gdb/status/2058232892266836141",
+        "author": "gdb",
+        "published": "2026-05-23T17:05:36+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "This is a fantastic post about why jobs aren’t going away in the way some predict. We are constantly making the mistake ",
+        "summary": "This is a fantastic post about why jobs aren’t going away in the way some predict. We are constantly making the mistake of confusing task completion with AI with being able to eliminate the whole job. \n\nEven as we can automate one or many tasks within a job, the definition of the job almost inevitably just expands to do vastly more of those tasks, do them at a higher quality, or move on to the type of task that hasn’t been automated yet. \n\nAnd as a result of being able to do more of the tasks or at a higher quality level, the job becomes valuable in a new way. And in many cases for now an entirely new audience as well. \n\nThis will be true for coding, legal work, sales, or marketing. The small business or non-tech company that wants to now take on larger software projects finally can, and they’ll hire to do so. The small business that couldn’t afford a full marketing agency can hire or contract out to a marketer that can do as much as an agency did before now with agents. And so on.\n\nDon’t fall into the trap of confusing tasks with jobs.",
+        "link": "https://x.com/levie/status/2058223867815227756",
+        "author": "levie",
+        "published": "2026-05-23T16:29:44+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      },
+      {
+        "kind": "x",
+        "title": "good location to build",
+        "summary": "good location to build",
+        "link": "https://x.com/gdb/status/2058223176027439439",
+        "author": "gdb",
+        "published": "2026-05-23T16:26:59+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "The Starship V3 heat shield held well",
+        "summary": "The Starship V3 heat shield held well",
+        "link": "https://x.com/elonmusk/status/2058220599583920153",
+        "author": "elonmusk",
+        "published": "2026-05-23T16:16:45+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "On the <dl>",
+        "summary": "<p><strong><a href=\"https://benmyers.dev/blog/on-the-dl/\">On the &lt;dl&gt;</a></strong></p>\nI learned a few new-to-me things about the <code>&lt;dl&gt;</code> element from this article by Ben Meyer:</p>\n<ol>\n<li>A <code>&lt;dt&gt;</code> can be followed by <em>multiple</em> <code>&lt;dd&gt;</code></li>\n<li>You can optionally group the <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> elements in a <code>&lt;div&gt;</code> for styling - but only a <code>&lt;div&gt;</code>.</li>\n<li>You can label them using ARIA.</li>\n<li>They've been called \"description lists\", not \"definition lists\", since <a href=\"https://www.w3.org/TR/2008/WD-html5-20080122/#the-dl\">an HTML5 draft in 2008</a>.</li>\n</ol>\n<p>So this is valid:</p>\n<pre><span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">h2</span> <span class=\"pl-c1\">id</span>=\"<span class=\"pl-s\">credits</span>\"<span class=\"pl-kos\">&gt;</span>Credits<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">h2</span><span class=\"pl-kos\">&gt;</span>\n<span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dl</span> <span class=\"pl-c1\">aria-labelledby</span>=\"<span class=\"pl-s\">credits</span>\"<span class=\"pl-kos\">&gt;</span>\n  <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">div</span><span class=\"pl-kos\">&gt;</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dt</span><span class=\"pl-kos\">&gt;</span>Author<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dt</span><span class=\"pl-kos\">&gt;</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>Jeffrey Zeldman<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>Ethan Marcotte<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>\n  <span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">div</span><span class=\"pl-kos\">&gt;</span>\n<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dl</span><span class=\"pl-kos\">&gt;</span></pre>\n\n<p>Here's a useful note from Adrian Roselli on <a href=\"https://adrianroselli.com/2025/01/updated-brief-note-on-description-list-support.html\">screen reader support for description lists</a>.\n\n    <p><small></small>Via <a href=\"https://news.ycombinator.com/item?id=48247325\">Hacker News</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/css\">css</a>, <a href=\"https://simonwillison.net/tags/html\">html</a>, <a href=\"https://simonwillison.net/tags/screen-readers\">screen-readers</a>, <a href=\"https://simonwillison.net/tags/web-standards\">web-standards</a></p>",
+        "link": "https://simonwillison.net/2026/May/23/on-the-dl/",
+        "author": "",
+        "keywords": "css html screen-readers web-standards",
+        "published": "2026-05-23T20:24:48+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-23T16:00:00+00:00",
+    "end": "2026-05-23T22:00:00+00:00"
+  }
+}
