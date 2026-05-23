@@ -225,8 +225,16 @@ a { color: inherit; text-decoration: none; }
 /* --- Summary --- */
 .card-summary {
   font-size: 14px; color: var(--ink-2); line-height: 1.6;
-  flex: 1; overflow: visible;
+  flex: 1;
   word-break: break-word; overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card:hover .card-summary {
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 /* --- Foot --- */
