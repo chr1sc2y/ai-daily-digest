@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-23T17:00:03.195133+00:00",
+  "counts": {
+    "x": 4,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "If you can learn one thing that's genuinely novel to you, you can learn anything.",
+        "summary": "If you can learn one thing that's genuinely novel to you, you can learn anything.",
+        "link": "https://x.com/fchollet/status/2058211474217328853",
+        "author": "fchollet",
+        "published": "2026-05-23T15:40:29+00:00",
+        "source_name": "François Chollet",
+        "source_role": "Creator of Keras / ARC Prize",
+        "source_handle": "fchollet"
+      },
+      {
+        "kind": "x",
+        "title": "Bob McGrew has a framework I keep thinking about: in the AI future there are only two jobs. The Lone Genius and the Mana",
+        "summary": "Bob McGrew has a framework I keep thinking about: in the AI future there are only two jobs. The Lone Genius and the Manager.\n\nThat's it. Everything else gets absorbed.\n\nThe Lone Genius is the person sitting alone at a computer, amplified 1000x by AI. One person with taste, vision, and relentless focus who can now do what used to take a team of 50.\n\nThe Manager is the person who becomes CEO of their own \"firm\" where most of the employees are AI agents. They define the goals. They decide what matters. They coordinate. The AI does the execution.\n\nThe Marxists will hear \"two jobs\" and panic. \"What about everyone else?!\" But here's what they're missing: AI doesn't shrink these two categories. It explodes them open. More people get to be geniuses. More people get to be managers. The barrier to entry for both just collapsed.\n\nWhat actually gets eliminated? David Graeber called them \"bullshit jobs.\" Graeber was no libertarian! He inspired Occupy Wall Street. \n\nHis words: \"Huge swaths of people spend their entire working lives performing tasks they secretly believe don't really need to be performed. The moral and spiritual damage that comes from this situation is profound. It is a scar across our collective soul.\"\n\nGraeber said bullshit jobs are \"a form of spiritual violence directed at the essence of what it means to be a human being.\" They induce \"hopelessness, depression, and self-loathing.\"\n\nThis is who the left should be fighting for. Not to preserve those jobs. To liberate people from them and give them better ones. \n\nThe dirty secret of the modern economy: millions of people sit in roles so pointless that even they can't justify their existence. Compliance layers. Reporting layers. Coordination layers. Meeting-about-the-meeting layers. They know it's meaningless. It eats them alive.\n\nAI eats those layers. Good. That's a jailbreak.\n\nWhat I love about Bob's framework is where it points. The Lone Genius used to require a PhD, a lab, institutional backing. Now a 19-year-old with taste and Codex can ship what took a research team a year. The genius bottleneck was never talent. It was access.\n\nThe Manager used to mean you needed to hire 50 people, raise money, build an org chart. Now you can orchestrate a fleet of AI agents from your laptop. The management bottleneck was never skill. It was capital.\n\nAI doesn't concentrate genius and management into fewer hands. It distributes them into more hands. The working class kid in West Virginia. The single mom in Ohio. The 55-year-old who got laid off and now builds software for the first time. Those are some of Bob's future geniuses and managers.\n\nThe best founders I see at YC are already living this. They toggle between both modes in the same day. Morning: lone genius, creative insight, the thing nobody else sees. Afternoon: manager, spinning up agents, steering, shipping.\n\nThe cycle time between genius and manager IS the new productivity metric.\n\nSo when someone tells you AI means \"only two jobs and everyone else starves,\" quote Graeber to them, they’ll get it. \n\nGraeber knew the real violence was making people do meaningless work and pretending it was dignity. AI ends that. More genius. More agency. Fewer spiritual prisons.",
+        "link": "https://x.com/garrytan/status/2058190873758990673",
+        "author": "garrytan",
+        "published": "2026-05-23T14:18:38+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "A 6-person team is building task-specific AI models that are 4-8x faster than anything from OpenAI or Anthropic. 500K do",
+        "summary": "A 6-person team is building task-specific AI models that are 4-8x faster than anything from OpenAI or Anthropic. 500K downloads on HuggingFace. No hype. Just better engineering winning on the merits.\n\nThis is what \"make something people want\" looks like in the model layer.\n\nhttps://t.co/nsf8b31xha",
+        "link": "https://x.com/garrytan/status/2058187750705418448",
+        "author": "garrytan",
+        "published": "2026-05-23T14:06:13+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "Everyone thinks \"do things that don't scale\" is about building relationships with early users.\n\nYes AND it's about gener",
+        "summary": "Everyone thinks \"do things that don't scale\" is about building relationships with early users.\n\nYes AND it's about generating mistakes at maximum density.\n\nWhen you're doing everything manually (onboarding, support, delivery) you hit errors every hour. Each error teaches you something the dashboard never will.\n\nThe manual work IS the learning. Automate too early and you freeze your ignorance in code (and now markdown).",
+        "link": "https://x.com/garrytan/status/2058169276302066001",
+        "author": "garrytan",
+        "published": "2026-05-23T12:52:49+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "The Difference Between a GPU and TPU",
+        "summary": "Full episode: https://youtu.be/sRKBGVFVYAw\nMe on twitter: https://x.com/dwarkesh_sp",
+        "link": "https://www.youtube.com/watch?v=95w9IIUjk7g",
+        "author": "Dwarkesh Clips",
+        "keywords": "",
+        "published": "2026-05-23T11:52:36+00:00",
+        "kind": "video",
+        "source_name": "Dwarkesh Patel",
+        "source_handle": "Dwarkesh Patel",
+        "source_role": "Channel · Dwarkesh Patel"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-23T10:00:00+00:00",
+    "end": "2026-05-23T16:00:00+00:00"
+  }
+}
