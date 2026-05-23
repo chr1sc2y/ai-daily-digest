@@ -1,8 +1,7 @@
 """Render the collected items into a single self-contained HTML page.
 
-Design language: editorial, magazine-like (inspired by Linear changelog,
-Vercel blog, Stripe Press). Mono-spaced metadata, generous whitespace,
-sticky section nav, tasteful hairlines.
+Design language: Apple News-style dense card grid with colour-coded
+category stripes, unified sans-serif typography, and hover-expand cards.
 """
 from __future__ import annotations
 
@@ -150,7 +149,6 @@ a { color: inherit; text-decoration: none; }
   background: var(--surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  overflow: hidden;
   display: flex; flex-direction: column;
   transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
               box-shadow .35s ease;
@@ -166,6 +164,7 @@ a { color: inherit; text-decoration: none; }
 
 .card-stripe {
   height: 5px; flex-shrink: 0;
+  border-radius: var(--radius) var(--radius) 0 0;
   transition: height .25s ease;
 }
 .card:hover .card-stripe { height: 7px; }
@@ -370,9 +369,6 @@ CLIENT_JS = r"""
     const titleBlock = item.kind !== "x" && title
       ? `<div class="card-title">${escapeHtml(title)}</div>`
       : "";
-    const openLink = link
-      ? `<a class="card-link ${linkClass(item.kind)}" href="${escapeHtml(link)}" target="_blank" rel="noreferrer noopener">Open ↗</a>`
-      : "";
     const label = tag(item.kind);
     const linkLabel = {Blog: "Read article ↗", Podcast: "Listen ↗", Video: "Watch ↗", Post: "Open ↗"}[label] || "Open ↗";
     const openHtml = link
@@ -459,6 +455,9 @@ CLIENT_JS = r"""
       return `<div class="section" id="${slug}"><div class="section-head"><h2>${escapeHtml(title)}</h2><span class="count">${String(rows.length).padStart(2, "0")} items</span></div><div class="grid">${rows.map(card).join("")}</div></div>`;
     }).join("");
     document.querySelector(".page").innerHTML = sections;
+    document.querySelectorAll(".seg button").forEach(b => b.classList.remove("active"));
+    const allBtn = document.querySelector(".seg button");
+    if (allBtn) allBtn.classList.add("active");
     const status = document.querySelector(".range-status");
     if (status) status.textContent = "Loaded " + items.length + " items";
   }
@@ -640,9 +639,6 @@ def render(
 ) -> str:
     blog_items = blog_items or []
     video_items = video_items or []
-    site = site or {}
-    repo = site.get("repo", "")
-    repo_url = site.get("repo_url", f"https://github.com/{repo}" if repo else "")
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")  # used in meta tag
 
     sections_meta = [
