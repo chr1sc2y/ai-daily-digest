@@ -115,7 +115,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink-3); cursor: pointer;
   transition: all .15s;
 }
-.time-seg button.active { background: var(--ink); color: var(--bg); }
+.time-seg button.active { background: var(--surface); color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
 .filter-bar .range-status {
   font-family: var(--mono); font-size: 11px; color: var(--ink-3);
   padding-left: 4px;
