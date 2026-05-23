@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-23T06:33:52.811380+00:00",
+  "generated_at": "2026-05-23T07:08:24.704642+00:00",
   "counts": {
     "x": 15,
     "blogs": 1,
     "podcasts": 0,
-    "videos": 0
+    "videos": 1
   },
   "items": {
     "x": [
@@ -190,7 +190,20 @@
       }
     ],
     "podcasts": [],
-    "videos": []
+    "videos": [
+      {
+        "title": "Workspace agents in ChatGPT: Admin and builder controls",
+        "summary": "Workspace agents in ChatGPT help teams turn repeatable workflows into shared agents that can pull in context, use tools, and move work forward on their own.\n\nIn this demo, you’ll see how admins and builders can set safeguards for workspace agents. Enterprise admins can centrally manage who can use, build, and publish agents, and define what agents are allowed to do. Builders can also configure when agents should ask for approval before taking specific actions, so agents work the way teams need them to across users and workflows.\n\nWorkspace agents are generally available to ChatGPT Business, Enterprise, and Edu.",
+        "link": "https://www.youtube.com/watch?v=HaaKUFAOi84",
+        "author": "OpenAI",
+        "keywords": "",
+        "published": "2026-05-22T22:48:37+00:00",
+        "kind": "video",
+        "source_name": "OpenAI",
+        "source_handle": "OpenAI",
+        "source_role": "Channel · OpenAI"
+      }
+    ]
   },
   "window": {
     "start": "2026-05-22T22:00:00+00:00",
