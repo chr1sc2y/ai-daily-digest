@@ -115,11 +115,6 @@ a { color: inherit; text-decoration: none; }
   transition: all .15s;
 }
 .time-seg button.active { background: var(--surface); color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-.filter-bar .range-status {
-  font-family: var(--mono); font-size: 11px; color: var(--ink-3);
-  padding-left: 4px;
-}
-
 /* --- Layout --- */
 .page { max-width: 1280px; margin: 0 auto; padding: 0 24px 80px; }
 .section { margin-bottom: 56px; }
@@ -447,12 +442,9 @@ CLIENT_JS = r"""
     document.querySelectorAll(".seg button").forEach(b => b.classList.remove("active"));
     const allBtn = document.querySelector(".seg button");
     if (allBtn) allBtn.classList.add("active");
-    const status = document.querySelector(".range-status");
-    if (status) status.textContent = "Loaded " + items.length + " items";
   }
 
   async function loadArchive() {
-    const status = document.querySelector(".range-status");
     try {
       const indexResp = await fetch(withCacheKey("data/index.json"), { cache: "reload" });
       if (!indexResp.ok) throw new Error("missing index");
@@ -477,10 +469,9 @@ CLIENT_JS = r"""
       latestEnd = endValues.length
         ? new Date(Math.max.apply(null, endValues))
         : (itemValues.length ? new Date(Math.max.apply(null, itemValues)) : new Date());
-      if (status) status.textContent = "7d archive ready";
       renderRange("24h");
     } catch (err) {
-      if (status) status.textContent = "Local archive unavailable";
+      // archive unavailable — showing server-rendered content only
     }
   }
 
@@ -673,7 +664,6 @@ def render(
     <button class="active" type="button" data-range="24h">24h</button>
     <button type="button" data-range="3d">3d</button>
     <button type="button" data-range="7d">7d</button>
-    <span class="range-status">{'Loading 7d archive' if interactive else ''}</span>
   </div>
   <div class="seg" aria-label="Content type">
     <button type="button" class="active">All</button>
