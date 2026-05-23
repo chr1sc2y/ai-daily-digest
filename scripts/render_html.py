@@ -327,19 +327,31 @@ CLIENT_JS = r"""
   }
 
   function tag(kind) {
-    return {x: "Post", blogs: "Blog", podcasts: "Podcast", videos: "Video"}[kind] || "Item";
+    return {x: "Post", blogs: "Blog", blog: "Blog", podcasts: "Podcast", podcast: "Podcast", videos: "Video", video: "Video"}[kind] || "Item";
   }
 
   function badgeClass(kind) {
-    return "badge-" + ({x: "x", blogs: "blogs", podcasts: "podcasts", videos: "videos"}[kind] || "x");
+    return "badge-" + ({
+      x: "x", blogs: "blogs", blog: "blogs",
+      podcasts: "podcasts", podcast: "podcasts",
+      videos: "videos", video: "videos"
+    }[kind] || "x");
   }
 
   function stripeClass(kind) {
-    return "stripe-" + ({x: "x", blogs: "blogs", podcasts: "podcasts", videos: "videos"}[kind] || "x");
+    return "stripe-" + ({
+      x: "x", blogs: "blogs", blog: "blogs",
+      podcasts: "podcasts", podcast: "podcasts",
+      videos: "videos", video: "videos"
+    }[kind] || "x");
   }
 
   function linkClass(kind) {
-    return "card-link-" + ({x: "x", blogs: "blogs", podcasts: "podcasts", videos: "videos"}[kind] || "x");
+    return "card-link-" + ({
+      x: "x", blogs: "blogs", blog: "blogs",
+      podcasts: "podcasts", podcast: "podcasts",
+      videos: "videos", video: "videos"
+    }[kind] || "x");
   }
 
   function card(item) {
