@@ -449,23 +449,32 @@ CLIENT_JS = r"""
       const indexResp = await fetch(withCacheKey("data/index.json"), { cache: "reload" });
       if (!indexResp.ok) throw new Error("missing index");
       const index = await indexResp.json();
-      const segmentPaths = (index.segments || []).map((segment) => segment.path).slice(-56);
-      const dailyPaths = (index.daily || []).map((day) => day.path).slice(-7);
+      // Only fetch segments whose window_end is within the last 7d (168h).
+      // This cuts the initial fetch from ~63 files down to ~28.
+      const cutoff = new Date(Date.now() - 168 * 60 * 60 * 1000);
+      const recentSegments = (index.segments || []).filter(function (s) {
+        var t = new Date(s.window_end || 0);
+        return !isNaN(t.getTime()) && t >= cutoff;
+      });
+      const segmentPaths = recentSegments.map(function (s) { return s.path; });
+      const dailyPaths = (index.daily || []).map(function (d) { return d.path; }).slice(-7);
       const archivePaths = Array.from(new Set(dailyPaths.concat(segmentPaths)));
-      const payloads = await Promise.all(archivePaths.map(async (path) => {
-        const resp = await fetch(withCacheKey(path), { cache: "reload" });
+      if (!archivePaths.length) return;
+      const payloads = await Promise.all(archivePaths.map(async function (path) {
+        var resp = await fetch(withCacheKey(path), { cache: "reload" });
         if (!resp.ok) return null;
         return resp.json();
       }));
       archiveItems = [];
-      payloads.filter(Boolean).forEach((payload) => {
-        const items = payload.items || {};
-        Object.entries({x: "x", blogs: "blogs", podcasts: "podcasts", videos: "videos"}).forEach(([key, kind]) => {
-          (items[key] || []).forEach((item) => archiveItems.push(Object.assign({}, item, {kind})));
+      payloads.filter(Boolean).forEach(function (payload) {
+        var items = payload.items || {};
+        Object.entries({x: "x", blogs: "blogs", podcasts: "podcasts", videos: "videos"}).forEach(function (entry) {
+          var key = entry[0], kind = entry[1];
+          (items[key] || []).forEach(function (item) { archiveItems.push(Object.assign({}, item, {kind: kind})); });
         });
       });
-      const endValues = (index.segments || []).map((segment) => new Date(segment.window_end || 0)).filter((dt) => !Number.isNaN(dt.getTime()));
-      const itemValues = archiveItems.map((item) => new Date(item.published || 0)).filter((dt) => !Number.isNaN(dt.getTime()));
+      var endValues = recentSegments.map(function (s) { return new Date(s.window_end || 0); }).filter(function (dt) { return !isNaN(dt.getTime()); });
+      var itemValues = archiveItems.map(function (item) { return new Date(item.published || 0); }).filter(function (dt) { return !isNaN(dt.getTime()); });
       latestEnd = endValues.length
         ? new Date(Math.max.apply(null, endValues))
         : (itemValues.length ? new Date(Math.max.apply(null, itemValues)) : new Date());
