@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-23T06:33:52.811380+00:00",
+  "counts": {
+    "x": 15,
+    "blogs": 1,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "It was a very good day https://t.co/shJaoIIDPX",
+        "summary": "It was a very good day https://t.co/shJaoIIDPX",
+        "link": "https://x.com/elonmusk/status/2058021274056614304",
+        "author": "elonmusk",
+        "published": "2026-05-23T03:04:42+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/njJvNNZyKr",
+        "summary": "https://t.co/njJvNNZyKr",
+        "link": "https://x.com/elonmusk/status/2058019707144257641",
+        "author": "elonmusk",
+        "published": "2026-05-23T02:58:28+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/KotP1BmroT",
+        "summary": "https://t.co/KotP1BmroT",
+        "link": "https://x.com/elonmusk/status/2058019329161973925",
+        "author": "elonmusk",
+        "published": "2026-05-23T02:56:58+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/C8wKrXoT7K",
+        "summary": "https://t.co/C8wKrXoT7K",
+        "link": "https://x.com/elonmusk/status/2058014367652696484",
+        "author": "elonmusk",
+        "published": "2026-05-23T02:37:15+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Here’s a key line in this mythos update. This is precisely an example of why engineers don’t go away, ever. \n\nWe’ve made",
+        "summary": "Here’s a key line in this mythos update. This is precisely an example of why engineers don’t go away, ever. \n\nWe’ve made it far easier to create and find security issues, which means the new bottleneck is our ability to actually review, respond to, and fix the issues. \n\nFar from AI magically solving all of this, there still is major triage work and human judgment required to do the follow on work to actually protect systems. As a result, we’re about to enter a security engineer boom.\n\nJevons paradox all over again.",
+        "link": "https://x.com/levie/status/2058006473620463985",
+        "author": "levie",
+        "published": "2026-05-23T02:05:53+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      },
+      {
+        "kind": "x",
+        "title": "Lately, I've been obsessed with how the best solo founders and engineers use agents to 10x their output. I ask them ques",
+        "summary": "Lately, I've been obsessed with how the best solo founders and engineers use agents to 10x their output. I ask them questions like:\n\n1. What's your AI stack?\n2. Show me how you build end to end.\n3. How do you manage multiple agents?\n\n📌 Subscribe to get all these episodes soon (episode with Ryan dropping this Sunday): https://t.co/NSTj7ijxE0",
+        "link": "https://x.com/petergyang/status/2057989910125310459",
+        "author": "petergyang",
+        "published": "2026-05-23T01:00:04+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "A friend shared this with me, and I love it so much. Make no little plans. https://t.co/LIUGb6crRZ",
+        "summary": "A friend shared this with me, and I love it so much. Make no little plans. https://t.co/LIUGb6crRZ",
+        "link": "https://x.com/kevinweil/status/2057987544663364045",
+        "author": "kevinweil",
+        "published": "2026-05-23T00:50:40+00:00",
+        "source_name": "Kevin Weil",
+        "source_role": "Chief Product Officer, OpenAI",
+        "source_handle": "kevinweil"
+      },
+      {
+        "kind": "x",
+        "title": "We’re expanding our partnership with Singapore to help safely deploy AI at scale. 🇸🇬\n\nTogether with country experts, our",
+        "summary": "We’re expanding our partnership with Singapore to help safely deploy AI at scale. 🇸🇬\n\nTogether with country experts, our new programs will focus on accelerating scientific discovery, advancing pandemic preparedness, and improving healthcare.\n\nFind out more → https://t.co/V0rFGHXOGy",
+        "link": "https://x.com/GoogleDeepMind/status/2057985225100235022",
+        "author": "GoogleDeepMind",
+        "published": "2026-05-23T00:41:27+00:00",
+        "source_name": "Google DeepMind",
+        "source_role": "Google DeepMind (official)",
+        "source_handle": "GoogleDeepMind"
+      },
+      {
+        "kind": "x",
+        "title": "Why?",
+        "summary": "Why?",
+        "link": "https://x.com/ylecun/status/2057979614115307712",
+        "author": "ylecun",
+        "published": "2026-05-23T00:19:10+00:00",
+        "source_name": "Yann LeCun",
+        "source_role": "Chief AI Scientist, Meta",
+        "source_handle": "ylecun"
+      },
+      {
+        "kind": "x",
+        "title": "Silicon Valley's congressman wants to tax the AI his own constituents build, while his household trades $34M in tech sto",
+        "summary": "Silicon Valley's congressman wants to tax the AI his own constituents build, while his household trades $34M in tech stocks. \n\nCA-17 deserves a representative who understands that punishing American AI gives the advantage to China. Funny how the Ranking Member of the China Committee keeps doing things that benefit Beijing.\n\nVote @ethanagarwal and primary Ro Khanna",
+        "link": "https://x.com/garrytan/status/2057975521880027172",
+        "author": "garrytan",
+        "published": "2026-05-23T00:02:54+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/w2mlKm3nTf",
+        "summary": "https://t.co/w2mlKm3nTf",
+        "link": "https://x.com/elonmusk/status/2057974937923490301",
+        "author": "elonmusk",
+        "published": "2026-05-23T00:00:35+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "We need to keep smart people in the country to build the future and build tomorrow’s businesses that employ millions of ",
+        "summary": "We need to keep smart people in the country to build the future and build tomorrow’s businesses that employ millions of people \n\nThis is bad and misguided policy",
+        "link": "https://x.com/garrytan/status/2057958284410380793",
+        "author": "garrytan",
+        "published": "2026-05-22T22:54:24+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "Tokenmax, don't headcount max https://t.co/pjjofYIhJb",
+        "summary": "Tokenmax, don't headcount max https://t.co/pjjofYIhJb",
+        "link": "https://x.com/garrytan/status/2057946412038676511",
+        "author": "garrytan",
+        "published": "2026-05-22T22:07:14+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      },
+      {
+        "kind": "x",
+        "title": "We used bots so far to enforce a 10PR per “person” limit. Great to see GitHub shipping that natively!",
+        "summary": "We used bots so far to enforce a 10PR per “person” limit. Great to see GitHub shipping that natively!",
+        "link": "https://x.com/steipete/status/2057946259709628781",
+        "author": "steipete",
+        "published": "2026-05-22T22:06:37+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "My simple secret to agentic coding\n\nhttps://t.co/MvhHazLwf2 https://t.co/0LnfgkvV6g",
+        "summary": "My simple secret to agentic coding\n\nhttps://t.co/MvhHazLwf2 https://t.co/0LnfgkvV6g",
+        "link": "https://x.com/garrytan/status/2057946119725080878",
+        "author": "garrytan",
+        "published": "2026-05-22T22:06:04+00:00",
+        "source_name": "Garry Tan",
+        "source_role": "CEO, Y Combinator",
+        "source_handle": "garrytan"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "The memory shortage is causing a repricing of consumer electronics",
+        "summary": "<p><strong><a href=\"https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone\">The memory shortage is causing a repricing of consumer electronics</a></strong></p>\nDavid Oks provides the clearest explanation I've seen yet of why consumer products that use memory are likely to get significantly more expensive over the next few years.</p>\n<p>The short version is that memory manufacturers - of which there are just three remaining large companies - have a fixed capacity in terms of how many wafers they can process at any one time. This fixed wafer capacity is then split between DDR - used in desktops and servers, LPDDR - used in mobile phones and low-energy devices, and HBM - used with GPUs.</p>\n<p>Until recently, HBM got just 2% of that wafer allocation. The enormous growth in AI data centers has pushed that up to an expected 20% by the end of 2026, and \"a single gigabyte of HBM consumes more than three times the wafer capacity that a gigabyte of DDR or LPDDR does\".</p>\n<p>Memory companies have learned from the extinction of their rivals that you should always under-provision rather than over-provision your fabricator capacity. The profit margins and demand for HBM (high-bandwidth memory) will constrain the production of consumer-device RAM for several years.</p>\n<p>This is already being felt in the sub-$100 smartphone market, which is particularly important to markets like Africa and South Asia.</p>\n<p>(The original title of the piece was \"AI is killing the cheap smartphone\" but I'm using the Hacker News rephrased title, which I think does more justice to the content.)\n\n    <p><small></small>Via <a href=\"https://news.ycombinator.com/item?id=48229319\">Hacker News</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/memory\">memory</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/ai-ethics\">ai-ethics</a></p>",
+        "link": "https://simonwillison.net/2026/May/22/memory-shortage/",
+        "author": "",
+        "keywords": "memory ai ai-ethics",
+        "published": "2026-05-22T22:01:31+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-22T22:00:00+00:00",
+    "end": "2026-05-23T04:00:00+00:00"
+  }
+}
