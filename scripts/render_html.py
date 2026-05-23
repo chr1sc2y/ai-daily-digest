@@ -150,14 +150,12 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   display: flex; flex-direction: column;
-  transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow .35s ease;
+  transition: box-shadow .25s ease;
   cursor: pointer;
   position: relative; z-index: 1;
   height: 100%;
 }
 .card:hover {
-  transform: scale(1.04);
   box-shadow: var(--shadow-hover);
   z-index: 10;
 }
@@ -165,9 +163,7 @@ a { color: inherit; text-decoration: none; }
 .card-stripe {
   height: 5px; flex-shrink: 0;
   border-radius: var(--radius) var(--radius) 0 0;
-  transition: height .25s ease;
 }
-.card:hover .card-stripe { height: 7px; }
 .stripe-blogs    { background: linear-gradient(90deg, #1d4ed8, #3b82f6); }
 .stripe-podcasts { background: linear-gradient(90deg, #7c3aed, #a855f7); }
 .stripe-videos   { background: linear-gradient(90deg, #dc2626, #f97316); }
@@ -231,10 +227,6 @@ a { color: inherit; text-decoration: none; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.card:hover .card-summary {
-  -webkit-line-clamp: unset;
-  overflow: visible;
-}
 
 /* --- Foot --- */
 .card-foot {
@@ -271,9 +263,6 @@ a { color: inherit; text-decoration: none; }
   .filter-bar { padding: 16px 20px 12px; }
   .page { padding: 0 20px 64px; }
 }
-
-/* --- Touch: no scale --- */
-@media (hover: none) { .card:hover { transform: none; } }
 
 footer.page-foot { display: none; }
 """
