@@ -109,9 +109,9 @@ a { color: inherit; text-decoration: none; }
 }
 .time-seg button {
   appearance: none; border: none; background: none;
-  padding: 5px 12px; border-radius: 999px;
-  font-family: var(--mono); font-size: 11px;
-  color: var(--ink-3); cursor: pointer;
+  padding: 6px 14px; border-radius: 999px;
+  font-size: 13px; font-weight: 500;
+  color: var(--ink-2); cursor: pointer;
   transition: all .15s;
 }
 .time-seg button.active { background: var(--surface); color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
@@ -262,33 +262,6 @@ a { color: inherit; text-decoration: none; }
   .hero-divider { padding: 0 20px; }
   .filter-bar { padding: 16px 20px 12px; }
   .page { padding: 0 20px 64px; }
-}
-
-/* --- Preview tooltip --- */
-.preview-tooltip {
-  position: fixed; z-index: 1000;
-  width: 360px; max-height: 80vh;
-  background: var(--surface);
-  border-radius: 12px;
-  box-shadow: 0 18px 48px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.10);
-  padding: 16px 18px;
-  font-size: 13px; line-height: 1.6;
-  color: var(--ink);
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity .18s ease, transform .18s ease;
-  overflow-y: auto;
-}
-.preview-tooltip.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-@media (prefers-color-scheme: dark) {
-  .preview-tooltip {
-    box-shadow: 0 18px 48px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.4);
-    outline: 1px solid rgba(255,255,255,0.08);
-  }
 }
 
 footer.page-foot { display: none; }
@@ -742,66 +715,6 @@ def render(
     apply();
   }}
   window.__applyLocalTime = apply;
-
-  var tooltip = null;
-  var tooltipTimer = null;
-
-  function buildTooltip() {{
-    var el = document.createElement("div");
-    el.className = "preview-tooltip";
-    document.body.appendChild(el);
-    return el;
-  }}
-
-  function escapeText(s) {{
-    return String(s || "").replace(/[&<>"']/g, function (ch) {{
-      return {{"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}}[ch];
-    }});
-  }}
-
-  function showTooltip(card) {{
-    if (!tooltip) tooltip = buildTooltip();
-    var summary = card.querySelector(".card-summary");
-    var text = summary ? summary.textContent.trim() : "";
-    if (text.length < 120) return;
-
-    var name = card.querySelector(".card-name");
-    var role = card.querySelector(".card-role");
-    var title = card.querySelector(".card-title");
-
-    var html = "";
-    if (name) html += '<div style="font-weight:600;font-size:13px;margin-bottom:2px">' + escapeText(name.textContent) + '</div>';
-    if (role) html += '<div style="font-size:11px;color:var(--ink-3);font-family:var(--mono);margin-bottom:8px">' + escapeText(role.textContent) + '</div>';
-    if (title) html += '<div style="font-weight:600;font-size:14px;margin-bottom:8px">' + escapeText(title.textContent) + '</div>';
-    html += '<div style="color:var(--ink-2);line-height:1.6;font-size:13px">' + escapeText(text) + '</div>';
-    tooltip.innerHTML = html;
-
-    var cr = card.getBoundingClientRect();
-    var tw = 360, gap = 14, left, top;
-    if (cr.right + gap + tw < window.innerWidth - 8) {{
-      left = cr.right + gap;
-    }} else {{
-      left = cr.left - gap - tw;
-    }}
-    if (left < 8) left = 8;
-    top = Math.max(8, cr.top);
-    if (top + 200 > window.innerHeight) top = Math.max(8, window.innerHeight - 220);
-
-    tooltip.style.left = left + "px";
-    tooltip.style.top = top + "px";
-    tooltip.classList.add("show");
-  }}
-
-  function hideTooltip() {{
-    if (tooltip) tooltip.classList.remove("show");
-  }}
-
-  document.addEventListener("mouseover", function (e) {{
-    var card = e.target.closest(".card");
-    if (!card) {{ clearTimeout(tooltipTimer); hideTooltip(); return; }}
-    clearTimeout(tooltipTimer);
-    tooltipTimer = setTimeout(function () {{ showTooltip(card); }}, 300);
-  }});
 }})();
 </script>
 {CLIENT_JS if interactive else ''}
