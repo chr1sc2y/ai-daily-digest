@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-24T22:58:59.400256+00:00",
+  "counts": {
+    "x": 8,
+    "blogs": 2,
+    "podcasts": 0,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "https://t.co/nanG49969k",
+        "summary": "https://t.co/nanG49969k",
+        "link": "https://x.com/rauchg/status/2058655347255165126",
+        "author": "rauchg",
+        "published": "2026-05-24T21:04:17+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "BJJ is the peak athletic pursuit. Nothing I’ve tried comes close. Join the cult",
+        "summary": "BJJ is the peak athletic pursuit. Nothing I’ve tried comes close. Join the cult",
+        "link": "https://x.com/rauchg/status/2058628992631193657",
+        "author": "rauchg",
+        "published": "2026-05-24T19:19:33+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "Restore Britain",
+        "summary": "Restore Britain",
+        "link": "https://x.com/elonmusk/status/2058610237603508522",
+        "author": "elonmusk",
+        "published": "2026-05-24T18:05:02+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "\"I've raised a $2M seed round, but I'm not going to hire anybody for a while.\n\nAs a startup founder, you want to underst",
+        "summary": "\"I've raised a $2M seed round, but I'm not going to hire anybody for a while.\n\nAs a startup founder, you want to understand every job and do it and feel the pain before you hire.\n\nThe reality is that an agent is alot faster to onboard and they retain all the training so you can improve it over time.\"\n\n📌 Watch Ryan talk more about how he onboards AI agents here: https://t.co/FXCjrzrFRO",
+        "link": "https://x.com/petergyang/status/2058609058714968194",
+        "author": "petergyang",
+        "published": "2026-05-24T18:00:21+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Fate loves irony, but despises hypocrisy",
+        "summary": "Fate loves irony, but despises hypocrisy",
+        "link": "https://x.com/elonmusk/status/2058601623572578781",
+        "author": "elonmusk",
+        "published": "2026-05-24T17:30:48+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "self improvement prompt for codex",
+        "summary": "self improvement prompt for codex",
+        "link": "https://x.com/gdb/status/2058598608224858442",
+        "author": "gdb",
+        "published": "2026-05-24T17:18:49+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "If you read my essay After Automation this is the interview where I make practical predictions about what it means for y",
+        "summary": "If you read my essay After Automation this is the interview where I make practical predictions about what it means for your work:",
+        "link": "https://x.com/danshipper/status/2058592843707396250",
+        "author": "danshipper",
+        "published": "2026-05-24T16:55:55+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "CEOs are uniquely prone to AI psychosis because they’re sufficiently distant from the last mile of work that still has t",
+        "summary": "CEOs are uniquely prone to AI psychosis because they’re sufficiently distant from the last mile of work that still has to happen to generate most value with AI.\n\nSo when they play with AI, they see the happy path results, often not considering the next 10 or 20 things that have to happen to get sustainable results from agents. \n\n“Look I made this awesome product prototype”. Yes but you didn’t have to review the code before it went into production and fix a bunch of issues.\n\n“Look I generated a contract”. Yes but you didn’t verify all the terms before it goes out to the counterparty and didn’t have to wire up all the past contracts to work with.\n\nThe best thing you can do as a CEO is to use AI a *ton* to figure out the real implications of agents in the enterprise, and come out the other side with an appreciation for both the upside and the real work that goes into them.",
+        "link": "https://x.com/levie/status/2058582370253701432",
+        "author": "levie",
+        "published": "2026-05-24T16:14:18+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "Quoting Armin Ronacher",
+        "summary": "<blockquote cite=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\"><p>The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]</p>\n<p>So at least personally, I increasingly want issue reports to be condensed to what the human actually observed:</p>\n<ol>\n<li>I ran this command.</li>\n<li>I expected this to happen.</li>\n<li>This happened instead.</li>\n<li>Here is the exact error or log.</li>\n</ol></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\">Armin Ronacher</a>, on slop issues filed against <a href=\"https://pi.dev/\">Pi</a></p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/github-issues\">github-issues</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/ai-ethics\">ai-ethics</a>, <a href=\"https://simonwillison.net/tags/open-source\">open-source</a>, <a href=\"https://simonwillison.net/tags/coding-agents\">coding-agents</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/armin-ronacher\">armin-ronacher</a>, <a href=\"https://simonwillison.net/tags/pi\">pi</a>, <a href=\"https://simonwillison.net/tags/slop\">slop</a></p>",
+        "link": "https://simonwillison.net/2026/May/24/armin-ronacher/",
+        "author": "",
+        "keywords": "ai github-issues llms ai-ethics open-source coding-agents generative-ai armin-ronacher pi slop",
+        "published": "2026-05-24T18:46:53+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "Mad House — Usborne Creepy Computer Games",
+        "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/usborne-mad-house\">Mad House — Usborne Creepy Computer Games</a></p>\n        <p>Via <a href=\"https://news.ycombinator.com/item?id=48258194\">Hacker News</a> I learned that UK publisher Usborne published <a href=\"https://usborne.com/us/books/computer-and-coding-books\">free PDFs of their 1980s Computer Books</a>, some of which I remember working through on my Commodore 64 as a child.</p>\n<p>These were so great! Beautifully illustrated books with fun projects made up of code you could type into your own machine.</p>\n<p>I remember playing \"Mad House\" typed in from the 1983 book \"Creepy Computer Games\", so I fed that PDF <a href=\"https://claude.ai/share/7b4a5617-f586-4744-b082-1650cab607cb\">into Claude</a> and had it build an interactive version of that game in JavaScript and HTML:</p>\n<blockquote>\n<p><code>Build a vanilla JS artifact that exactly recreates the game Mad House from this book, make sure it's mobile friendly and has a suitable retro aesthetic</code></p>\n<p><code>Credit the book title and link to https://usborne.com/us/books/computer-and-coding-books</code></p>\n</blockquote>\n<p><img alt=\"Screenshot of a retro green-on-black terminal-style game interface titled &quot;MAD HOUSE — A REAL NIGHTMARE —&quot; with a REC indicator, FOOTSTEPS 240, DOORS counter, three rows of ASCII corridors made of asterisks with &quot;&gt;&quot; and &quot;&lt;&quot; door markers, &quot;PRESS START TO BEGIN&quot; text, NEAR DOOR controls (X and C) and FAR DOOR controls (N and M), and a &quot;▶ START / RESTART&quot; button at the bottom.\" src=\"https://static.simonwillison.net/static/2026/mad-house.jpg\" /></p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/computer-history\">computer-history</a>, <a href=\"https://simonwillison.net/tags/games\">games</a>, <a href=\"https://simonwillison.net/tags/tools\">tools</a></p>",
+        "link": "https://simonwillison.net/2026/May/24/usborne-mad-house/",
+        "author": "",
+        "keywords": "computer-history games tools",
+        "published": "2026-05-24T17:14:11+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "Dwarkesh Patel Learns Go",
+        "summary": "Full episode: https://www.youtube.com/watch?v=X_ZVSPcZhtw\nMe on twitter: https://x.com/dwarkesh_sp",
+        "link": "https://www.youtube.com/watch?v=xoLxmsiJl9c",
+        "author": "Dwarkesh Clips",
+        "keywords": "",
+        "published": "2026-05-24T19:09:02+00:00",
+        "kind": "video",
+        "source_name": "Dwarkesh Patel",
+        "source_handle": "Dwarkesh Patel",
+        "source_role": "Channel · Dwarkesh Patel"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-24T16:00:00+00:00",
+    "end": "2026-05-24T22:00:00+00:00"
+  }
+}
