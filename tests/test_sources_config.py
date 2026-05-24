@@ -57,6 +57,14 @@ def test_no_duplicate_handles_or_rss():
     assert len(all_rss) == len(set(all_rss)), "duplicate RSS URL across feeds"
 
 
+def test_x_curation_includes_developer_signal_and_prunes_known_noise():
+    data = _load()
+    handles = {u["handle"].lower() for u in data["x_users"]}
+    assert "thsottiaux" in handles
+    assert "garrytan" not in handles
+    assert "mattturck" not in handles
+
+
 def test_youtube_feeds_use_channel_id_format():
     data = _load()
     for entry in data["youtube"]:

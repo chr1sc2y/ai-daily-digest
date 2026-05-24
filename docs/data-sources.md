@@ -21,6 +21,12 @@ What we fetch, where it lives, and how stable it is.
 The configured handles live in [`config/sources.json`](../config/sources.json)
 under `x_users[]`.
 
+Curation policy: X should favor first-person builders, researchers, and
+developer-tool makers whose informal posts still carry product or technical
+signal. Broad celebrity, investor, or general executive accounts are pruned
+when they repeatedly add unrelated chatter; company announcements should
+primarily come through official blogs, YouTube channels, and RSS feeds.
+
 ## Blogs
 
 Plain RSS / Atom feeds. Currently:

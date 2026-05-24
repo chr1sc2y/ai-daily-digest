@@ -5,6 +5,7 @@
   },
   "x_users": [
     { "name": "Andrej Karpathy",     "handle": "karpathy",       "role": "Eureka Labs / ex-OpenAI, Tesla" },
+    { "name": "Tibo",                "handle": "thsottiaux",     "role": "Codex, OpenAI" },
     { "name": "Swyx",                "handle": "swyx",           "role": "Smol AI / Latent Space" },
     { "name": "Josh Woodward",       "handle": "joshwoodward",   "role": "VP, Google Labs" },
     { "name": "Kevin Weil",          "handle": "kevinweil",      "role": "Chief Product Officer, OpenAI" },
@@ -20,10 +21,7 @@
     { "name": "Alex Albert",         "handle": "alexalbert__",   "role": "Head of Claude Relations, Anthropic" },
     { "name": "Aaron Levie",         "handle": "levie",          "role": "CEO, Box" },
     { "name": "Ryo Lu",              "handle": "ryolu_",         "role": "Head of Design, Cursor" },
-    { "name": "Garry Tan",           "handle": "garrytan",       "role": "CEO, Y Combinator" },
-    { "name": "Matt Turck",          "handle": "mattturck",      "role": "Managing Director, FirstMark" },
     { "name": "Zara Zhang",          "handle": "zarazhang",      "role": "Investor / writer" },
-    { "name": "Nikunj Kothari",      "handle": "nikunjk",        "role": "Investor, Khosla Ventures" },
     { "name": "Peter Steinberger",   "handle": "steipete",       "role": "Indie hacker, ex-PSPDFKit" },
     { "name": "Dan Shipper",         "handle": "danshipper",     "role": "CEO, Every" },
     { "name": "Aditya Agarwal",      "handle": "adityaag",       "role": "Partner, South Park Commons" },
