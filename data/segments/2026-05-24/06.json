@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-24T07:21:38.024059+00:00",
+  "counts": {
+    "x": 6,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "under appreciated that codex is open source",
+        "summary": "under appreciated that codex is open source",
+        "link": "https://x.com/gdb/status/2058381548383096994",
+        "author": "gdb",
+        "published": "2026-05-24T02:56:18+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "I always wanted a GitHub dashboard: See my repos, open Issues/PRs, what version I released last, how many commits since ",
+        "summary": "I always wanted a GitHub dashboard: See my repos, open Issues/PRs, what version I released last, how many commits since last release.\n\nSo I built one for everyone.\nhttps://t.co/GWCP5wcrDQ https://t.co/DRvjenlVMi",
+        "link": "https://x.com/steipete/status/2058381186884411473",
+        "author": "steipete",
+        "published": "2026-05-24T02:54:52+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Processed 1400 replies\n◾ OpenAI is catching up to Anthropic \n◾ 'Codex' got more mentions than 'Claude Code'\n◾ However, b",
+        "summary": "Processed 1400 replies\n◾ OpenAI is catching up to Anthropic \n◾ 'Codex' got more mentions than 'Claude Code'\n◾ However, by model mentions, A\\ is mogging https://t.co/BjtqVGmlUg",
+        "link": "https://x.com/rauchg/status/2058353051073970416",
+        "author": "rauchg",
+        "published": "2026-05-24T01:03:04+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "Real-time video of Starship from Starlink",
+        "summary": "Real-time video of Starship from Starlink",
+        "link": "https://x.com/elonmusk/status/2058341400039530636",
+        "author": "elonmusk",
+        "published": "2026-05-24T00:16:46+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "codex... made a smiley? :) https://t.co/UJc4X4A8q1",
+        "summary": "codex... made a smiley? :) https://t.co/UJc4X4A8q1",
+        "link": "https://x.com/steipete/status/2058332234247987379",
+        "author": "steipete",
+        "published": "2026-05-23T23:40:21+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Should we bring batch compute to codex? Aka /slow mode",
+        "summary": "Should we bring batch compute to codex? Aka /slow mode",
+        "link": "https://x.com/thsottiaux/status/2058320061258236263",
+        "author": "thsottiaux",
+        "published": "2026-05-23T22:51:58+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-23T22:00:00+00:00",
+    "end": "2026-05-24T04:00:00+00:00"
+  }
+}
