@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-25T23:03:25.766595+00:00",
+  "counts": {
+    "x": 14,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "What used to feel like procrastination (building systems instead of the MVP) is now a prerequisite to ship effectively w",
+        "summary": "What used to feel like procrastination (building systems instead of the MVP) is now a prerequisite to ship effectively with AI agents.\n\nMy number 1 lesson from @ryancarson:\n\n\"We used to say just do the bare minimum to get the MVP out. Don't spend time on systems. It's literally reversed now.\n\nYou have to spend a lot of time setting up your documentation. Build all that into a cron job with a skill file, and suddenly you're doing the work of 10 people.\"\n\n📌 I asked Ryan how he ships 10 PRs a day, here's his answer: https://t.co/8jMGNSdHmu",
+        "link": "https://x.com/petergyang/status/2059029752858775581",
+        "author": "petergyang",
+        "published": "2026-05-25T21:52:02+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Very grateful to @david__booth for inviting me to Tahoe.\n\nGot to meet @nateliason in person, see how @clairevo teaches h",
+        "summary": "Very grateful to @david__booth for inviting me to Tahoe.\n\nGot to meet @nateliason in person, see how @clairevo teaches her kids, and just meet a great group of folks. \n\nGot a nice kayaking trip in too with my daughter. https://t.co/LA97vxiE0Y",
+        "link": "https://x.com/petergyang/status/2059026107069010083",
+        "author": "petergyang",
+        "published": "2026-05-25T21:37:33+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "The CEO of Goldman Sachs is taking the other side on the pessimistic takes on AI and jobs. \n\nIf you looked at what work ",
+        "summary": "The CEO of Goldman Sachs is taking the other side on the pessimistic takes on AI and jobs. \n\nIf you looked at what work looked like a few decades ago and saw how much faster everything is or easier it is to produce the same thing as before - even before AI - you’d certainly have been convinced there’d be no jobs left.\n\nWhat happens is we constantly just demand more from everything. Instead of automating a task and delivering the same value proposition, but cheaper, we just expect more from the overall product or service. Because some players in the market decides to do more with the automation, and it raises everyone’s expectations. So those that don’t respond can’t compete.\n\nWe get more financial analysis from analysts. We get much more comprehensive legal advice. We get more tailored financial services offerings. We get better software in niches we never thought we could automate. Our healthcare providers offer more tests and deeper medical advice. This just goes on and on.\n\nWhen you move from believing the world is static and you’ll have a better view of how jobs evolve due to AI.",
+        "link": "https://x.com/levie/status/2059025559896883489",
+        "author": "levie",
+        "published": "2026-05-25T21:35:22+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      },
+      {
+        "kind": "x",
+        "title": "Starlink now in Kyrgyz Republic! 🇰🇬",
+        "summary": "Starlink now in Kyrgyz Republic! 🇰🇬",
+        "link": "https://x.com/elonmusk/status/2059023760510828816",
+        "author": "elonmusk",
+        "published": "2026-05-25T21:28:13+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Grok Build is still in beta for another month or so, but is already quite useful for production tasks",
+        "summary": "Grok Build is still in beta for another month or so, but is already quite useful for production tasks",
+        "link": "https://x.com/elonmusk/status/2059016015644614797",
+        "author": "elonmusk",
+        "published": "2026-05-25T20:57:27+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Good counterpoint from inside @every to After Automation:",
+        "summary": "Good counterpoint from inside @every to After Automation:",
+        "link": "https://x.com/danshipper/status/2059014616059879501",
+        "author": "danshipper",
+        "published": "2026-05-25T20:51:53+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Memorial Day. Today we honor those who gave everything to defend our democracy. Democracy isn't guaranteed; it's a preci",
+        "summary": "Memorial Day. Today we honor those who gave everything to defend our democracy. Democracy isn't guaranteed; it's a precious inheritance that requires our constant care. 🇺🇸",
+        "link": "https://x.com/AndrewYNg/status/2059006941012295935",
+        "author": "AndrewYNg",
+        "published": "2026-05-25T20:21:23+00:00",
+        "source_name": "Andrew Ng",
+        "source_role": "Founder, DeepLearning.AI / Landing AI",
+        "source_handle": "AndrewYNg"
+      },
+      {
+        "kind": "x",
+        "title": "True",
+        "summary": "True",
+        "link": "https://x.com/elonmusk/status/2059002579707654199",
+        "author": "elonmusk",
+        "published": "2026-05-25T20:04:04+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "This trend will continue for many years",
+        "summary": "This trend will continue for many years",
+        "link": "https://x.com/elonmusk/status/2059002244305973472",
+        "author": "elonmusk",
+        "published": "2026-05-25T20:02:44+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "I haven't written a personal blog post in over 5 years so if you see posts that claim to be written by me, they're not. ",
+        "summary": "I haven't written a personal blog post in over 5 years so if you see posts that claim to be written by me, they're not. I'll update if this ever changes. Maybe it should.",
+        "link": "https://x.com/AmandaAskell/status/2058994218484338726",
+        "author": "AmandaAskell",
+        "published": "2026-05-25T19:30:50+00:00",
+        "source_name": "Amanda Askell",
+        "source_role": "Philosopher, Anthropic",
+        "source_handle": "AmandaAskell"
+      },
+      {
+        "kind": "x",
+        "title": "Anthropic co-founder Chris Olah was invited to speak at today's presentation of Pope Leo XIV's encyclical \"Magnifica hum",
+        "summary": "Anthropic co-founder Chris Olah was invited to speak at today's presentation of Pope Leo XIV's encyclical \"Magnifica humanitas.\"\n\nRead the full text of his remarks: https://t.co/CoBfkVOVcy",
+        "link": "https://x.com/AnthropicAI/status/2058983299092009421",
+        "author": "AnthropicAI",
+        "published": "2026-05-25T18:47:27+00:00",
+        "source_name": "Anthropic",
+        "source_role": "Anthropic (official)",
+        "source_handle": "AnthropicAI"
+      },
+      {
+        "kind": "x",
+        "title": "Thinking of AI as a productivity booster for prior workflows is the wrong framing. Like all of the previous waves of com",
+        "summary": "Thinking of AI as a productivity booster for prior workflows is the wrong framing. Like all of the previous waves of computerization/softwarization, AI is a tool that lets you do new things in new ways.",
+        "link": "https://x.com/fchollet/status/2058982905368773040",
+        "author": "fchollet",
+        "published": "2026-05-25T18:45:53+00:00",
+        "source_name": "François Chollet",
+        "source_role": "Creator of Keras / ARC Prize",
+        "source_handle": "fchollet"
+      },
+      {
+        "kind": "x",
+        "title": "Grok Build is now available in Beta for all SuperGrok and X Premium+ users.\n\nUse Plan Mode, create images and videos wit",
+        "summary": "Grok Build is now available in Beta for all SuperGrok and X Premium+ users.\n\nUse Plan Mode, create images and videos with Imagine, and build automations or orchestrators with the CLI.\n\nVisit https://t.co/bpTHpjivWD to get started. https://t.co/OZ0kjtkpUf",
+        "link": "https://x.com/xai/status/2058973760708091907",
+        "author": "xai",
+        "published": "2026-05-25T18:09:33+00:00",
+        "source_name": "xAI",
+        "source_role": "xAI (official)",
+        "source_handle": "xai"
+      },
+      {
+        "kind": "x",
+        "title": "\"Humanity, created by God in all its grandeur is today facing a pivotal choice: either to construct a new Tower of Babel",
+        "summary": "\"Humanity, created by God in all its grandeur is today facing a pivotal choice: either to construct a new Tower of Babel or to build the city in which God and humanity dwell together.\"\n\nThe Pope has obviously been reading @every from 2024: https://t.co/TxmwICvJ77",
+        "link": "https://x.com/danshipper/status/2058962119287038145",
+        "author": "danshipper",
+        "published": "2026-05-25T17:23:17+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "DeepMind’s Insane AI Breakthroughs With CEO Demis Hassabis",
+        "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nOur Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, Benji Rabhan, B Shang, Cameron Navor, Charles Ian Norman Venn, Christian Ahlin, Eric T, Fred R, Gordon Child, Juan Benet, Michael Tedder, Owen Skarpness, Richard Sundvall, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi\n \nMy research: https://cg.tuwien.ac.at/~zsolnai/\nThumbnail design: https://felicia.hu",
+        "link": "https://www.youtube.com/watch?v=huAwz_BR8WM",
+        "author": "Two Minute Papers",
+        "keywords": "",
+        "published": "2026-05-25T17:49:30+00:00",
+        "kind": "video",
+        "source_name": "Two Minute Papers",
+        "source_handle": "Two Minute Papers",
+        "source_role": "Channel · Two Minute Papers"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-25T16:00:00+00:00",
+    "end": "2026-05-25T22:00:00+00:00"
+  }
+}
