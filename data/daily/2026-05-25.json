@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-25",
+  "generated_at": "2026-05-25T17:44:23.700783+00:00",
+  "source_segments": [
+    "segments/2026-05-25/00.json",
+    "segments/2026-05-25/06.json",
+    "segments/2026-05-25/12.json",
+    "segments/2026-05-25/18.json"
+  ],
+  "counts": {
+    "x": 30,
+    "blogs": 4,
+    "podcasts": 0,
+    "videos": 2
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "OpenClaw's dependency purge continues. Killed Sharp and Jimp. Replaced it with photon, a small WebAssembly that runs com",
+        "summary": "OpenClaw's dependency purge continues. Killed Sharp and Jimp. Replaced it with photon, a small WebAssembly that runs compiled Rust for image processing. 2MB vs 140MB. https://t.co/tSimX2GKwP",
+        "link": "https://x.com/steipete/status/2058922222790525272",
+        "author": "steipete",
+        "published": "2026-05-25T14:44:45+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Folks: when you write skills, ask your agent to be token efficient, relax grammer. I see too many skills that write book",
+        "summary": "Folks: when you write skills, ask your agent to be token efficient, relax grammer. I see too many skills that write books in the skill description, and all that crap is loaded into every context.\n\nI wrote a skill that finds the worst offenders. https://t.co/kfaaJpxMXE",
+        "link": "https://x.com/steipete/status/2058917897590673525",
+        "author": "steipete",
+        "published": "2026-05-25T14:27:34+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Terrible",
+        "summary": "Terrible",
+        "link": "https://x.com/elonmusk/status/2058913184036065600",
+        "author": "elonmusk",
+        "published": "2026-05-25T14:08:50+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Only Restore Britain can save Britain",
+        "summary": "Only Restore Britain can save Britain",
+        "link": "https://x.com/elonmusk/status/2058912384756920696",
+        "author": "elonmusk",
+        "published": "2026-05-25T14:05:39+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "There's security, and there's clankers.",
+        "summary": "There's security, and there's clankers.",
+        "link": "https://x.com/steipete/status/2058884046940225918",
+        "author": "steipete",
+        "published": "2026-05-25T12:13:03+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "New pet peeve: cli's that install new skills onto my system without asking.",
+        "summary": "New pet peeve: cli's that install new skills onto my system without asking.",
+        "link": "https://x.com/steipete/status/2058883349632934149",
+        "author": "steipete",
+        "published": "2026-05-25T12:10:17+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "💯",
+        "summary": "💯",
+        "link": "https://x.com/elonmusk/status/2058790017313415380",
+        "author": "elonmusk",
+        "published": "2026-05-25T05:59:25+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Yup",
+        "summary": "Yup",
+        "link": "https://x.com/elonmusk/status/2058788547834851830",
+        "author": "elonmusk",
+        "published": "2026-05-25T05:53:34+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Yes",
+        "summary": "Yes",
+        "link": "https://x.com/elonmusk/status/2058788221895442461",
+        "author": "elonmusk",
+        "published": "2026-05-25T05:52:17+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Definitely not",
+        "summary": "Definitely not",
+        "link": "https://x.com/elonmusk/status/2058788162487386413",
+        "author": "elonmusk",
+        "published": "2026-05-25T05:52:03+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Grok foundation model V9-Medium (1.5T) has finished training. Evals look good. A lot of Cursor data was added in supplem",
+        "summary": "Grok foundation model V9-Medium (1.5T) has finished training. Evals look good. A lot of Cursor data was added in supplementary training and there is more to come.\n\nFine-tuning is underway and reinforcement learning begins in a few days. 2 to 3 weeks to public release. \n\nThis will be a major improvement over the 0.5T v8-small that currently serves all Grok production traffic, especially for difficult coding tasks.",
+        "link": "https://x.com/elonmusk/status/2058787384364265734",
+        "author": "elonmusk",
+        "published": "2026-05-25T05:48:57+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "How do you build a great brand? Build a great product",
+        "summary": "How do you build a great brand? Build a great product",
+        "link": "https://x.com/rauchg/status/2058750970998505505",
+        "author": "rauchg",
+        "published": "2026-05-25T03:24:15+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "GPT-5.5 Pro for fact checking:",
+        "summary": "GPT-5.5 Pro for fact checking:",
+        "link": "https://x.com/gdb/status/2058750645394649410",
+        "author": "gdb",
+        "published": "2026-05-25T03:22:58+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "Using computer use, you can ask codex to cancel subscriptions you don't need anymore. Very pleasant to watch. No particu",
+        "summary": "Using computer use, you can ask codex to cancel subscriptions you don't need anymore. Very pleasant to watch. No particular one in mind, works on all of them.\n\nhttps://t.co/Q2mNyiCPba",
+        "link": "https://x.com/thsottiaux/status/2058748717155664162",
+        "author": "thsottiaux",
+        "published": "2026-05-25T03:15:18+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      },
+      {
+        "kind": "x",
+        "title": "The 400’s in Rome were brutal",
+        "summary": "The 400’s in Rome were brutal",
+        "link": "https://x.com/elonmusk/status/2058747872619761795",
+        "author": "elonmusk",
+        "published": "2026-05-25T03:11:57+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Product &gt;&gt; Brand",
+        "summary": "Product &gt;&gt; Brand",
+        "link": "https://x.com/elonmusk/status/2058732108948848957",
+        "author": "elonmusk",
+        "published": "2026-05-25T02:09:18+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Fantastic breakdown of After Automation in today’s AI Daily Brief\n\nThanks for such a thoughtful episode @nlw! https://t.",
+        "summary": "Fantastic breakdown of After Automation in today’s AI Daily Brief\n\nThanks for such a thoughtful episode @nlw! https://t.co/YXefJrdTu0",
+        "link": "https://x.com/danshipper/status/2058723492355252490",
+        "author": "danshipper",
+        "published": "2026-05-25T01:35:04+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Grok Build improving every day, 7 days a week",
+        "summary": "Grok Build improving every day, 7 days a week",
+        "link": "https://x.com/elonmusk/status/2058710684066521323",
+        "author": "elonmusk",
+        "published": "2026-05-25T00:44:10+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "True",
+        "summary": "True",
+        "link": "https://x.com/elonmusk/status/2058710409813651756",
+        "author": "elonmusk",
+        "published": "2026-05-25T00:43:05+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "wdyt? what is @every?",
+        "summary": "wdyt? what is @every?",
+        "link": "https://x.com/danshipper/status/2058682096432861371",
+        "author": "danshipper",
+        "published": "2026-05-24T22:50:34+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/R5YLI3ybBh",
+        "summary": "https://t.co/R5YLI3ybBh",
+        "link": "https://x.com/ylecun/status/2058676921110589664",
+        "author": "ylecun",
+        "published": "2026-05-24T22:30:01+00:00",
+        "source_name": "Yann LeCun",
+        "source_role": "Chief AI Scientist, Meta",
+        "source_handle": "ylecun"
+      },
+      {
+        "kind": "x",
+        "title": "i have arrived https://t.co/Hkj9VX6aUH",
+        "summary": "i have arrived https://t.co/Hkj9VX6aUH",
+        "link": "https://x.com/danshipper/status/2058672883296014524",
+        "author": "danshipper",
+        "published": "2026-05-24T22:13:58+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "https://t.co/nanG49969k",
+        "summary": "https://t.co/nanG49969k",
+        "link": "https://x.com/rauchg/status/2058655347255165126",
+        "author": "rauchg",
+        "published": "2026-05-24T21:04:17+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "BJJ is the peak athletic pursuit. Nothing I’ve tried comes close. Join the cult",
+        "summary": "BJJ is the peak athletic pursuit. Nothing I’ve tried comes close. Join the cult",
+        "link": "https://x.com/rauchg/status/2058628992631193657",
+        "author": "rauchg",
+        "published": "2026-05-24T19:19:33+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "Restore Britain",
+        "summary": "Restore Britain",
+        "link": "https://x.com/elonmusk/status/2058610237603508522",
+        "author": "elonmusk",
+        "published": "2026-05-24T18:05:02+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "\"I've raised a $2M seed round, but I'm not going to hire anybody for a while.\n\nAs a startup founder, you want to underst",
+        "summary": "\"I've raised a $2M seed round, but I'm not going to hire anybody for a while.\n\nAs a startup founder, you want to understand every job and do it and feel the pain before you hire.\n\nThe reality is that an agent is alot faster to onboard and they retain all the training so you can improve it over time.\"\n\n📌 Watch Ryan talk more about how he onboards AI agents here: https://t.co/FXCjrzrFRO",
+        "link": "https://x.com/petergyang/status/2058609058714968194",
+        "author": "petergyang",
+        "published": "2026-05-24T18:00:21+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Fate loves irony, but despises hypocrisy",
+        "summary": "Fate loves irony, but despises hypocrisy",
+        "link": "https://x.com/elonmusk/status/2058601623572578781",
+        "author": "elonmusk",
+        "published": "2026-05-24T17:30:48+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "self improvement prompt for codex",
+        "summary": "self improvement prompt for codex",
+        "link": "https://x.com/gdb/status/2058598608224858442",
+        "author": "gdb",
+        "published": "2026-05-24T17:18:49+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "If you read my essay After Automation this is the interview where I make practical predictions about what it means for y",
+        "summary": "If you read my essay After Automation this is the interview where I make practical predictions about what it means for your work:",
+        "link": "https://x.com/danshipper/status/2058592843707396250",
+        "author": "danshipper",
+        "published": "2026-05-24T16:55:55+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "CEOs are uniquely prone to AI psychosis because they’re sufficiently distant from the last mile of work that still has t",
+        "summary": "CEOs are uniquely prone to AI psychosis because they’re sufficiently distant from the last mile of work that still has to happen to generate most value with AI.\n\nSo when they play with AI, they see the happy path results, often not considering the next 10 or 20 things that have to happen to get sustainable results from agents. \n\n“Look I made this awesome product prototype”. Yes but you didn’t have to review the code before it went into production and fix a bunch of issues.\n\n“Look I generated a contract”. Yes but you didn’t verify all the terms before it goes out to the counterparty and didn’t have to wire up all the past contracts to work with.\n\nThe best thing you can do as a CEO is to use AI a *ton* to figure out the real implications of agents in the enterprise, and come out the other side with an appreciation for both the upside and the real work that goes into them.",
+        "link": "https://x.com/levie/status/2058582370253701432",
+        "author": "levie",
+        "published": "2026-05-24T16:14:18+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "datasette 1.0a30",
+        "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a30\">datasette 1.0a30</a></p>\n        <p>The big new feature in this alpha is a new customizable \"Jump to...\" menu, described in detail in <a href=\"https://datasette.io/blog/2026/jump-menu/\">The extensible \"Jump to\" menu in Datasette 1.0a30</a> on the Datasette blog. You can try it out by hitting <code>/</code> on <a href=\"https://latest.datasette.io/\">latest.datasette.io</a> - it looks like this:</p>\n<p><img alt=\"Animated demo - the Jump to menu appears, and as the user types it filters to specific databases and tables and debug options\" src=\"https://static.simonwillison.net/static/2026/menu.gif\" /></p>\n<p>The new <a href=\"https://docs.datasette.io/en/latest/plugin_hooks.html#jump-items-sql-datasette-actor-request\">jump_items_sql()</a> plugin hook allows plugins to add their own items to the set that's searched by the plugin.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/projects\">projects</a>, <a href=\"https://simonwillison.net/tags/datasette\">datasette</a>, <a href=\"https://simonwillison.net/tags/annotated-release-notes\">annotated-release-notes</a></p>",
+        "link": "https://simonwillison.net/2026/May/24/datasette/",
+        "author": "",
+        "keywords": "projects datasette annotated-release-notes",
+        "published": "2026-05-24T23:52:37+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "datasette-agent 0.1a4",
+        "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.1a4\">datasette-agent 0.1a4</a></p>\n        <p>Taking advantage of the new <a href=\"https://docs.datasette.io/en/latest/javascript_plugins.html#javascript-plugins-makejumpsections\">makeJumpSections()</a> JavaScript plugin hook added in <a href=\"https://docs.datasette.io/en/latest/changelog.html#a30-2026-05-24\">Datasette 1.0a30</a>, <code>datasette-agent</code> now presents this \"Start a new agent chat\" interface as part of the Jump to menu, any time you hit <code>/</code>:</p>\n<p><img alt=\"Animated demo - this time the demo starts on agent.datasette.io and when the menu opens it has a new Start chat box below the search box - entering 'count entries' and hitting the button causes it to start an agent conversation that counts the number of entries and returns 3300.\" src=\"https://static.simonwillison.net/static/2026/menu-agent.gif\" /></p>\n<p>You can try this out by signing into <a href=\"https://agent.datasette.io/\">agent.datasette.io</a> using your GitHub account.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/datasette\">datasette</a>, <a href=\"https://simonwillison.net/tags/datasette-agent\">datasette-agent</a></p>",
+        "link": "https://simonwillison.net/2026/May/24/datasette-agent/",
+        "author": "",
+        "keywords": "datasette datasette-agent",
+        "published": "2026-05-24T23:19:34+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "Quoting Armin Ronacher",
+        "summary": "<blockquote cite=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\"><p>The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]</p>\n<p>So at least personally, I increasingly want issue reports to be condensed to what the human actually observed:</p>\n<ol>\n<li>I ran this command.</li>\n<li>I expected this to happen.</li>\n<li>This happened instead.</li>\n<li>Here is the exact error or log.</li>\n</ol></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\">Armin Ronacher</a>, on slop issues filed against <a href=\"https://pi.dev/\">Pi</a></p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/github-issues\">github-issues</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/ai-ethics\">ai-ethics</a>, <a href=\"https://simonwillison.net/tags/open-source\">open-source</a>, <a href=\"https://simonwillison.net/tags/coding-agents\">coding-agents</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/armin-ronacher\">armin-ronacher</a>, <a href=\"https://simonwillison.net/tags/pi\">pi</a>, <a href=\"https://simonwillison.net/tags/slop\">slop</a></p>",
+        "link": "https://simonwillison.net/2026/May/24/armin-ronacher/",
+        "author": "",
+        "keywords": "ai github-issues llms ai-ethics open-source coding-agents generative-ai armin-ronacher pi slop",
+        "published": "2026-05-24T18:46:53+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "Mad House — Usborne Creepy Computer Games",
+        "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/usborne-mad-house\">Mad House — Usborne Creepy Computer Games</a></p>\n        <p>Via <a href=\"https://news.ycombinator.com/item?id=48258194\">Hacker News</a> I learned that UK publisher Usborne published <a href=\"https://usborne.com/us/books/computer-and-coding-books\">free PDFs of their 1980s Computer Books</a>, some of which I remember working through on my Commodore 64 as a child.</p>\n<p>These were so great! Beautifully illustrated books with fun projects made up of code you could type into your own machine.</p>\n<p>I remember playing \"Mad House\" typed in from the 1983 book \"Creepy Computer Games\", so I fed that PDF <a href=\"https://claude.ai/share/7b4a5617-f586-4744-b082-1650cab607cb\">into Claude</a> and had it build an interactive version of that game in JavaScript and HTML:</p>\n<blockquote>\n<p><code>Build a vanilla JS artifact that exactly recreates the game Mad House from this book, make sure it's mobile friendly and has a suitable retro aesthetic</code></p>\n<p><code>Credit the book title and link to https://usborne.com/us/books/computer-and-coding-books</code></p>\n</blockquote>\n<p><img alt=\"Screenshot of a retro green-on-black terminal-style game interface titled &quot;MAD HOUSE — A REAL NIGHTMARE —&quot; with a REC indicator, FOOTSTEPS 240, DOORS counter, three rows of ASCII corridors made of asterisks with &quot;&gt;&quot; and &quot;&lt;&quot; door markers, &quot;PRESS START TO BEGIN&quot; text, NEAR DOOR controls (X and C) and FAR DOOR controls (N and M), and a &quot;▶ START / RESTART&quot; button at the bottom.\" src=\"https://static.simonwillison.net/static/2026/mad-house.jpg\" /></p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/computer-history\">computer-history</a>, <a href=\"https://simonwillison.net/tags/games\">games</a>, <a href=\"https://simonwillison.net/tags/tools\">tools</a></p>",
+        "link": "https://simonwillison.net/2026/May/24/usborne-mad-house/",
+        "author": "",
+        "keywords": "computer-history games tools",
+        "published": "2026-05-24T17:14:11+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "How Did Italy Cope With the Fall of Rome? – Ada Palmer",
+        "summary": "Full episode: https://youtu.be/PAIhVfGbREA\nMe on x: https://x.com/dwarkesh_sp\n\nRenaissance historian Ada Palmer explains why Italy – the richest region in Europe – never unified, how the Pope had the money and armies to conquer Italy but couldn't consolidate, and why Machiavelli believed regime change always costs more lives than tyranny.",
+        "link": "https://www.youtube.com/watch?v=Tg2Yx5rEO3M",
+        "author": "Dwarkesh Clips",
+        "keywords": "",
+        "published": "2026-05-25T14:07:10+00:00",
+        "kind": "video",
+        "source_name": "Dwarkesh Patel",
+        "source_handle": "Dwarkesh Patel",
+        "source_role": "Channel · Dwarkesh Patel"
+      },
+      {
+        "title": "Dwarkesh Patel Learns Go",
+        "summary": "Full episode: https://www.youtube.com/watch?v=X_ZVSPcZhtw\nMe on twitter: https://x.com/dwarkesh_sp",
+        "link": "https://www.youtube.com/watch?v=xoLxmsiJl9c",
+        "author": "Dwarkesh Clips",
+        "keywords": "",
+        "published": "2026-05-24T19:09:02+00:00",
+        "kind": "video",
+        "source_name": "Dwarkesh Patel",
+        "source_handle": "Dwarkesh Patel",
+        "source_role": "Channel · Dwarkesh Patel"
+      }
+    ]
+  }
+}
