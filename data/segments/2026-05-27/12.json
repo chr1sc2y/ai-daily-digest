@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-27T12:53:26.045674+00:00",
+  "counts": {
+    "x": 6,
+    "blogs": 1,
+    "podcasts": 0,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "Wise words",
+        "summary": "Wise words",
+        "link": "https://x.com/elonmusk/status/2059574258981036175",
+        "author": "elonmusk",
+        "published": "2026-05-27T09:55:43+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Thank Heaven for the First Amendment in America!",
+        "summary": "Thank Heaven for the First Amendment in America!",
+        "link": "https://x.com/elonmusk/status/2059573467792748842",
+        "author": "elonmusk",
+        "published": "2026-05-27T09:52:34+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "true but changing fast",
+        "summary": "true but changing fast",
+        "link": "https://x.com/gdb/status/2059566028166934585",
+        "author": "gdb",
+        "published": "2026-05-27T09:23:00+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "codex is great for any kind of work done with a computer:",
+        "summary": "codex is great for any kind of work done with a computer:",
+        "link": "https://x.com/gdb/status/2059519197562929416",
+        "author": "gdb",
+        "published": "2026-05-27T06:16:55+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "Honored to receive a medal from his Majesty King Abdullah II for Distinction on Jordan’s 80th Independence Day.\n\nIt’s be",
+        "summary": "Honored to receive a medal from his Majesty King Abdullah II for Distinction on Jordan’s 80th Independence Day.\n\nIt’s been an incredibly journey building @Replit, starting from Jordan more than 15 years ago, and then helping accelerate the field of agentic AI globally. https://t.co/BKE14jsaRe",
+        "link": "https://x.com/amasad/status/2059518682825392525",
+        "author": "amasad",
+        "published": "2026-05-27T06:14:52+00:00",
+        "source_name": "Amjad Masad",
+        "source_role": "CEO, Replit",
+        "source_handle": "amasad"
+      },
+      {
+        "kind": "x",
+        "title": "🛫",
+        "summary": "🛫",
+        "link": "https://x.com/sama/status/2059492605634007125",
+        "author": "sama",
+        "published": "2026-05-27T04:31:15+00:00",
+        "source_name": "Sam Altman",
+        "source_role": "CEO, OpenAI",
+        "source_handle": "sama"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "Quoting Kyle Ferrana",
+        "summary": "<blockquote cite=\"https://twitter.com/kyletrainemoji/status/2059301102814953511\"><p>PICARD: Data, shields up</p>\n<p>DATA: Brilliant! Shields can reduce damage we sustain. Not immunity. Not hubris. Just prudence. It's not precaution—it's strategy.</p>\n<p>[camera shakes]</p>\n<p>WORF: HULL BREACHES ON NINE DECKS</p>\n<p>DATA: Here's what happened: you told me to raise shields, and I didn't</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://twitter.com/kyletrainemoji/status/2059301102814953511\">Kyle Ferrana</a>, @KyleTrainEmoji</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai-misuse\">ai-misuse</a>, <a href=\"https://simonwillison.net/tags/coding-agents\">coding-agents</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a></p>",
+        "link": "https://simonwillison.net/2026/May/27/kyle-ferrana/",
+        "author": "",
+        "keywords": "ai-misuse coding-agents ai llms",
+        "published": "2026-05-27T06:41:43+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "How Transformers.js Works: AI Models in JavaScript, Explained",
+        "summary": "00:00 Intro\n01:16 Machine Learning\n03:11 ONNX\n04:04 Quantization\n05:15 The core Library\n06:56 Pipeline API\n10:26 Pipe\n13:06 Wrap-up\n\nTransformers.js brings state-of-the-art machine learning to JavaScriprt.\n\nIn this intro, I explain the mental model behind Transformers.js: tensors, neural networks, ONNX, quantization, model loading, preprocessing, postprocessing, and the pipeline() API.\n\nWe also look at what happens under the hood for text-generation and depth-estimation, and why one high-level API can support many different AI tasks.\n\nLinks:\n\nFull documentation:\nhttps://huggingface.co/docs/transformers.js/index\n\nGitHub:\nhttps://github.com/huggingface/transformers.js\n\nDemos in this video:\nhttps://huggingface.co/spaces/webml-community/GPT-OSS-WebGPU\nhttps://huggingface.co/spaces/webml-community/whisper-large-v3-turbo-webgpu\nhttps://huggingface.co/spaces/webml-community/remove-background-webgpu",
+        "link": "https://www.youtube.com/watch?v=A_6UOxQSvvY",
+        "author": "Hugging Face",
+        "keywords": "",
+        "published": "2026-05-27T08:26:22+00:00",
+        "kind": "video",
+        "source_name": "Hugging Face",
+        "source_handle": "Hugging Face",
+        "source_role": "Channel · Hugging Face"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-27T04:00:00+00:00",
+    "end": "2026-05-27T10:00:00+00:00"
+  }
+}
