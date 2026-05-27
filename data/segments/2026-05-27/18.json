@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-27T18:26:58.217103+00:00",
+  "counts": {
+    "x": 11,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "A top feature request is rolling out in @NotebookLM: Google Drive files will now automatically sync! 🔄\n\nWe're actively r",
+        "summary": "A top feature request is rolling out in @NotebookLM: Google Drive files will now automatically sync! 🔄\n\nWe're actively rolling this out, starting with 10% today and ramping up soon. https://t.co/0wq1DW21xI",
+        "link": "https://x.com/joshwoodward/status/2059665697618493706",
+        "author": "joshwoodward",
+        "published": "2026-05-27T15:59:03+00:00",
+        "source_name": "Josh Woodward",
+        "source_role": "VP, Google Labs",
+        "source_handle": "joshwoodward"
+      },
+      {
+        "kind": "x",
+        "title": "New in the Claude Marketplace: @augmentcode, @boltdotnew, @coderabbitai, @hebbia, and @WeAreLegora.\n\nApply your existing",
+        "summary": "New in the Claude Marketplace: @augmentcode, @boltdotnew, @coderabbitai, @hebbia, and @WeAreLegora.\n\nApply your existing Anthropic spend commitment toward their Claude-powered products.\n\nLearn more: https://t.co/J3Sdsg2lU6 https://t.co/gN0npDM468",
+        "link": "https://x.com/claudeai/status/2059662933924123044",
+        "author": "claudeai",
+        "published": "2026-05-27T15:48:04+00:00",
+        "source_name": "Claude",
+        "source_role": "Anthropic's Claude",
+        "source_handle": "claudeai"
+      },
+      {
+        "kind": "x",
+        "title": "Codex for transcribing and answering questions about a meeting in real time:",
+        "summary": "Codex for transcribing and answering questions about a meeting in real time:",
+        "link": "https://x.com/gdb/status/2059662726256075023",
+        "author": "gdb",
+        "published": "2026-05-27T15:47:15+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "Team is investigating elevated latencies across the board for API and ChatGPT. Updates will be posted on https://t.co/R3",
+        "summary": "Team is investigating elevated latencies across the board for API and ChatGPT. Updates will be posted on https://t.co/R3dCKGH1G4",
+        "link": "https://x.com/thsottiaux/status/2059651958710120733",
+        "author": "thsottiaux",
+        "published": "2026-05-27T15:04:28+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      },
+      {
+        "kind": "x",
+        "title": "To simplify our Codex compute fleet management, we will be sunsetting GPT-5.2 and GPT-5.3-Codex in Codex on June 2nd whe",
+        "summary": "To simplify our Codex compute fleet management, we will be sunsetting GPT-5.2 and GPT-5.3-Codex in Codex on June 2nd when logged in with your ChatGPT account.\n\nFor free plans, GPT-5.5 will be the default frontier model to build and work with going forward.\n\nThese models will remain available on our API.",
+        "link": "https://x.com/thsottiaux/status/2059650685948551384",
+        "author": "thsottiaux",
+        "published": "2026-05-27T14:59:24+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      },
+      {
+        "kind": "x",
+        "title": "I got tired of making PowerPoint slides so I built an AI skill to do it for me.\n\nHere's my new tutorial on how to build ",
+        "summary": "I got tired of making PowerPoint slides so I built an AI skill to do it for me.\n\nHere's my new tutorial on how to build a /slides skill that turns a rough outline into a beautiful HTML deck in minutes.\n\nI walk through how to:\n\n→ Use 12 slide formats and 3 templates\n→ Add live charts and subtle animations\n→ Get AI to screenshot each slide and fix layout issues itself\n\n📌 Watch now: https://t.co/qFN6mhiQ82",
+        "link": "https://x.com/petergyang/status/2059642246614647259",
+        "author": "petergyang",
+        "published": "2026-05-27T14:25:52+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Every time GitHub has an outage our team is paged. Incidents at Vercel get automatically filed by anomaly detection syst",
+        "summary": "Every time GitHub has an outage our team is paged. Incidents at Vercel get automatically filed by anomaly detection systems.\n\nWe just detected an outage 16 minutes before their status page changed. Deployments suddenly dipped and surged.\n\nDespite all the chatter about coding AGI, the reality is that software infrastructure remains an extremely hard problem.\n\nI have no doubt the GitHub team is highly competent, and there's no shortage of models and agents available to them. Don't forget this is the company that brought us Copilot, the first major breakthrough product in AI coding. Yet clearly the prompt \"/goal scale GitHub, make everything extremely fast, make no mistakes\" is not enough.\n\nThe hard parts of software remain very hard, especially under unprecedented demand, as more people join in on the fun of building new things.",
+        "link": "https://x.com/rauchg/status/2059612940307714540",
+        "author": "rauchg",
+        "published": "2026-05-27T12:29:25+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "high overlap between people who believe benchmarks show we’re close to automating all jobs, and people who think shrimp ",
+        "summary": "high overlap between people who believe benchmarks show we’re close to automating all jobs, and people who think shrimp welfare is the most effective form of charitable giving because the thinking error is the same",
+        "link": "https://x.com/danshipper/status/2059605933068554614",
+        "author": "danshipper",
+        "published": "2026-05-27T12:01:34+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Track day. https://t.co/fxB7ZxakkK",
+        "summary": "Track day. https://t.co/fxB7ZxakkK",
+        "link": "https://x.com/amasad/status/2059601288157901078",
+        "author": "amasad",
+        "published": "2026-05-27T11:43:07+00:00",
+        "source_name": "Amjad Masad",
+        "source_role": "CEO, Replit",
+        "source_handle": "amasad"
+      },
+      {
+        "kind": "x",
+        "title": "gm https://t.co/FzYDDaeBV7",
+        "summary": "gm https://t.co/FzYDDaeBV7",
+        "link": "https://x.com/rauchg/status/2059597719321121275",
+        "author": "rauchg",
+        "published": "2026-05-27T11:28:56+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "Prices are critical information without an economy cannot function",
+        "summary": "Prices are critical information without an economy cannot function",
+        "link": "https://x.com/elonmusk/status/2059576661562257627",
+        "author": "elonmusk",
+        "published": "2026-05-27T10:05:15+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-27T10:00:00+00:00",
+    "end": "2026-05-27T16:00:00+00:00"
+  }
+}
