@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-30T17:05:54.840631+00:00",
+  "counts": {
+    "x": 2,
+    "blogs": 0,
+    "podcasts": 0,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "Release the body camera videos",
+        "summary": "Release the body camera videos",
+        "link": "https://x.com/elonmusk/status/2060749428483334465",
+        "author": "elonmusk",
+        "published": "2026-05-30T15:45:25+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "The end will begin when humanity turns away from humanity",
+        "summary": "The end will begin when humanity turns away from humanity",
+        "link": "https://x.com/fchollet/status/2060695962600009969",
+        "author": "fchollet",
+        "published": "2026-05-30T12:12:58+00:00",
+        "source_name": "François Chollet",
+        "source_role": "Creator of Keras / ARC Prize",
+        "source_handle": "fchollet"
+      }
+    ],
+    "blogs": [],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "Terence Tao on How AI Is Changing Mathematics",
+        "summary": "Fields Medal recipient Terence Tao explains how AI is changing the way mathematicians work, making it easier to experiment, explore new ideas, and collaborate on difficult problems.\nThe video also features OpenAI Chief Research Officer Mark Chen, who discusses OpenAI's broader goal of building tools that help scientists and researchers achieve breakthroughs at scale.\nTogether, they explore how AI can expand what's possible in mathematics and science while preserving the creativity, curiosity, and discovery that drive human progress.\nTerence Tao was interviewed at an OpenAI Forum event held in partnership with IPAM (the Institute for Pure and Applied Mathematics) in March 2026.",
+        "link": "https://www.youtube.com/watch?v=cdflu9ZXZGE",
+        "author": "OpenAI",
+        "keywords": "",
+        "published": "2026-05-30T13:19:23+00:00",
+        "kind": "video",
+        "source_name": "OpenAI",
+        "source_handle": "OpenAI",
+        "source_role": "Channel · OpenAI"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-30T10:00:00+00:00",
+    "end": "2026-05-30T16:00:00+00:00"
+  }
+}
