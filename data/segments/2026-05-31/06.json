@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-31T07:46:56.036484+00:00",
+  "counts": {
+    "x": 8,
+    "blogs": 1,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "Basically the ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the",
+        "summary": "Basically the ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the same time",
+        "link": "https://x.com/petergyang/status/2060930599565811774",
+        "author": "petergyang",
+        "published": "2026-05-31T03:45:19+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "My guess is:\n- OpenAI Codex dank memes\n- Anthropic essays",
+        "summary": "My guess is:\n- OpenAI Codex dank memes\n- Anthropic essays",
+        "link": "https://x.com/petergyang/status/2060930334620053998",
+        "author": "petergyang",
+        "published": "2026-05-31T03:44:16+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Just spent an hour with daughter learning CS 101 from @brilliantorg \n\nShe doesn’t want to give up until she beats Joyce ",
+        "summary": "Just spent an hour with daughter learning CS 101 from @brilliantorg \n\nShe doesn’t want to give up until she beats Joyce B 🔥 https://t.co/Eq3kNxXsGn",
+        "link": "https://x.com/petergyang/status/2060928818383355907",
+        "author": "petergyang",
+        "published": "2026-05-31T03:38:15+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Again, maybe counterintuitive, but in the majority of conversations I have with CIOs, CTOs, and CEOs in large enterprise",
+        "summary": "Again, maybe counterintuitive, but in the majority of conversations I have with CIOs, CTOs, and CEOs in large enterprises, they are either growing due to AI (in new job functions like FDEs, engineering, etc.) or at a minimum reinvesting efficiency savings back into the business in new areas (sales, marketing, etc.).\n\nDavid Solomon, CEO of Goldman Sachs, articulated this perfectly in a NYTimes OpEd last week. The AI boom is both creating all new jobs in the build out of AI systems and the implementation across sectors, but also freeing up dollars to invest in areas that have been underfunded or have more demand now because of AI. \n\nMost businesses have been constrained by how much software they can produce at a given cost, how many sales reps they can hire, how many marketing campaigns they can run, how they can do outbound customer success motions with enough tailoring, how they can find more risk in their business and prevent it, and 100s of other things. \n\nWhen AI makes it possible to do more of this, investment goes back into the business. The companies that better serve their customers win over the long run, and those that just try and find savings end up doing worse.",
+        "link": "https://x.com/levie/status/2060923684295221390",
+        "author": "levie",
+        "published": "2026-05-31T03:17:51+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      },
+      {
+        "kind": "x",
+        "title": "Pretty good progress",
+        "summary": "Pretty good progress",
+        "link": "https://x.com/elonmusk/status/2060913698147823751",
+        "author": "elonmusk",
+        "published": "2026-05-31T02:38:10+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Problems in Paris https://t.co/KOU8r5UF4S",
+        "summary": "Problems in Paris https://t.co/KOU8r5UF4S",
+        "link": "https://x.com/elonmusk/status/2060913203542913258",
+        "author": "elonmusk",
+        "published": "2026-05-31T02:36:12+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "How can you have a cute name like Corgi and then make people work 997 🥹",
+        "summary": "How can you have a cute name like Corgi and then make people work 997 🥹",
+        "link": "https://x.com/petergyang/status/2060872433641693562",
+        "author": "petergyang",
+        "published": "2026-05-30T23:54:11+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "business insider 2013 vs. 2026 https://t.co/DVCelvXlgK",
+        "summary": "business insider 2013 vs. 2026 https://t.co/DVCelvXlgK",
+        "link": "https://x.com/danshipper/status/2060861670184870225",
+        "author": "danshipper",
+        "published": "2026-05-30T23:11:25+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "Quoting Karen Kwok for Reuters Breakingviews",
+        "summary": "<blockquote cite=\"https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/\"><p>Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/\">Karen Kwok for Reuters Breakingviews</a>, citing \"a person familiar with the matter\"</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a></p>",
+        "link": "https://simonwillison.net/2026/May/31/anthropic-run-rate/",
+        "author": "",
+        "keywords": "anthropic ai",
+        "published": "2026-05-31T01:48:12+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": []
+  },
+  "window": {
+    "start": "2026-05-30T22:00:00+00:00",
+    "end": "2026-05-31T04:00:00+00:00"
+  }
+}
