@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-31",
+  "generated_at": "2026-05-31T17:06:41.427148+00:00",
+  "source_segments": [
+    "segments/2026-05-31/00.json",
+    "segments/2026-05-31/06.json",
+    "segments/2026-05-31/12.json",
+    "segments/2026-05-31/18.json"
+  ],
+  "counts": {
+    "x": 30,
+    "blogs": 5,
+    "podcasts": 0,
+    "videos": 0
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "Haven't seen codex writing ad-hoc codemods before, but it just did for a bigger TypeScript migration. Impressed.",
+        "summary": "Haven't seen codex writing ad-hoc codemods before, but it just did for a bigger TypeScript migration. Impressed.",
+        "link": "https://x.com/steipete/status/2061115471760441692",
+        "author": "steipete",
+        "published": "2026-05-31T15:59:56+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Worth watching",
+        "summary": "Worth watching",
+        "link": "https://x.com/elonmusk/status/2061115160413045126",
+        "author": "elonmusk",
+        "published": "2026-05-31T15:58:42+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Interesting",
+        "summary": "Interesting",
+        "link": "https://x.com/elonmusk/status/2061110383931191343",
+        "author": "elonmusk",
+        "published": "2026-05-31T15:39:43+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "The Codex usage limits have been reset for all paid ChatGPT subscriptions. You should be back to 100% weekly and 100% ho",
+        "summary": "The Codex usage limits have been reset for all paid ChatGPT subscriptions. You should be back to 100% weekly and 100% hourly limits.\n\nLet the tokens do incredible things today and have fun.",
+        "link": "https://x.com/thsottiaux/status/2061106703446450392",
+        "author": "thsottiaux",
+        "published": "2026-05-31T15:25:06+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      },
+      {
+        "kind": "x",
+        "title": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+        "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+        "link": "https://x.com/sama/status/2061101875303530871",
+        "author": "sama",
+        "published": "2026-05-31T15:05:55+00:00",
+        "source_name": "Sam Altman",
+        "source_role": "CEO, OpenAI",
+        "source_handle": "sama"
+      },
+      {
+        "kind": "x",
+        "title": "\"It's terrifying launching something. I've launched 100s of products, and every time it's like...what if zero people car",
+        "summary": "\"It's terrifying launching something. I've launched 100s of products, and every time it's like...what if zero people care?\"\n\nHere's my new episode with @Shpigford, a solo builder who sold Baremetrics for $4M and is now building 5 products at the same time with AI agents.\n\nWe covered the AI skills that he uses to ship:\n\n✅ /build skill to research, plan, track, and build new features\n\n✅ /adversarial-code-review skill to have GPT review Claude's work\n\n✅ /but-for-real skill to get AI to fix its own mistakes\n\n...and more.\n\nSome quotes from Josh:\n\n\"The idea of spending months working on something before you put it out for other people to use, I think that's a really bad idea.\"\n\n\"I'm textbook ADHD. My brain naturally is just ping-ponging all over the place. Now I can feed the beast a little bit more.\"\n\n\"My advice is to just fail a lot, because the only way that you'll ever figure out what not to do is by doing the thing incorrectly.\"\n\n📌 Watch now: https://t.co/9brwr7daw8\n\nThanks to our sponsors:\n\n@WisprFlow: Don't type, just speak https://t.co/oqHJ8bN3ll\n\n@linear: The AI agent platform for modern teams https://t.co/yFylGfkenJ",
+        "link": "https://x.com/petergyang/status/2061092939233980762",
+        "author": "petergyang",
+        "published": "2026-05-31T14:30:24+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "The idea of OpenClaw is always that it should be yours. \n\nIt's modular and lean, only add what you need. Fewer skills, f",
+        "summary": "The idea of OpenClaw is always that it should be yours. \n\nIt's modular and lean, only add what you need. Fewer skills, fewer tools = your agent can work more efficiently.",
+        "link": "https://x.com/steipete/status/2061072753998856696",
+        "author": "steipete",
+        "published": "2026-05-31T13:10:12+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "Finally got my visa sorted out and moving to San Francisco, just in time for MS Build and OpenClaw’s after hours! https:",
+        "summary": "Finally got my visa sorted out and moving to San Francisco, just in time for MS Build and OpenClaw’s after hours! https://t.co/agbyZ79kb1",
+        "link": "https://x.com/steipete/status/2061031509088231640",
+        "author": "steipete",
+        "published": "2026-05-31T10:26:18+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "codex computer use is viscerally compelling",
+        "summary": "codex computer use is viscerally compelling",
+        "link": "https://x.com/gdb/status/2060978248792907818",
+        "author": "gdb",
+        "published": "2026-05-31T06:54:40+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "Try the audiobook of Suicidal Empathy https://t.co/Tl8cL5iU6J",
+        "summary": "Try the audiobook of Suicidal Empathy https://t.co/Tl8cL5iU6J",
+        "link": "https://x.com/elonmusk/status/2060976208502812816",
+        "author": "elonmusk",
+        "published": "2026-05-31T06:46:33+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Release the footage, you evil bastards! https://t.co/NiijaBi7dL",
+        "summary": "Release the footage, you evil bastards! https://t.co/NiijaBi7dL",
+        "link": "https://x.com/elonmusk/status/2060968536630038908",
+        "author": "elonmusk",
+        "published": "2026-05-31T06:16:04+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+        "summary": "Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+        "link": "https://x.com/thsottiaux/status/2060964284117782996",
+        "author": "thsottiaux",
+        "published": "2026-05-31T05:59:10+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      },
+      {
+        "kind": "x",
+        "title": "What’s something we haven’t fixed in codex for a while and that’s plain annoying?",
+        "summary": "What’s something we haven’t fixed in codex for a while and that’s plain annoying?",
+        "link": "https://x.com/thsottiaux/status/2060960564676034726",
+        "author": "thsottiaux",
+        "published": "2026-05-31T05:44:24+00:00",
+        "source_name": "Tibo",
+        "source_role": "Codex, OpenAI",
+        "source_handle": "thsottiaux"
+      },
+      {
+        "kind": "x",
+        "title": "GPT Realtime 2 unlocks some real magic:",
+        "summary": "GPT Realtime 2 unlocks some real magic:",
+        "link": "https://x.com/gdb/status/2060955146952077653",
+        "author": "gdb",
+        "published": "2026-05-31T05:22:52+00:00",
+        "source_name": "Greg Brockman",
+        "source_role": "President, OpenAI",
+        "source_handle": "gdb"
+      },
+      {
+        "kind": "x",
+        "title": "Basically the ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the",
+        "summary": "Basically the ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the same time",
+        "link": "https://x.com/petergyang/status/2060930599565811774",
+        "author": "petergyang",
+        "published": "2026-05-31T03:45:19+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "My guess is:\n- OpenAI Codex dank memes\n- Anthropic essays",
+        "summary": "My guess is:\n- OpenAI Codex dank memes\n- Anthropic essays",
+        "link": "https://x.com/petergyang/status/2060930334620053998",
+        "author": "petergyang",
+        "published": "2026-05-31T03:44:16+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Just spent an hour with daughter learning CS 101 from @brilliantorg \n\nShe doesn’t want to give up until she beats Joyce ",
+        "summary": "Just spent an hour with daughter learning CS 101 from @brilliantorg \n\nShe doesn’t want to give up until she beats Joyce B 🔥 https://t.co/Eq3kNxXsGn",
+        "link": "https://x.com/petergyang/status/2060928818383355907",
+        "author": "petergyang",
+        "published": "2026-05-31T03:38:15+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Again, maybe counterintuitive, but in the majority of conversations I have with CIOs, CTOs, and CEOs in large enterprise",
+        "summary": "Again, maybe counterintuitive, but in the majority of conversations I have with CIOs, CTOs, and CEOs in large enterprises, they are either growing due to AI (in new job functions like FDEs, engineering, etc.) or at a minimum reinvesting efficiency savings back into the business in new areas (sales, marketing, etc.).\n\nDavid Solomon, CEO of Goldman Sachs, articulated this perfectly in a NYTimes OpEd last week. The AI boom is both creating all new jobs in the build out of AI systems and the implementation across sectors, but also freeing up dollars to invest in areas that have been underfunded or have more demand now because of AI. \n\nMost businesses have been constrained by how much software they can produce at a given cost, how many sales reps they can hire, how many marketing campaigns they can run, how they can do outbound customer success motions with enough tailoring, how they can find more risk in their business and prevent it, and 100s of other things. \n\nWhen AI makes it possible to do more of this, investment goes back into the business. The companies that better serve their customers win over the long run, and those that just try and find savings end up doing worse.",
+        "link": "https://x.com/levie/status/2060923684295221390",
+        "author": "levie",
+        "published": "2026-05-31T03:17:51+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      },
+      {
+        "kind": "x",
+        "title": "Pretty good progress",
+        "summary": "Pretty good progress",
+        "link": "https://x.com/elonmusk/status/2060913698147823751",
+        "author": "elonmusk",
+        "published": "2026-05-31T02:38:10+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Problems in Paris https://t.co/KOU8r5UF4S",
+        "summary": "Problems in Paris https://t.co/KOU8r5UF4S",
+        "link": "https://x.com/elonmusk/status/2060913203542913258",
+        "author": "elonmusk",
+        "published": "2026-05-31T02:36:12+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "How can you have a cute name like Corgi and then make people work 997 🥹",
+        "summary": "How can you have a cute name like Corgi and then make people work 997 🥹",
+        "link": "https://x.com/petergyang/status/2060872433641693562",
+        "author": "petergyang",
+        "published": "2026-05-30T23:54:11+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "business insider 2013 vs. 2026 https://t.co/DVCelvXlgK",
+        "summary": "business insider 2013 vs. 2026 https://t.co/DVCelvXlgK",
+        "link": "https://x.com/danshipper/status/2060861670184870225",
+        "author": "danshipper",
+        "published": "2026-05-30T23:11:25+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "I'm such a huge fan of what @suekhim and the Brilliant team have built. \n\nWhen every kid in every country grows up with ",
+        "summary": "I'm such a huge fan of what @suekhim and the Brilliant team have built. \n\nWhen every kid in every country grows up with a 1:1 personalized AI tutor, we'll realize how much potential we really have.",
+        "link": "https://x.com/kevinweil/status/2060826960927015015",
+        "author": "kevinweil",
+        "published": "2026-05-30T20:53:30+00:00",
+        "source_name": "Kevin Weil",
+        "source_role": "Chief Product Officer, OpenAI",
+        "source_handle": "kevinweil"
+      },
+      {
+        "kind": "x",
+        "title": "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best.",
+        "summary": "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best.",
+        "link": "https://x.com/rauchg/status/2060803480823193840",
+        "author": "rauchg",
+        "published": "2026-05-30T19:20:12+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "Per-API Key spend caps on AI Gateway",
+        "summary": "Per-API Key spend caps on AI Gateway",
+        "link": "https://x.com/rauchg/status/2060787704166776927",
+        "author": "rauchg",
+        "published": "2026-05-30T18:17:30+00:00",
+        "source_name": "Guillermo Rauch",
+        "source_role": "CEO, Vercel",
+        "source_handle": "rauchg"
+      },
+      {
+        "kind": "x",
+        "title": "I'm going to run a half day session for some parents and very bright kids to onboard them to Hermes. What use cases shou",
+        "summary": "I'm going to run a half day session for some parents and very bright kids to onboard them to Hermes. What use cases should I cover? cc @NousResearch",
+        "link": "https://x.com/petergyang/status/2060772366742073840",
+        "author": "petergyang",
+        "published": "2026-05-30T17:16:34+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "38b tokens and a 56h longest task\n\n41 day current streak\n\nlfg codex https://t.co/FpIkhoyJTP",
+        "summary": "38b tokens and a 56h longest task\n\n41 day current streak\n\nlfg codex https://t.co/FpIkhoyJTP",
+        "link": "https://x.com/danshipper/status/2060771279280513362",
+        "author": "danshipper",
+        "published": "2026-05-30T17:12:14+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Haha these are my exact dance moves too\n\nThis man is the best asian dad billionaire",
+        "summary": "Haha these are my exact dance moves too\n\nThis man is the best asian dad billionaire",
+        "link": "https://x.com/petergyang/status/2060771146560315479",
+        "author": "petergyang",
+        "published": "2026-05-30T17:11:43+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "what i love about auto-review: Cursor explains the command and risk, makes it much easier for new coders to learn and ju",
+        "summary": "what i love about auto-review: Cursor explains the command and risk, makes it much easier for new coders to learn and just do things",
+        "link": "https://x.com/ryolu_/status/2060766674203353190",
+        "author": "ryolu_",
+        "published": "2026-05-30T16:53:56+00:00",
+        "source_name": "Ryo Lu",
+        "source_role": "Head of Design, Cursor",
+        "source_handle": "ryolu_"
+      },
+      {
+        "kind": "x",
+        "title": "It's interesting how the same model (Opus 4.8) can produce very different output whether you're using it via Claude Code",
+        "summary": "It's interesting how the same model (Opus 4.8) can produce very different output whether you're using it via Claude Code or regular Claude.\n\nI find the latter still better for writing tasks, probably because it has a default prompt that's not optimized for coding.",
+        "link": "https://x.com/petergyang/status/2060758437919879656",
+        "author": "petergyang",
+        "published": "2026-05-30T16:21:13+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "Quoting Karen Kwok for Reuters Breakingviews",
+        "summary": "<blockquote cite=\"https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/\"><p>Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/\">Karen Kwok for Reuters Breakingviews</a>, citing \"a person familiar with the matter\"</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a></p>",
+        "link": "https://simonwillison.net/2026/May/31/anthropic-run-rate/",
+        "author": "",
+        "keywords": "anthropic ai",
+        "published": "2026-05-31T01:48:12+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "How we contain Claude across products",
+        "summary": "<p><strong><a href=\"https://www.anthropic.com/engineering/how-we-contain-claude\">How we contain Claude across products</a></strong></p>\nA complaint I often have about sandboxing products is that they are rarely thoroughly <em>documented</em>, and in the absence of detailed documentation it's hard to know how much I can trust them.</p>\n<p>Anthropic just published a fantastic overview of how their various sandbox techniques work across <a href=\"https://claude.ai/\">Claude.ai</a>, Claude Code, and Cowork.</p>\n<blockquote>\n<p>We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. For example, if credentials never enter the sandbox, they can't be exfiltrated, regardless of whether the cause is a user, a model finding a “creative” path, or an attacker.</p>\n</blockquote>\n<p>Claude.ai uses gVisor. Claude Code, run locally, uses Seatbelt on macOS and Bubblewrap on Linux. Claude Cowork runs a full VM (Apple's Virtualization framework on macOS, HCS on Windows).</p>\n<p>There's a lot in here, including some interesting stories of risks they missed such as the <code>api.anthropic.com/v1/files</code> exfiltration vector <a href=\"https://simonwillison.net/2026/Jan/14/claude-cowork-exfiltrates-files/\">covered here previously</a>.</p>\n<p>This reminded me it's time I took another look at Anthropic's open source <a href=\"https://github.com/anthropic-experimental/sandbox-runtime\">srt (Anthropic Sandbox Runtime)</a> tool - it's mature enough know that I'm ready to give it a proper go.\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/sandboxing\">sandboxing</a>, <a href=\"https://simonwillison.net/tags/security\">security</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a>, <a href=\"https://simonwillison.net/tags/claude\">claude</a>, <a href=\"https://simonwillison.net/tags/claude-code\">claude-code</a></p>",
+        "link": "https://simonwillison.net/2026/May/30/how-we-contain-claude/",
+        "author": "",
+        "keywords": "sandboxing security ai generative-ai llms anthropic claude claude-code",
+        "published": "2026-05-30T21:36:24+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
+        "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/pyodide-asgi-browser#readme\">Running Python ASGI apps in the browser via Pyodide + a service worker</a></p>\n        <p><a href=\"https://lite.datasette.io/\">Datasette Lite</a> is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly.</p>\n<p>When I first built it <a href=\"https://simonwillison.net/2022/May/4/datasette-lite/\">four years ago</a> I used Web Workers and code that intercepts navigation operations and fetches the generated HTML by running the Python app.</p>\n<p>This worked, but had the disadvantage that any JavaScript in <code>&lt;script&gt;</code> tags would not be executed - breaking some Datasette functionality and a whole lot of Datasette plugins.</p>\n<p>This morning I <a href=\"https://github.com/simonw/research/pull/112\">set Claude Opus 4.8 the task</a> (in Claude Code for web) of figuring out how to run Python ASGI apps in Pyodide using Service Workers instead, and it seems to work! Here's a <a href=\"https://simonw.github.io/research/pyodide-asgi-browser/\">basic ASGI FastCGI demo</a> and here's <a href=\"https://simonw.github.io/research/pyodide-asgi-browser/datasette.html\">a demo that runs Datasette 1.0a31</a>.</p>\n<p>I'm still getting my head around exactly how it works, but once I've done that I plan to upgrade Datasette Lite itself.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/javascript\">javascript</a>, <a href=\"https://simonwillison.net/tags/python\">python</a>, <a href=\"https://simonwillison.net/tags/datasette\">datasette</a>, <a href=\"https://simonwillison.net/tags/asgi\">asgi</a>, <a href=\"https://simonwillison.net/tags/service-workers\">service-workers</a>, <a href=\"https://simonwillison.net/tags/pyodide\">pyodide</a>, <a href=\"https://simonwillison.net/tags/datasette-lite\">datasette-lite</a>, <a href=\"https://simonwillison.net/tags/claude-code\">claude-code</a></p>",
+        "link": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/",
+        "author": "",
+        "keywords": "javascript python datasette asgi service-workers pyodide datasette-lite claude-code",
+        "published": "2026-05-30T21:02:16+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "I Am Retiring from Tech to Live Offline",
+        "summary": "<p><strong><a href=\"https://openpath.quest/2026/i-am-retiring-from-tech-to-live-offline/\">I Am Retiring from Tech to Live Offline</a></strong></p>\nI've seen a lot of posts on forums from people threatening to quit their careers over AI. This is <em>not</em> one of those: Chad Whitacre is taking concrete steps, starting with this typewritten, scanned letter</p>\n<blockquote>\n<p>I'm retiring from tech. Well, \"retiring\" is euphemistic. I'm stepping away from tech, and that includes Open Source. [...]</p>\n<p>AI was the last straw. Have you heard of that island off India where the indigenous population kills any outsiders fool-hardy enough to land? They are doing the rest of us a favor by preserving a way of life we may need again someday, or at the very least should not want to see completely extinguished. A reminder. Never forget your roots. Here in Pennsylvania we have the Amish performing a similar function. Significantly less hostile, though still set apart, they bear witness to what was normal for all of us a couple short centuries ago: horse and buggy, wood stoves and lanterns. My intent is to be AI Amish, which means Internet Amish. Not 1780, but 1980. Neo-Amish. I'm fine driving a car and flipping a lightswitch, by which I mean that they don't make me into something I hate, which AI and [struck through: social media] [handwritten above: doomscrolling] do.</p>\n</blockquote>\n<p>I'll admit that at first I wasn't entirely sure if this was serious. Then I found this earlier post by Chad from Feb 19 2026, <a href=\"https://openpath.quest/2026/spitting-out-the-agentic-kool-aid/\">Spitting Out the Agentic Kool-Aid</a>:</p>\n<blockquote>\n<p>I figured I’d better taste the Kool-Aid in order to form an opinion, so I dove into Claude Code with Opus 4.5 on a side project. I spent three 12+ hour days with it. I was intoxicated. My family was weirded out. [...]</p>\n<p>It weirded me out too, when I unplugged for a long weekend. Something felt off. It was like I had another “person” in my head, sharing my inner monologue—but the “person” was a computer system owned by a budding megacorp.</p>\n<p>[...] I am now also committing myself to disembarking from the titantic of technological accelerationism.</p>\n<p>All efforts to address the problems of invasive technology are worthwhile, even those that are only partially effective. For my part, I have started trying to return more fully to a pre-screen, analog life.</p>\n</blockquote>\n<p>It's accompanied by <a href=\"https://www.youtube.com/watch?v=DCC76jmmzkc\">a video version of the essay</a> which I found touching and sincere.</p>\n<p>Chad has been trying to solve the open source sustainability problem <a href=\"https://simonwillison.net/2024/Jan/23/the-open-source-sustainability-crisis/\">for <em>years</em></a> - I talked with him about this at PyCon 2025 in Cleveland. That's a very tough nut to crack, and the disruption caused by AI looks to be making it even harder.</p>\n<p>I'm glad that the <a href=\"https://endowment.dev/\">Open Source\nEndowment</a> will continue without him. I'm very much going to miss his online voice.\n\n    <p><small></small>Via <a href=\"https://news.ycombinator.com/item?id=48323683\">Hacker News</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/open-source\">open-source</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/chad-whitacre\">chad-whitacre</a>, <a href=\"https://simonwillison.net/tags/ai-ethics\">ai-ethics</a>, <a href=\"https://simonwillison.net/tags/deep-blue\">deep-blue</a></p>",
+        "link": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/",
+        "author": "",
+        "keywords": "open-source ai generative-ai llms chad-whitacre ai-ethics deep-blue",
+        "published": "2026-05-30T19:39:08+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      },
+      {
+        "title": "Quoting Daniel Jalkut",
+        "summary": "<blockquote cite=\"https://mastodon.social/@danielpunkass/116639318125898071\"><p>My take on AI is, essentially, everybody who’s against it is too against it and everybody who’s for it is too for it.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://mastodon.social/@danielpunkass/116639318125898071\">Daniel Jalkut</a>, via <a href=\"https://daringfireball.net/linked/2026/05/30/jalkut-on-ai\">John Gruber</a></p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/john-gruber\">john-gruber</a></p>",
+        "link": "https://simonwillison.net/2026/May/30/daniel-jalkut/",
+        "author": "",
+        "keywords": "ai john-gruber",
+        "published": "2026-05-30T17:29:55+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": []
+  }
+}
