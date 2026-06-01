@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-01T09:27:08.099706+00:00",
+  "counts": {
+    "x": 12,
+    "blogs": 1,
+    "podcasts": 0,
+    "videos": 1
+  },
+  "items": {
+    "x": [
+      {
+        "kind": "x",
+        "title": "McDonald’s advertising on 𝕏",
+        "summary": "McDonald’s advertising on 𝕏",
+        "link": "https://x.com/elonmusk/status/2061288956910780577",
+        "author": "elonmusk",
+        "published": "2026-06-01T03:29:18+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Ok is there any difference between Codex automations and Claude Code routines? Which one is better? \n\nI want to consolid",
+        "summary": "Ok is there any difference between Codex automations and Claude Code routines? Which one is better? \n\nI want to consolidate all my cron jobs in one list.",
+        "link": "https://x.com/petergyang/status/2061277577785000203",
+        "author": "petergyang",
+        "published": "2026-06-01T02:44:05+00:00",
+        "source_name": "Peter Yang",
+        "source_role": "Product, Roblox / AI writer",
+        "source_handle": "petergyang"
+      },
+      {
+        "kind": "x",
+        "title": "Glad they’re ok",
+        "summary": "Glad they’re ok",
+        "link": "https://x.com/elonmusk/status/2061268418750476762",
+        "author": "elonmusk",
+        "published": "2026-06-01T02:07:42+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "Good point",
+        "summary": "Good point",
+        "link": "https://x.com/elonmusk/status/2061268036208971886",
+        "author": "elonmusk",
+        "published": "2026-06-01T02:06:10+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "just a small zoom out on the vibe shift:\n\nin Feb 2025 @soumithchintala was talking about his dream of personal, local, p",
+        "summary": "just a small zoom out on the vibe shift:\n\nin Feb 2025 @soumithchintala was talking about his dream of personal, local, private agents, most people didn't believe him.\n\nit's June 2026 and @pewdiepie has just released his vibecoded @opencode wrapper that is a complete personal AI productivity suite including email, docs, and calendar. top of HN, easily >1m views, >10k stars in a day.\n\nif your Knowledge Work Agents startup can't beat pewdiepie you might as well pack up and go home at this point, his is the benchmark for what you can DIY.",
+        "link": "https://x.com/swyx/status/2061256096719970337",
+        "author": "swyx",
+        "published": "2026-06-01T01:18:44+00:00",
+        "source_name": "Swyx",
+        "source_role": "Smol AI / Latent Space",
+        "source_handle": "swyx"
+      },
+      {
+        "kind": "x",
+        "title": "This is effectively the #1 problem for AI agents in the enterprise. \n\nAs we go from agentic coding (where a large amount",
+        "summary": "This is effectively the #1 problem for AI agents in the enterprise. \n\nAs we go from agentic coding (where a large amount of context is in the code base, and users are technical enough to get the rest to the agent easily) to a world of knowledge work agents, the context problem becomes much more acute.\n\nWe see this every day with customers at Box. For existing digital knowledge, it’s often fragmented across legacy systems or environments that don’t play nice with agents, and have access controls that don’t map to the real work that needs to be done, which become a huge hurdle for getting agents the context they need. This has to all get moved to modern, secure cloud environments.\n\nBut also, companies often haven’t captured and digitized some of the critical context that agents need to work with. Decisions, processes, and workflows often live in people’s heads and tribal knowledge that need to get turned into unstructured data for agents.\n\nThis is actually one of the biggest points of leverage for applied AI companies, because they can work to specialize in getting agents exactly the information and domain expertise they need. But it’s also one of the reasons why FDEs and new system integrator plays will also work so well right now. \n\nThe companies that figure this out will be able to get the most out of AI going forward.",
+        "link": "https://x.com/levie/status/2061247380897579500",
+        "author": "levie",
+        "published": "2026-06-01T00:44:06+00:00",
+        "source_name": "Aaron Levie",
+        "source_role": "CEO, Box",
+        "source_handle": "levie"
+      },
+      {
+        "kind": "x",
+        "title": "This is simply a fact",
+        "summary": "This is simply a fact",
+        "link": "https://x.com/elonmusk/status/2061235363222614263",
+        "author": "elonmusk",
+        "published": "2026-05-31T23:56:21+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "if you're comparing your startup to the manhattan project and you're not rocking this every day .... ngmi https://t.co/u",
+        "summary": "if you're comparing your startup to the manhattan project and you're not rocking this every day .... ngmi https://t.co/uv4VXrw8Db",
+        "link": "https://x.com/danshipper/status/2061234578610585677",
+        "author": "danshipper",
+        "published": "2026-05-31T23:53:14+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Try Tesla self-driving",
+        "summary": "Try Tesla self-driving",
+        "link": "https://x.com/elonmusk/status/2061221391937217011",
+        "author": "elonmusk",
+        "published": "2026-05-31T23:00:50+00:00",
+        "source_name": "Elon Musk",
+        "source_role": "CEO, Tesla / xAI",
+        "source_handle": "elonmusk"
+      },
+      {
+        "kind": "x",
+        "title": "this will happen with AI too in about a decade https://t.co/idtwKdvJ0T",
+        "summary": "this will happen with AI too in about a decade https://t.co/idtwKdvJ0T",
+        "link": "https://x.com/danshipper/status/2061216715262906449",
+        "author": "danshipper",
+        "published": "2026-05-31T22:42:15+00:00",
+        "source_name": "Dan Shipper",
+        "source_role": "CEO, Every",
+        "source_handle": "danshipper"
+      },
+      {
+        "kind": "x",
+        "title": "Been teaching codex to be my QA assistant. For every commit it creates a user-test scenario and uses webVNC (crabbox), c",
+        "summary": "Been teaching codex to be my QA assistant. For every commit it creates a user-test scenario and uses webVNC (crabbox), computer/browser use (peekaboo/mcporter) to test OpenClaw like a user/QA person would.\n\nThis runs in the background and opens PRs with fixes. https://t.co/xGcKgjyf7F",
+        "link": "https://x.com/steipete/status/2061208638027395490",
+        "author": "steipete",
+        "published": "2026-05-31T22:10:09+00:00",
+        "source_name": "Peter Steinberger",
+        "source_role": "Indie hacker, ex-PSPDFKit",
+        "source_handle": "steipete"
+      },
+      {
+        "kind": "x",
+        "title": "every evals/analytics startup is going through a onetime generational upgrade into a continual learning platform in 2026",
+        "summary": "every evals/analytics startup is going through a onetime generational upgrade into a continual learning platform in 2026\n\nmany will fail but as always the tasteful ones win",
+        "link": "https://x.com/swyx/status/2061206120233054327",
+        "author": "swyx",
+        "published": "2026-05-31T22:00:09+00:00",
+        "source_name": "Swyx",
+        "source_role": "Smol AI / Latent Space",
+        "source_handle": "swyx"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "datasette 1.0a32",
+        "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a32\">datasette 1.0a32</a></p>\n        <p>A minor bugfix release. Fixes a bug with <code>INSERT ... RETURNING</code> queries via the <a href=\"https://datasette.io/blog/2026/sql-write-queries/\">new /db/-/execute-write endpoint</a> and a bunch of <a href=\"https://docs.datasette.io/en/latest/settings.html#setting-base-url\">base_url</a> issues which showed up when I was <a href=\"https://simonwillison.net/2026/May/30/pyodide-asgi-browser/\">experimenting with Service Workers</a> yesterday.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/datasette\">datasette</a>, <a href=\"https://simonwillison.net/tags/annotated-release-notes\">annotated-release-notes</a></p>",
+        "link": "https://simonwillison.net/2026/May/31/datasette/",
+        "author": "",
+        "keywords": "datasette annotated-release-notes",
+        "published": "2026-05-31T23:23:38+00:00",
+        "kind": "blog",
+        "source_name": "Simon Willison",
+        "source_handle": "Simon Willison",
+        "source_role": "By Simon Willison"
+      }
+    ],
+    "podcasts": [],
+    "videos": [
+      {
+        "title": "Einstein vs Feynman,  Who Wins? 🧠🤔 #physics #ai #science #feynman #research",
+        "summary": "Check the pinned comment for the link to the full interview. In this quick clip, we explore which legendary scientist ranks higher among the experts. It's a fun debate that leads into an even bigger discussion about AI's role in future scientific breakthroughs. You won't want to miss the full deep dive with Demis Hassabis! ⚡️",
+        "link": "https://www.youtube.com/shorts/vsKH3oPwss4",
+        "author": "Two Minute Papers",
+        "keywords": "",
+        "published": "2026-06-01T00:16:21+00:00",
+        "kind": "video",
+        "source_name": "Two Minute Papers",
+        "source_handle": "Two Minute Papers",
+        "source_role": "Channel · Two Minute Papers"
+      }
+    ]
+  },
+  "window": {
+    "start": "2026-05-31T22:00:00+00:00",
+    "end": "2026-06-01T04:00:00+00:00"
+  }
+}
